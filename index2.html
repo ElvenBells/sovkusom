@@ -8,78 +8,72 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧺</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Manrope:wght@400;500;600;700;800&family=Comfortaa:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
-   SoVkuSom · Landing · Design Tokens
+SoVkuSom · Landing · Design Tokens
 ============================================================ */
 :root{
-  --bg:        #FDFBF7;
-  --bg-2:      #F9F4EE;
-  --cream:     #F4EDE3;
-  --card:      #FFFFFF;
-  --peach:     #E8B49C;
-  --peach-soft:#F3D5C4;
-  --terra:     #D88C7D;
-  --terra-dk:  #C2725F;
-  --ink:       #3E3530;
-  --ink-deep:  #2C2520;
-  --ink-soft:  rgba(62,53,48,.66);
-  --sage:      #8A9272;
-  --sage-soft: #E9EBDF;
-  --error:     #C25B4A;
-  --line:      rgba(62,53,48,.12);
-  --shadow-sm: 0 10px 24px -14px rgba(216,140,125,.45);
-  --shadow-md: 0 24px 48px -20px rgba(216,140,125,.40);
-  --shadow-lg: 0 34px 70px -24px rgba(216,140,125,.45);
-  --r-lg: 28px; --r-md: 20px; --r-sm: 16px;
-  --font-head: "Playfair Display", Georgia, serif;
-  --font-body: "Manrope", "Segoe UI", sans-serif;
-  --container: 1200px;
-  --ease: cubic-bezier(.22,1,.36,1);
+--bg:        #FDFBF7;
+--bg-2:      #F9F4EE;
+--cream:     #F4EDE3;
+--card:      #FFFFFF;
+--peach:     #E8B49C;
+--peach-soft:#F3D5C4;
+--terra:     #D88C7D;
+--terra-dk:  #C2725F;
+--ink:       #3E3530;
+--ink-deep:  #2C2520;
+--ink-soft:  rgba(62,53,48,.66);
+--sage:      #8A9272;
+--sage-soft: #E9EBDF;
+--error:     #C25B4A;
+--line:      rgba(62,53,48,.12);
+--shadow-sm: 0 10px 24px -14px rgba(216,140,125,.45);
+--shadow-md: 0 24px 48px -20px rgba(216,140,125,.40);
+--shadow-lg: 0 34px 70px -24px rgba(216,140,125,.45);
+--r-lg: 28px; --r-md: 20px; --r-sm: 16px;
+--font-head: "Playfair Display", Georgia, serif;
+--font-body: "Manrope", "Segoe UI", sans-serif;
+--container: 1200px;
+--ease: cubic-bezier(.22,1,.36,1);
 }
-
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:96px}
 body{
-  font-family:var(--font-body);
-  background:var(--bg);
-  color:var(--ink);
-  font-size:17px;line-height:1.65;
-  -webkit-font-smoothing:antialiased;
-  overflow-x:hidden;
+font-family:var(--font-body);
+background:var(--bg);
+color:var(--ink);
+font-size:17px;line-height:1.65;
+-webkit-font-smoothing:antialiased;
+overflow-x:hidden;
 }
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
 ::selection{background:var(--peach);color:var(--ink-deep)}
 :focus-visible{outline:2px solid var(--terra);outline-offset:3px;border-radius:6px}
-
 h1,h2,h3{font-family:var(--font-head);font-weight:500;line-height:1.12;color:var(--ink-deep)}
 h2{font-size:clamp(1.9rem,3.6vw,2.9rem);letter-spacing:-.01em}
 h2 em, h1 em{font-style:italic;color:var(--terra-dk)}
 .lead{color:var(--ink-soft);max-width:56ch}
-
 .container{width:min(var(--container),calc(100% - 40px));margin-inline:auto}
 @media (min-width:768px) and (max-width:1199px){.container{width:min(688px,calc(100% - 48px))}}
-
 /* ---------- Grain overlay ---------- */
 .grain{position:fixed;inset:-50%;width:200%;height:200%;pointer-events:none;z-index:2000;opacity:.055;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  animation:grain 9s steps(6) infinite}
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+animation:grain 9s steps(6) infinite}
 @keyframes grain{0%,100%{transform:translate(0,0)}20%{transform:translate(-2%,1%)}40%{transform:translate(1%,-2%)}60%{transform:translate(-1%,2%)}80%{transform:translate(2%,1%)}}
-
 /* ---------- Custom cursor ---------- */
 #cursor{position:fixed;top:0;left:0;width:14px;height:14px;border-radius:50%;background:var(--terra);
-  pointer-events:none;z-index:3000;opacity:0;transform:translate(-50%,-50%);
-  transition:width .25s var(--ease),height .25s var(--ease),opacity .3s,background .3s;mix-blend-mode:multiply}
+pointer-events:none;z-index:3000;opacity:0;transform:translate(-50%,-50%);
+transition:width .25s var(--ease),height .25s var(--ease),opacity .3s,background .3s;mix-blend-mode:multiply}
 #cursor.big{width:52px;height:52px;background:var(--peach);opacity:.55}
 @media (pointer:coarse){#cursor{display:none}}
-
 /* ---------- Buttons ---------- */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;
-  padding:16px 30px;border-radius:999px;font-weight:700;font-size:16px;
-  transition:transform .3s var(--ease),box-shadow .3s,background .3s,color .3s,border-color .3s;white-space:nowrap}
+padding:16px 30px;border-radius:999px;font-weight:700;font-size:16px;
+transition:transform .3s var(--ease),box-shadow .3s,background .3s,color .3s,border-color .3s;white-space:nowrap}
 .btn .arr{transition:transform .3s var(--ease);flex:none}
 .btn:hover .arr{transform:translateX(5px)}
 .btn-primary{background:var(--terra);color:#FFF9F3;box-shadow:var(--shadow-sm)}
@@ -92,49 +86,54 @@ h2 em, h1 em{font-style:italic;color:var(--terra-dk)}
 .btn-sm{padding:11px 22px;font-size:14.5px}
 .btn[disabled]{opacity:.45;pointer-events:none}
 .icon-btn{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;flex:none;
-  border:1.5px solid rgba(62,53,48,.18);background:rgba(255,255,255,.6);transition:.3s var(--ease)}
+border:1.5px solid rgba(62,53,48,.18);background:rgba(255,255,255,.6);transition:.3s var(--ease)}
 .icon-btn:hover{background:var(--peach);border-color:var(--peach)}
 .icon-btn[disabled]{opacity:.3;pointer-events:none}
-
 /* ---------- Scroll reveal ---------- */
 .rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s var(--ease);transition-delay:var(--d,0s)}
 .rv.on{opacity:1;transform:none}
-
 /* ---------- Blobs / decor ---------- */
 .blob{position:absolute;pointer-events:none;z-index:0;filter:blur(2px);
-  animation:blobMorph 18s ease-in-out infinite alternate}
+animation:blobMorph 18s ease-in-out infinite alternate}
 .blob-peach{background:radial-gradient(circle at 35% 35%,rgba(232,180,156,.55),rgba(232,180,156,.12) 70%)}
 .blob-sage{background:radial-gradient(circle at 60% 40%,rgba(138,146,114,.32),rgba(138,146,114,.06) 70%)}
 @keyframes blobMorph{
-  0%{border-radius:58% 42% 55% 45%/48% 55% 45% 52%}
-  50%{border-radius:45% 55% 40% 60%/55% 42% 58% 45%}
-  100%{border-radius:60% 40% 52% 48%/42% 58% 42% 58%}}
-
+0%{border-radius:58% 42% 55% 45%/48% 55% 45% 52%}
+50%{border-radius:45% 55% 40% 60%/55% 42% 58% 45%}
+100%{border-radius:60% 40% 52% 48%/42% 58% 42% 58%}}
 /* ---------- Section header ---------- */
 .section{padding:120px 0;position:relative}
 @media (max-width:767px){.section{padding:72px 0}}
 .sec-head{margin-bottom:56px;max-width:760px}
 .eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:12.5px;font-weight:800;
-  letter-spacing:.22em;text-transform:uppercase;color:var(--terra-dk);margin-bottom:20px}
+letter-spacing:.22em;text-transform:uppercase;color:var(--terra-dk);margin-bottom:20px}
 .eyebrow::before{content:"";width:34px;height:2px;background:var(--terra);border-radius:2px}
 .sec-head .lead{margin-top:18px}
-
 /* ============================================================
-   HEADER
+HEADER
 ============================================================ */
 .header{position:fixed;inset:0 0 auto;z-index:900;padding:18px 0;transition:padding .35s var(--ease),background .35s,box-shadow .35s,backdrop-filter .35s}
 .header.is-scrolled{padding:10px 0;background:rgba(253,251,247,.72);
-  -webkit-backdrop-filter:blur(12px) saturate(1.15);backdrop-filter:blur(12px) saturate(1.15);
-  box-shadow:0 10px 30px -18px rgba(216,140,125,.35);border-bottom:1px solid rgba(62,53,48,.07)}
+-webkit-backdrop-filter:blur(12px) saturate(1.15);backdrop-filter:blur(12px) saturate(1.15);
+box-shadow:0 10px 30px -18px rgba(216,140,125,.35);border-bottom:1px solid rgba(62,53,48,.07)}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
-.logo{font-family:var(--font-head);font-style:italic;font-weight:600;font-size:26px;letter-spacing:.01em;display:flex;align-items:center;gap:10px}
+/* ---------- Logo lockup (иконка + название текстом, Comfortaa) ---------- */
+.logo{display:flex;align-items:center;gap:12px}
+.logo img{height:46px;width:auto;object-fit:contain;display:block;flex:none}
+@media (max-width:980px){.logo img{height:40px}}
+.logo-text{display:flex;flex-direction:column;gap:3px;line-height:1}
+.logo-name{font-family:"Comfortaa",var(--font-body);font-weight:700;font-size:21px;letter-spacing:.01em;color:var(--ink-deep)}
+.logo-sub{font-family:"Comfortaa",var(--font-body);font-size:10.5px;font-weight:500;color:var(--ink-soft);letter-spacing:.02em}
+@media (max-width:480px){.logo-sub{display:none}}
+.footer .logo-name{color:var(--cream)}
+.footer .logo-sub{color:rgba(244,237,227,.6)}
 .logo b{color:var(--terra-dk);font-weight:600}
 .logo .dot{width:9px;height:9px;border-radius:50%;background:var(--terra);flex:none;animation:pulse 3s ease-in-out infinite}
 @keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.5);opacity:.55}}
 .nav{display:flex;gap:34px;align-items:center}
 .nav a{position:relative;font-size:15px;font-weight:600;color:var(--ink-soft);padding:6px 0;transition:color .3s}
 .nav a::after{content:"";position:absolute;left:50%;bottom:-2px;width:6px;height:6px;border-radius:50%;
-  background:var(--terra);transform:translate(-50%,8px) scale(0);transition:.35s var(--ease)}
+background:var(--terra);transform:translate(-50%,8px) scale(0);transition:.35s var(--ease)}
 .nav a:hover,.nav a.active{color:var(--ink-deep)}
 .nav a:hover::after,.nav a.active::after{transform:translate(-50%,0) scale(1)}
 .header-cta{display:flex;gap:14px;align-items:center}
@@ -146,15 +145,14 @@ body.drawer-open .burger span{background:transparent}
 body.drawer-open .burger span::before{top:0;transform:rotate(45deg)}
 body.drawer-open .burger span::after{top:0;transform:rotate(-45deg)}
 @media (max-width:980px){.nav,.header-cta .btn{display:none}.burger{display:grid}}
-
 /* ---------- Drawer ---------- */
 .drawer{position:fixed;inset:0;z-index:1000;background:var(--bg-2);display:flex;flex-direction:column;
-  padding:110px 32px 40px;transform:translateX(102%);transition:transform .55s var(--ease);visibility:hidden}
+padding:110px 32px 40px;transform:translateX(102%);transition:transform .55s var(--ease);visibility:hidden}
 .drawer.open{transform:none;visibility:visible}
 .drawer nav{display:flex;flex-direction:column;gap:6px}
 .drawer nav a{font-family:var(--font-head);font-size:clamp(30px,8vw,42px);padding:10px 0;
-  border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;
-  opacity:0;transform:translateY(20px);transition:opacity .5s ease,transform .5s var(--ease)}
+border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;
+opacity:0;transform:translateY(20px);transition:opacity .5s ease,transform .5s var(--ease)}
 .drawer.open nav a{opacity:1;transform:none}
 .drawer.open nav a:nth-child(1){transition-delay:.10s}.drawer.open nav a:nth-child(2){transition-delay:.16s}
 .drawer.open nav a:nth-child(3){transition-delay:.22s}.drawer.open nav a:nth-child(4){transition-delay:.28s}
@@ -163,14 +161,13 @@ body.drawer-open .burger span::after{top:0;transform:rotate(-45deg)}
 .drawer-foot{margin-top:auto;display:flex;flex-direction:column;gap:14px}
 .drawer-foot .btn{width:100%}
 .drawer-note{font-size:14px;color:var(--ink-soft);text-align:center}
-
 /* ============================================================
-   HERO
+HERO
 ============================================================ */
 .hero{position:relative;padding:170px 0 90px;overflow:hidden}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;position:relative;z-index:2}
 .hero-eyebrow{display:inline-flex;align-items:center;gap:12px;background:var(--cream);border:1px solid rgba(62,53,48,.08);
-  padding:9px 18px;border-radius:999px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--terra-dk)}
+padding:9px 18px;border-radius:999px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--terra-dk)}
 .hero-eyebrow svg{flex:none}
 .hero h1{font-size:clamp(2.5rem,5.6vw,4.5rem);margin:26px 0 24px;letter-spacing:-.015em}
 .hero h1 .mask{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
@@ -185,17 +182,16 @@ body.drawer-open .burger span::after{top:0;transform:rotate(-45deg)}
 .hero-trust .avs img:first-child{margin-left:0}
 .hero-trust span{font-size:14px;color:var(--ink-soft)}
 .hero-trust b{color:var(--ink-deep)}
-
 .hero-visual{position:relative;min-height:520px}
 .hero-photo{position:relative;width:min(430px,88%);margin-left:auto;z-index:2}
 .hero-photo .frame{border-radius:220px 220px var(--r-lg) var(--r-lg);overflow:hidden;
-  box-shadow:var(--shadow-lg);aspect-ratio:9/11;background:var(--cream)}
+box-shadow:var(--shadow-lg);aspect-ratio:9/11;background:var(--cream)}
 .hero-photo img{width:100%;height:100%;object-fit:cover;animation:kenburns 16s ease-in-out infinite alternate}
 @keyframes kenburns{from{transform:scale(1) translateY(0)}to{transform:scale(1.07) translateY(-10px)}}
 .hero-blob{width:120%;aspect-ratio:1;top:-8%;right:-16%}
 .sticker{position:absolute;background:#fff;border-radius:14px;padding:10px 16px;font-size:13.5px;font-weight:700;
-  box-shadow:var(--shadow-md);display:flex;align-items:center;gap:8px;z-index:3;
-  animation:floaty 6s ease-in-out infinite;border:1px solid rgba(62,53,48,.06)}
+box-shadow:var(--shadow-md);display:flex;align-items:center;gap:8px;z-index:3;
+animation:floaty 6s ease-in-out infinite;border:1px solid rgba(62,53,48,.06)}
 .sticker .tick{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;flex:none;background:var(--peach-soft);color:var(--terra-dk)}
 .sticker-1{top:6%;left:-4%;transform:rotate(-5deg)}
 .sticker-2{bottom:22%;left:-12%;transform:rotate(4deg);animation-delay:1.2s;background:var(--ink-deep);color:var(--cream)}
@@ -209,16 +205,14 @@ body.drawer-open .burger span::after{top:0;transform:rotate(-45deg)}
 .scroll-hint .line{width:60px;height:1.5px;background:var(--terra);position:relative;overflow:hidden;border-radius:2px}
 .scroll-hint .line::after{content:"";position:absolute;inset:0;background:var(--bg);animation:slideLine 2.2s var(--ease) infinite}
 @keyframes slideLine{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
-
 @media (max-width:980px){
-  .hero{padding:130px 0 60px}
-  .hero-grid{grid-template-columns:1fr;gap:48px}
-  .hero-visual{min-height:0}
-  .hero-photo{margin:0 auto;width:min(400px,92%)}
-  .hero-blob{right:-30%}
-  .scroll-hint{display:none}
+.hero{padding:130px 0 60px}
+.hero-grid{grid-template-columns:1fr;gap:48px}
+.hero-visual{min-height:0}
+.hero-photo{margin:0 auto;width:min(400px,92%)}
+.hero-blob{right:-30%}
+.scroll-hint{display:none}
 }
-
 /* ---------- Marquee ---------- */
 .marquee{background:var(--ink-deep);color:var(--cream);overflow:hidden;padding:20px 0;position:relative}
 .marquee-track{display:flex;gap:0;width:max-content;animation:marquee 30s linear infinite}
@@ -226,17 +220,16 @@ body.drawer-open .burger span::after{top:0;transform:rotate(-45deg)}
 .marquee span{font-family:var(--font-head);font-style:italic;font-size:20px;padding:0 28px;display:flex;align-items:center;gap:56px;white-space:nowrap}
 .marquee span::after{content:"✦";font-size:13px;color:var(--terra);font-style:normal}
 @keyframes marquee{to{transform:translateX(-50%)}}
-
 /* ============================================================
-   WORKSHOPS (cards)
+WORKSHOPS (cards)
 ============================================================ */
 .workshops{background:var(--bg)}
 .cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
 @media (max-width:1023px){.cards-grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:639px){.cards-grid{grid-template-columns:1fr}}
 .w-card{background:var(--card);border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;
-  border:1px solid rgba(62,53,48,.06);box-shadow:0 12px 30px -22px rgba(216,140,125,.35);
-  transition:transform .45s var(--ease),box-shadow .45s}
+border:1px solid rgba(62,53,48,.06);box-shadow:0 12px 30px -22px rgba(216,140,125,.35);
+transition:transform .45s var(--ease),box-shadow .45s}
 .w-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg)}
 .w-media{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--cream)}
 .w-media img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
@@ -244,10 +237,10 @@ body.drawer-open .burger span::after{top:0;transform:rotate(-45deg)}
 .w-media::after{content:"";position:absolute;inset:0;background:rgba(44,37,32,.42);opacity:0;transition:opacity .45s}
 .w-card:hover .w-media::after{opacity:1}
 .w-more{position:absolute;left:50%;top:50%;transform:translate(-50%,-40%) scale(.9);z-index:2;color:#FFF7EF;
-  font-weight:700;font-size:15px;display:flex;gap:8px;align-items:center;opacity:0;transition:.45s var(--ease)}
+font-weight:700;font-size:15px;display:flex;gap:8px;align-items:center;opacity:0;transition:.45s var(--ease)}
 .w-card:hover .w-more{opacity:1;transform:translate(-50%,-50%) scale(1)}
 .badge{position:absolute;top:16px;left:16px;z-index:3;background:var(--peach);color:var(--ink-deep);
-  font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:7px 14px;border-radius:999px;box-shadow:var(--shadow-sm)}
+font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:7px 14px;border-radius:999px;box-shadow:var(--shadow-sm)}
 .badge.sage{background:var(--sage);color:#FFFDF8}
 .badge.dark{background:var(--ink-deep);color:var(--cream)}
 .w-body{padding:26px 26px 28px;display:flex;flex-direction:column;gap:14px;flex:1}
@@ -261,25 +254,24 @@ body.drawer-open .burger span::after{top:0;transform:rotate(-45deg)}
 .w-note{font-size:13px;color:var(--ink-soft)}
 .empty-hint{margin-top:36px;text-align:center;font-size:15px;color:var(--ink-soft)}
 .empty-hint a{color:var(--terra-dk);font-weight:700;border-bottom:1.5px dotted var(--terra)}
-
 /* ============================================================
-   LESSONS · Bento
+LESSONS · Bento
 ============================================================ */
 .lessons{background:var(--bg-2);overflow:hidden}
 .lessons .blob{width:420px;aspect-ratio:1;top:60px;right:-180px}
 .bento{display:grid;grid-template-columns:repeat(6,1fr);gap:26px;position:relative;z-index:2}
 .l-card{background:var(--card);border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;
-  border:1px solid rgba(62,53,48,.06);box-shadow:0 12px 30px -22px rgba(216,140,125,.3);
-  transition:transform .45s var(--ease),box-shadow .45s;position:relative}
+border:1px solid rgba(62,53,48,.06);box-shadow:0 12px 30px -22px rgba(216,140,125,.3);
+transition:transform .45s var(--ease),box-shadow .45s;position:relative}
 .l-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg)}
 .l-card:nth-child(1){grid-column:span 4}
 .l-card:nth-child(2){grid-column:span 2}
 .l-card:nth-child(3),.l-card:nth-child(4),.l-card:nth-child(5){grid-column:span 2}
 @media (max-width:1023px){
-  .l-card:nth-child(1){grid-column:span 6}
-  .l-card:nth-child(2){grid-column:span 3}
-  .l-card:nth-child(3){grid-column:span 3}
-  .l-card:nth-child(4),.l-card:nth-child(5){grid-column:span 3}
+.l-card:nth-child(1){grid-column:span 6}
+.l-card:nth-child(2){grid-column:span 3}
+.l-card:nth-child(3){grid-column:span 3}
+.l-card:nth-child(4),.l-card:nth-child(5){grid-column:span 3}
 }
 @media (max-width:639px){.l-card{grid-column:span 6 !important}}
 .l-media{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--cream)}
@@ -289,50 +281,136 @@ body.drawer-open .burger span::after{top:0;transform:rotate(-45deg)}
 .l-media::after{content:"";position:absolute;inset:0;background:rgba(44,37,32,.38);opacity:0;transition:opacity .4s}
 .l-card:hover .l-media::after{opacity:1}
 .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) scale(.85);z-index:2;width:66px;height:66px;
-  border-radius:50%;background:rgba(253,251,247,.92);display:grid;place-items:center;color:var(--terra-dk);
-  opacity:.92;transition:.4s var(--ease);box-shadow:var(--shadow-md)}
+border-radius:50%;background:rgba(253,251,247,.92);display:grid;place-items:center;color:var(--terra-dk);
+opacity:.92;transition:.4s var(--ease);box-shadow:var(--shadow-md)}
 .l-card:hover .play{transform:translate(-50%,-50%) scale(1.08);background:var(--peach)}
 .play::after{content:"";position:absolute;inset:-9px;border-radius:50%;border:1.5px solid rgba(253,251,247,.75);animation:ring 2.4s ease-out infinite}
 @keyframes ring{from{transform:scale(.8);opacity:1}to{transform:scale(1.35);opacity:0}}
 .dur{position:absolute;right:14px;bottom:14px;z-index:2;background:rgba(44,37,32,.75);color:var(--cream);
-  font-size:12px;font-weight:700;padding:5px 11px;border-radius:999px;letter-spacing:.04em}
+font-size:12px;font-weight:700;padding:5px 11px;border-radius:999px;letter-spacing:.04em}
 .l-body{padding:22px 24px 26px;display:flex;flex-direction:column;gap:10px;flex:1}
 .l-body h3{font-size:21.5px}
 .l-body p{font-size:14.5px;color:var(--ink-soft)}
 .l-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding-top:16px;border-top:1px dashed var(--line)}
 .l-link{font-size:14px;font-weight:700;color:var(--terra-dk);display:inline-flex;gap:7px;align-items:center;transition:gap .3s}
 .l-link:hover{gap:12px}
-
 /* ============================================================
-   ABOUT
+LESSONS · New sections (free, paid, subscription)
+============================================================ */
+.subsection-title{font-family:var(--font-head);font-size:clamp(1.3rem,2.4vw,1.8rem);color:var(--ink-deep);
+margin:56px 0 24px;display:flex;align-items:center;gap:14px;font-weight:500;letter-spacing:-.01em}
+.subsection-title::before{content:"";width:28px;height:2px;background:var(--terra);border-radius:2px;flex:none}
+.subsection-title:first-of-type{margin-top:40px}
+/* ---------- Mini-carousel: слоты под фото работ ---------- */
+.card-carousel{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:var(--cream);flex:none;min-height:0}
+.cc-track{position:absolute;inset:0;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.cc-track::-webkit-scrollbar{display:none}
+.cc-slide{flex:0 0 100%;min-width:100%;height:100%;scroll-snap-align:start}
+.cc-slide img{width:100%;height:100%;object-fit:cover}
+.cc-count{position:absolute;top:8px;right:8px;z-index:2;background:rgba(44,37,32,.72);color:var(--cream);
+font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;letter-spacing:.05em;pointer-events:none}
+.cc-dots{position:absolute;left:0;right:0;bottom:8px;z-index:2;display:flex;gap:5px;justify-content:center}
+.cc-dots button{width:7px;height:7px;padding:0;border-radius:50%;background:rgba(253,251,247,.55);transition:.3s var(--ease)}
+.cc-dots button.active{background:var(--terra);width:18px;border-radius:999px}
+.cc-prev,.cc-next{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:28px;height:28px;border-radius:50%;
+background:rgba(253,251,247,.9);color:var(--terra-dk);display:grid;place-items:center;
+opacity:0;transition:opacity .3s,background .3s;box-shadow:var(--shadow-sm)}
+.cc-prev{left:8px}.cc-next{right:8px}
+.cc-prev:hover,.cc-next:hover{background:var(--peach)}
+.card-carousel:hover .cc-prev,.card-carousel:hover .cc-next,.card-carousel:focus-within .cc-prev,.card-carousel:focus-within .cc-next{opacity:1}
+@media (pointer:coarse){.cc-prev,.cc-next{display:none}}
+/* ---------- Free grid ---------- */
+.free-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;position:relative;z-index:2}
+@media (max-width:1023px){.free-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:540px){.free-grid{grid-template-columns:1fr}}
+.free-card{background:var(--card);border-radius:var(--r-md);padding:14px 14px 24px;
+border:1px solid rgba(62,53,48,.06);box-shadow:0 8px 22px -18px rgba(216,140,125,.3);
+transition:transform .4s var(--ease),box-shadow .4s;display:flex;flex-direction:column;gap:12px;position:relative}
+.free-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-md)}
+.free-card .card-carousel{margin-bottom:6px}
+.free-body{padding:0 10px;display:flex;flex-direction:column;gap:10px;flex:1}
+.free-icon{font-size:24px;line-height:1;flex:none}
+.free-card h3{font-family:var(--font-head);font-size:18px;color:var(--ink-deep);line-height:1.3;font-weight:600}
+.free-card p{font-size:14px;color:var(--ink-soft);line-height:1.5}
+.free-link{margin-top:auto;display:inline-flex;align-items:center;gap:8px;
+color:var(--terra-dk);font-weight:700;font-size:14.5px;padding-top:10px;transition:gap .3s}
+.free-link:hover{gap:12px}
+/* ---------- Paid grid ---------- */
+.paid-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;position:relative;z-index:2}
+@media (max-width:1199px){.paid-grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:879px){.paid-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:540px){.paid-grid{grid-template-columns:1fr}}
+.paid-card{background:var(--card);border-radius:var(--r-md);padding:14px 14px 22px;
+border:1px solid rgba(62,53,48,.06);box-shadow:0 8px 22px -18px rgba(216,140,125,.3);
+transition:transform .4s var(--ease),box-shadow .4s;display:flex;flex-direction:column;gap:12px;position:relative}
+.paid-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-md)}
+.paid-card .card-carousel{margin-bottom:4px}
+.paid-body{padding:0 8px;display:flex;flex-direction:column;gap:12px;flex:1}
+.paid-card h3{font-family:var(--font-head);font-size:17px;color:var(--ink-deep);line-height:1.35;min-height:2.7em;font-weight:600}
+.paid-price{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;font-family:var(--font-head);
+font-size:22px;font-weight:600;color:var(--ink-deep)}
+.paid-price .old{font-size:15px;color:var(--ink-soft);text-decoration:line-through;font-weight:400}
+.paid-price .discount{font-size:11px;font-weight:800;color:#fff;background:var(--terra);
+padding:3px 9px;border-radius:999px;letter-spacing:.05em;align-self:center}
+/* ---------- Subscription grid ---------- */
+.subs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:8px;position:relative;z-index:2}
+@media (max-width:1023px){.subs-grid{grid-template-columns:1fr}}
+.sub-card{background:var(--card);border-radius:var(--r-lg);padding:30px;
+border:1px solid rgba(62,53,48,.06);box-shadow:0 14px 34px -24px rgba(216,140,125,.35);
+position:relative;overflow:hidden;display:flex;flex-direction:column}
+.sub-card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--terra)}
+.sub-card.meal::before{background:var(--sage)}
+.sub-card.promo::before{background:var(--ink-deep)}
+.sub-card h4{font-family:var(--font-head);font-size:22px;color:var(--ink-deep);margin-bottom:10px;font-weight:500}
+.sub-card > p{color:var(--ink-soft);font-size:14.5px;margin-bottom:18px}
+.chat-link{display:inline-flex;align-items:center;gap:8px;background:var(--sage-soft);color:var(--ink-deep);
+padding:11px 16px;border-radius:12px;font-size:14px;font-weight:700;margin-bottom:18px;
+transition:background .3s,transform .3s;width:max-content}
+.chat-link:hover{background:var(--peach-soft);transform:translateY(-2px)}
+.chat-link svg{flex:none}
+.sub-details{border:1px solid var(--line);border-radius:12px;margin-top:10px;overflow:hidden;background:var(--bg)}
+.sub-details summary{padding:13px 16px;cursor:pointer;font-weight:600;color:var(--ink-deep);
+list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;
+transition:background .3s;font-size:14.5px}
+.sub-details summary::-webkit-details-marker{display:none}
+.sub-details summary::after{content:"+";font-size:22px;color:var(--terra);transition:transform .3s;flex:none;line-height:1;font-weight:400}
+.sub-details[open] summary::after{transform:rotate(45deg)}
+.sub-details summary:hover{background:var(--bg-2)}
+.sub-list{list-style:none;padding:8px 16px 16px;display:flex;flex-direction:column;gap:4px}
+.sub-list li{padding:9px 0;border-bottom:1px dashed var(--line);font-size:14px}
+.sub-list li:last-child{border-bottom:none}
+.sub-list a{color:var(--terra-dk);font-weight:600;display:inline-flex;align-items:center;gap:6px;transition:gap .3s}
+.sub-list a:hover{gap:10px}
+.sub-list a::before{content:"▸";color:var(--terra);font-size:11px}
+/* ============================================================
+ABOUT
 ============================================================ */
 .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center;position:relative;z-index:2}
 .about-photo{position:relative}
 .about-photo .arch{border-radius:999px 999px var(--r-lg) var(--r-lg);overflow:hidden;aspect-ratio:4/5;
-  box-shadow:var(--shadow-lg);border:8px solid #fff;position:relative;z-index:2}
+box-shadow:var(--shadow-lg);border:8px solid #fff;position:relative;z-index:2}
 .about-photo .arch img{width:100%;height:100%;object-fit:cover}
 .about-blob{width:115%;aspect-ratio:1;left:-12%;top:-6%}
 .about-sign{position:absolute;z-index:3;right:-16px;bottom:34px;background:var(--ink-deep);color:var(--cream);
-  padding:14px 22px;border-radius:16px;transform:rotate(3deg);box-shadow:var(--shadow-md);font-family:var(--font-head);font-style:italic;font-size:18px}
+padding:14px 22px;border-radius:16px;transform:rotate(3deg);box-shadow:var(--shadow-md);font-family:var(--font-head);font-style:italic;font-size:18px}
 .about-txt p{margin-top:18px;color:var(--ink-soft)}
 .about-txt p b{color:var(--ink-deep)}
 .counters{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:40px}
 .counter{background:#fff;border:1px solid rgba(62,53,48,.06);border-radius:var(--r-md);padding:22px;
-  display:flex;gap:16px;align-items:center;box-shadow:0 14px 34px -24px rgba(216,140,125,.5);
-  transition:transform .4s var(--ease),box-shadow .4s}
+display:flex;gap:16px;align-items:center;box-shadow:0 14px 34px -24px rgba(216,140,125,.5);
+transition:transform .4s var(--ease),box-shadow .4s}
 .counter:hover{transform:translateY(-5px);box-shadow:var(--shadow-md)}
 .counter .ci{width:52px;height:52px;flex:none;border-radius:16px;background:var(--sage-soft);color:var(--sage);display:grid;place-items:center}
 .counter:nth-child(even) .ci{background:var(--peach-soft);color:var(--terra-dk)}
 .counter .num{font-family:var(--font-head);font-size:30px;font-weight:600;line-height:1.1;color:var(--ink-deep)}
 .counter .lbl{font-size:13.5px;color:var(--ink-soft)}
 @media (max-width:980px){
-  .about-grid{grid-template-columns:1fr;gap:56px}
-  .about-photo{width:min(380px,86%);margin:0 auto}
+.about-grid{grid-template-columns:1fr;gap:56px}
+.about-photo{width:min(380px,86%);margin:0 auto}
 }
 @media (max-width:480px){.counters{grid-template-columns:1fr}}
-
 /* ============================================================
-   GALLERY (horizontal)
+GALLERY (horizontal)
 ============================================================ */
 .gallery{background:var(--bg);overflow:hidden}
 .gal-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
@@ -341,7 +419,7 @@ body.drawer-open .burger span::after{top:0;transform:rotate(-45deg)}
 .gal-track::-webkit-scrollbar{display:none}
 .gal-track.dragging{cursor:grabbing;scroll-snap-type:none}
 .gal-card{flex:0 0 300px;scroll-snap-align:start;background:#fff;border-radius:var(--r-md);padding:12px 12px 18px;
-  box-shadow:0 16px 36px -24px rgba(216,140,125,.45);border:1px solid rgba(62,53,48,.05);transition:transform .4s var(--ease)}
+box-shadow:0 16px 36px -24px rgba(216,140,125,.45);border:1px solid rgba(62,53,48,.05);transition:transform .4s var(--ease)}
 .gal-card:nth-child(odd){transform:rotate(-1.4deg)}
 .gal-card:nth-child(even){transform:rotate(1.2deg) translateY(10px)}
 .gal-card:hover{transform:rotate(0) translateY(-6px);box-shadow:var(--shadow-md)}
@@ -350,19 +428,18 @@ body.drawer-open .burger span::after{top:0;transform:rotate(-45deg)}
 .gal-card:hover img{transform:scale(1.06)}
 .gal-card figcaption{font-size:13.5px;color:var(--ink-soft);padding:12px 6px 0;display:flex;justify-content:space-between;gap:8px}
 .gal-card figcaption b{color:var(--ink);font-weight:700}
-
 /* ============================================================
-   REVIEWS
+REVIEWS
 ============================================================ */
 .reviews{background:var(--bg-2)}
 .rev-nav{display:flex;gap:12px}
 .rev-viewport{overflow:hidden;margin-top:8px}
 .rev-track{display:flex;gap:26px;transition:transform .6s var(--ease)}
 .rev-card{flex:0 0 calc((100% - 26px)/2);background:#fff;border-radius:var(--r-lg);padding:38px;position:relative;
-  border:1px solid rgba(62,53,48,.06);box-shadow:0 14px 36px -26px rgba(216,140,125,.5);display:flex;flex-direction:column;gap:18px}
+border:1px solid rgba(62,53,48,.06);box-shadow:0 14px 36px -26px rgba(216,140,125,.5);display:flex;flex-direction:column;gap:18px}
 @media (max-width:879px){.rev-card{flex:0 0 100%;padding:28px}}
 .rev-card::before{content:"«";position:absolute;top:-6px;right:26px;font-family:var(--font-head);
-  font-size:130px;line-height:1;color:var(--peach-soft);z-index:0;pointer-events:none}
+font-size:130px;line-height:1;color:var(--peach-soft);z-index:0;pointer-events:none}
 .rev-top{display:flex;align-items:center;gap:16px;position:relative;z-index:1}
 .rev-top img{width:56px;height:56px;border-radius:50%;object-fit:cover;border:3px solid var(--peach-soft)}
 .rev-top .who b{display:block;font-size:17px;color:var(--ink-deep)}
@@ -376,32 +453,30 @@ body.drawer-open .burger span::after{top:0;transform:rotate(-45deg)}
 .rev-dots{display:flex;gap:9px;justify-content:center;margin-top:34px}
 .rev-dots button{width:9px;height:9px;border-radius:999px;background:rgba(62,53,48,.18);transition:.35s var(--ease)}
 .rev-dots button.active{width:30px;background:var(--terra)}
-
 /* ============================================================
-   FAQ
+FAQ
 ============================================================ */
 .faq-wrap{max-width:820px;margin:0 auto}
 .faq-item{border-bottom:1px solid var(--line)}
 .faq-item:first-child{border-top:1px solid var(--line)}
 .faq-q{width:100%;display:flex;align-items:center;justify-content:space-between;gap:24px;text-align:left;
-  padding:28px 4px;font-family:var(--font-head);font-size:clamp(18px,2.4vw,23px);color:var(--ink-deep);transition:color .3s}
+padding:28px 4px;font-family:var(--font-head);font-size:clamp(18px,2.4vw,23px);color:var(--ink-deep);transition:color .3s}
 .faq-q:hover{color:var(--terra-dk)}
 .faq-ic{width:42px;height:42px;flex:none;border-radius:50%;border:1.5px solid rgba(62,53,48,.16);display:grid;place-items:center;
-  transition:transform .45s var(--ease),background .3s,border-color .3s}
+transition:transform .45s var(--ease),background .3s,border-color .3s}
 .faq-ic svg{transition:transform .45s var(--ease)}
 .faq-item.open .faq-ic{background:var(--terra);border-color:var(--terra);color:#fff;transform:rotate(45deg)}
 .faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s var(--ease)}
 .faq-item.open .faq-a{grid-template-rows:1fr}
 .faq-a > div{overflow:hidden}
 .faq-a p{padding:0 60px 30px 4px;color:var(--ink-soft);max-width:64ch}
-
 /* ============================================================
-   LEAD BANNER + CONTACT
+LEAD BANNER + CONTACT
 ============================================================ */
 .lead-banner{position:relative;overflow:hidden;border-radius:36px;background:var(--ink-deep);color:var(--cream);
-  padding:64px;display:flex;align-items:center;gap:48px;justify-content:space-between;flex-wrap:wrap}
+padding:64px;display:flex;align-items:center;gap:48px;justify-content:space-between;flex-wrap:wrap}
 .lead-banner::before{content:"";position:absolute;width:480px;aspect-ratio:1;border-radius:50%;
-  background:radial-gradient(circle,rgba(216,140,125,.35),transparent 70%);top:-160px;right:-100px}
+background:radial-gradient(circle,rgba(216,140,125,.35),transparent 70%);top:-160px;right:-100px}
 .lead-banner h3{font-size:clamp(24px,3vw,34px);color:var(--cream)}
 .lead-banner h3 em{color:var(--peach)}
 .lead-banner p{color:rgba(244,237,227,.7);margin-top:12px;max-width:44ch}
@@ -409,7 +484,7 @@ body.drawer-open .burger span::after{top:0;transform:rotate(-45deg)}
 @media (max-width:980px){.contact-grid{grid-template-columns:1fr}}
 .contact-list{display:flex;flex-direction:column;gap:8px;margin-top:34px}
 .contact-list a{display:flex;gap:16px;align-items:center;padding:18px 20px;border-radius:var(--r-md);background:#fff;
-  border:1px solid rgba(62,53,48,.06);transition:transform .35s var(--ease),box-shadow .35s}
+border:1px solid rgba(62,53,48,.06);transition:transform .35s var(--ease),box-shadow .35s}
 .contact-list a:hover{transform:translateX(8px);box-shadow:var(--shadow-sm)}
 .contact-list .ci{width:46px;height:46px;flex:none;border-radius:14px;background:var(--peach-soft);color:var(--terra-dk);display:grid;place-items:center}
 .contact-list b{display:block;font-size:16px}
@@ -421,7 +496,7 @@ body.drawer-open .burger span::after{top:0;transform:rotate(-45deg)}
 .field{margin-top:22px;position:relative}
 .field label{display:block;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:9px}
 .field input,.field select,.field textarea{width:100%;border:1.5px solid rgba(62,53,48,.16);background:var(--bg);
-  border-radius:14px;padding:15px 18px;font:inherit;color:var(--ink);transition:border-color .3s,box-shadow .3s,background .3s}
+border-radius:14px;padding:15px 18px;font:inherit;color:var(--ink);transition:border-color .3s,box-shadow .3s,background .3s}
 .field textarea{resize:vertical;min-height:96px}
 .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--terra);background:#fff;box-shadow:0 0 0 4px rgba(232,180,156,.28)}
 .field.error input,.field.error select{border-color:var(--error);background:#FDF3F1}
@@ -442,9 +517,8 @@ body.drawer-open .burger span::after{top:0;transform:rotate(-45deg)}
 .form-success h4{font-family:var(--font-head);font-size:26px}
 .form-success p{color:var(--ink-soft);margin-top:10px}
 .form-success .btn{margin-top:22px}
-
 /* ============================================================
-   FOOTER
+FOOTER
 ============================================================ */
 .footer{background:var(--ink-deep);color:rgba(244,237,227,.72);padding:80px 0 44px;margin-top:120px}
 @media (max-width:767px){.footer{margin-top:72px}}
@@ -461,52 +535,49 @@ body.drawer-open .burger span::after{top:0;transform:rotate(-45deg)}
 .footer-social a{width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(244,237,227,.22);display:grid;place-items:center;transition:.3s}
 .footer-social a:hover{background:var(--terra);border-color:var(--terra);color:#fff;transform:translateY(-4px)}
 .footer-bottom{margin-top:64px;padding-top:28px;border-top:1px solid rgba(244,237,227,.14);
-  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:rgba(244,237,227,.45)}
+display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:rgba(244,237,227,.45)}
 .footer-bottom em{color:var(--peach)}
-
 /* ============================================================
-   STICKY MOBILE BAR
+STICKY MOBILE BAR
 ============================================================ */
 .stickybar{position:fixed;left:12px;right:12px;bottom:12px;z-index:800;display:none;gap:10px;
-  transform:translateY(130%);transition:transform .5s var(--ease)}
+transform:translateY(130%);transition:transform .5s var(--ease)}
 .stickybar.show{transform:none}
 .stickybar .btn{border-radius:18px;box-shadow:0 16px 36px -12px rgba(62,53,48,.4)}
 .stickybar .sb-vk{flex:7}
 .stickybar .sb-tel{flex:3;padding:16px 0}
 @media (max-width:980px){.stickybar{display:flex}body{padding-bottom:86px}}
-
 /* ============================================================
-   LIGHTBOX
+LIGHTBOX
 ============================================================ */
 .lightbox{position:fixed;inset:0;z-index:1500;display:grid;place-items:center;padding:24px;
-  opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
 .lightbox.open{opacity:1;visibility:visible}
 .lightbox .lb-bg{position:absolute;inset:0;background:rgba(30,25,21,.92);backdrop-filter:blur(4px)}
 .lightbox figure{position:relative;z-index:2;max-width:min(920px,92vw);text-align:center}
 .lightbox img{max-height:76vh;max-width:100%;border-radius:var(--r-md);margin:0 auto;box-shadow:0 40px 90px -30px rgba(0,0,0,.6);
-  transform:scale(.94);transition:transform .45s var(--ease)}
+transform:scale(.94);transition:transform .45s var(--ease)}
 .lightbox.open img{transform:scale(1)}
 .lightbox figcaption{color:rgba(244,237,227,.75);margin-top:16px;font-size:14.5px}
 .lb-count{position:absolute;top:-34px;left:0;color:var(--peach);font-size:13.5px;letter-spacing:.14em}
 .lb-close{position:absolute;top:20px;right:20px;z-index:3;width:52px;height:52px;border-radius:50%;
-  background:rgba(244,237,227,.12);color:var(--cream);display:grid;place-items:center;transition:.3s}
+background:rgba(244,237,227,.12);color:var(--cream);display:grid;place-items:center;transition:.3s}
 .lb-close:hover{background:var(--terra);transform:rotate(90deg)}
 .lb-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:54px;height:54px;border-radius:50%;
-  background:rgba(244,237,227,.12);color:var(--cream);display:grid;place-items:center;transition:.3s}
+background:rgba(244,237,227,.12);color:var(--cream);display:grid;place-items:center;transition:.3s}
 .lb-arrow:hover{background:var(--terra)}
 .lb-prev{left:18px}.lb-next{right:18px}
 @media (max-width:640px){.lb-arrow{display:none}}
-
 /* ============================================================
-   MODALS
+MODALS
 ============================================================ */
 .modal{position:fixed;inset:0;z-index:1600;display:grid;place-items:center;padding:20px;
-  opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
 .modal.open{opacity:1;visibility:visible}
 .modal-bg{position:absolute;inset:0;background:rgba(44,37,32,.55);backdrop-filter:blur(6px)}
 .modal-box{position:relative;z-index:2;background:var(--bg);border-radius:var(--r-lg);width:min(640px,100%);
-  max-height:84vh;display:flex;flex-direction:column;box-shadow:0 50px 100px -30px rgba(44,37,32,.5);
-  transform:translateY(24px) scale(.97);transition:transform .45s var(--ease);overflow:hidden}
+max-height:84vh;display:flex;flex-direction:column;box-shadow:0 50px 100px -30px rgba(44,37,32,.5);
+transform:translateY(24px) scale(.97);transition:transform .45s var(--ease);overflow:hidden}
 .modal.open .modal-box{transform:none}
 .modal-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:26px 30px;border-bottom:1px solid var(--line)}
 .modal-head h3{font-size:23px}
@@ -521,729 +592,1272 @@ body.drawer-open .burger span::after{top:0;transform:rotate(-45deg)}
 @media (max-width:560px){.lead-inner{grid-template-columns:1fr}}
 .lead-inner .book{border-radius:18px;overflow:hidden;box-shadow:var(--shadow-md);transform:rotate(-2deg)}
 .lead-inner .book img{aspect-ratio:3/4;object-fit:cover;width:100%}
-
 /* ---------- Utility ---------- */
 body.lock{overflow:hidden}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-
 /* ---------- Reduced motion ---------- */
 @media (prefers-reduced-motion: reduce){
-  *,*::before,*::after{animation:none !important;transition:none !important}
-  html{scroll-behavior:auto}
-  .rv,.hero h1 .mask > span{opacity:1 !important;transform:none !important}
-  .grain{display:none}
+*,*::before,*::after{animation:none !important;transition:none !important}
+html{scroll-behavior:auto}
+.rv,.hero h1 .mask > span{opacity:1 !important;transform:none !important}
+.grain{display:none}
 }
 </style>
 </head>
 <body>
-
 <div class="grain" aria-hidden="true"></div>
 <div id="cursor" aria-hidden="true"></div>
-
 <!-- ================= HEADER ================= -->
 <header class="header" id="header">
-  <div class="container header-inner">
-    <a href="#home" class="logo" data-cursor>So<b>Vku</b>Som<span class="dot"></span></a>
-    <nav class="nav" aria-label="Основная навигация">
-      <a href="#workshops">Совместники</a>
-      <a href="#lessons">Видео-уроки</a>
-      <a href="#about">Обо мне</a>
-      <a href="#reviews">Отзывы</a>
-      <a href="#faq">Вопросы</a>
-      <a href="#contact">Контакты</a>
-    </nav>
-    <div class="header-cta">
-      <a class="btn btn-primary btn-sm magnet" href="https://vk.com/sovкусom" target="_blank" rel="noopener">
-        Написать ВК
-        <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-    </div>
-    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
-  </div>
+<div class="container header-inner">
+<a href="#home" class="logo" data-cursor>
+<img src="images/logo.png" alt="">
+<span class="logo-text">
+<span class="logo-name">SoVkuSom</span>
+<span class="logo-sub">Авторская мастерская Натальи Девятых</span>
+</span>
+</a>
+<nav class="nav" aria-label="Основная навигация">
+<a href="#workshops">Совместники</a>
+<a href="#lessons">Видео-уроки</a>
+<a href="#about">Обо мне</a>
+<a href="#reviews">Отзывы</a>
+<a href="#faq">Вопросы</a>
+<a href="#contact">Контакты</a>
+</nav>
+<div class="header-cta">
+<a class="btn btn-primary btn-sm magnet" href="https://vk.ru/sovkusomnd" target="_blank" rel="noopener">
+Написать ВК
+<svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+</a>
+</div>
+<button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+</div>
 </header>
-
 <!-- Drawer -->
 <aside class="drawer" id="drawer" aria-label="Мобильное меню">
-  <nav>
-    <a href="#workshops">Совместники <i>01</i></a>
-    <a href="#lessons">Видео-уроки <i>02</i></a>
-    <a href="#about">Обо мне <i>03</i></a>
-    <a href="#reviews">Отзывы <i>04</i></a>
-    <a href="#faq">Вопросы <i>05</i></a>
-    <a href="#contact">Контакты <i>06</i></a>
-  </nav>
-  <div class="drawer-foot">
-    <a class="btn btn-primary" href="https://vk.com/sovкусom" target="_blank" rel="noopener">Написать ВКонтакте</a>
-    <a class="btn btn-ghost" href="tel:+79991234567">+7 999 123-45-67</a>
-    <p class="drawer-note">Москва, мастерская на Пятницкой, 25 · ежедневно 10:00–20:00</p>
-  </div>
+<nav>
+<a href="#workshops">Совместники <i>01</i></a>
+<a href="#lessons">Видео-уроки <i>02</i></a>
+<a href="#about">Обо мне <i>03</i></a>
+<a href="#reviews">Отзывы <i>04</i></a>
+<a href="#faq">Вопросы <i>05</i></a>
+<a href="#contact">Контакты <i>06</i></a>
+</nav>
+<div class="drawer-foot">
+<a class="btn btn-primary" href="https://vk.ru/sovkusomnd" target="_blank" rel="noopener">Написать ВКонтакте</a>
+<a class="btn btn-ghost" href="tel:+79120117250">+7 (912) 011-72-50</a>
+<p class="drawer-note">Москва, мастерская на Пятницкой, 25 · ежедневно 10:00–20:00</p>
+</div>
 </aside>
-
 <main>
 <!-- ================= HERO ================= -->
 <section class="hero" id="home">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <span class="hero-eyebrow rv" style="--d:.05s">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg>
-        Мастерская ручного плетения
-      </span>
-      <h1>
-        <span class="mask"><span>Вещи, в которых живёт</span></span>
-        <span class="mask"><span><em>тепло рук</em></span></span>
-      </h1>
-      <p class="sub rv" style="--d:.35s">SoVkuSom — камерная мастерская плетения из ротанга и джута. Учу создавать кашпо, кресла и абажуры, которые делают дом живым: офлайн в Москве и онлайн по всему миру.</p>
-      <div class="hero-cta rv" style="--d:.5s">
-        <a class="btn btn-primary magnet" href="https://vk.com/sovкусom" target="_blank" rel="noopener">
-          Написать ВКонтакте
-          <svg class="arr" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <a class="btn btn-ghost" href="#lessons">Смотреть уроки</a>
-      </div>
-      <div class="hero-trust rv" style="--d:.65s">
-        <div class="avs">
-          <img src="https://picsum.photos/seed/student-avatar-1/84/84" alt="Ученица">
-          <img src="https://picsum.photos/seed/student-avatar-2/84/84" alt="Ученица">
-          <img src="https://picsum.photos/seed/student-avatar-3/84/84" alt="Ученик">
-        </div>
-        <span><b>500+ учеников</b> уже сплели своё первое изделие</span>
-      </div>
-    </div>
-
-    <div class="hero-visual">
-      <div class="blob blob-peach hero-blob plx" data-speed="-0.05" aria-hidden="true"></div>
-      <div class="hero-photo rv" style="--d:.3s">
-        <div class="frame">
-          <img src="https://picsum.photos/seed/rattan-master-hands/860/1060" alt="Мастер плетёт кашпо из ротанга">
-        </div>
-        <div class="sticker sticker-1">
-          <span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg></span>
-          100% ротанг
-        </div>
-        <div class="sticker sticker-2">
-          <span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.6 2.3 7.2-6.3-4.5-6.3 4.5L8 13.8 2 9.2h7.6z"/></svg></span>
-          Ручная работа
-        </div>
-        <div class="sticker sticker-3">
-          <span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 21C7 17 3 13.5 3 9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 9 2.5c0 4-4 7.5-9 11.5z"/></svg></span>
-          Сделано в Москве
-        </div>
-        <svg class="hero-arrow a1" viewBox="0 0 100 60" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
-          <path d="M4 50 C 30 8, 66 8, 92 26" stroke-dasharray="5 6"/>
-          <path d="M84 20 l9 6 -11 4"/>
-        </svg>
-        <svg class="hero-arrow a2" viewBox="0 0 100 60" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
-          <path d="M6 12 C 36 46, 66 44, 94 30" stroke-dasharray="5 6"/>
-          <path d="M84 26 l11 3 -8 8"/>
-        </svg>
-      </div>
-      <div class="scroll-hint rv" style="--d:.8s">листайте вниз <span class="line"></span></div>
-    </div>
-  </div>
+<div class="container hero-grid">
+<div class="hero-copy">
+<span class="hero-eyebrow rv" style="--d:.05s">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg>
+Мастерская ручного плетения
+</span>
+<h1>
+<span class="mask"><span>Вещи, в которых живёт</span></span>
+<span class="mask"><span><em>тепло рук</em></span></span>
+</h1>
+<p class="sub rv" style="--d:.35s">SoVkuSom — камерная мастерская плетения из ротанга и джута. Учу создавать кашпо, кресла и абажуры, которые делают дом живым: офлайн в Москве и онлайн по всему миру.</p>
+<div class="hero-cta rv" style="--d:.5s">
+<a class="btn btn-primary magnet" href="https://vk.ru/sovkusomnd" target="_blank" rel="noopener">
+Написать ВКонтакте
+<svg class="arr" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+</a>
+<a class="btn btn-ghost" href="#lessons">Смотреть уроки</a>
+</div>
+<div class="hero-trust rv" style="--d:.65s">
+<div class="avs">
+<img src="https://picsum.photos/seed/student-avatar-1/84/84" alt="Ученица">
+<img src="https://picsum.photos/seed/student-avatar-2/84/84" alt="Ученица">
+<img src="https://picsum.photos/seed/student-avatar-3/84/84" alt="Ученик">
+</div>
+<span><b>500+ учеников</b> уже сплели своё первое изделие</span>
+</div>
+</div>
+<div class="hero-visual">
+<div class="blob blob-peach hero-blob plx" data-speed="-0.05" aria-hidden="true"></div>
+<div class="hero-photo rv" style="--d:.3s">
+<div class="frame">
+<img src="images/intro.jpg" alt="Мастер плетёт кашпо из ротанга">
+</div>
+<div class="sticker sticker-1">
+<span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg></span>
+100% ротанг
+</div>
+<div class="sticker sticker-2">
+<span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.6 2.3 7.2-6.3-4.5-6.3 4.5L8 13.8 2 9.2h7.6z"/></svg></span>
+Ручная работа
+</div>
+<div class="sticker sticker-3">
+<span class="tick"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 21C7 17 3 13.5 3 9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 9 2.5c0 4-4 7.5-9 11.5z"/></svg></span>
+Сделано в Москве
+</div>
+<svg class="hero-arrow a1" viewBox="0 0 100 60" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+<path d="M4 50 C 30 8, 66 8, 92 26" stroke-dasharray="5 6"/>
+<path d="M84 20 l9 6 -11 4"/>
+</svg>
+<svg class="hero-arrow a2" viewBox="0 0 100 60" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+<path d="M6 12 C 36 46, 66 44, 94 30" stroke-dasharray="5 6"/>
+<path d="M84 26 l11 3 -8 8"/>
+</svg>
+</div>
+<div class="scroll-hint rv" style="--d:.8s">листайте вниз <span class="line"></span></div>
+</div>
+</div>
 </section>
-
 <!-- ================= MARQUEE ================= -->
 <div class="marquee" aria-hidden="true">
-  <div class="marquee-track" id="marqueeTrack">
-    <span>ротанг</span><span>джут</span><span>кашпо</span><span>абажуры</span><span>кресла</span><span>макраме</span><span>сухоцветы</span><span>тепло рук</span>
-  </div>
+<div class="marquee-track" id="marqueeTrack">
+<span>ротанг</span><span>джут</span><span>кашпо</span><span>абажуры</span><span>кресла</span><span>макраме</span><span>сухоцветы</span><span>тепло рук</span>
 </div>
-
+</div>
 <!-- ================= WORKSHOPS ================= -->
 <section class="section workshops" id="workshops">
-  <div class="blob blob-sage plx" data-speed="0.04" style="width:340px;aspect-ratio:1;left:-160px;top:120px" aria-hidden="true"></div>
-  <div class="container">
-    <div class="sec-head rv">
-      <span class="eyebrow">01 · Совместники</span>
-      <h2>Живые мастер-классы — <em>плетём вместе</em> за большим столом</h2>
-      <p class="lead">Небольшие группы до 6 человек, весь материал и инструменты включены, чай с травами и плетёные кресла — в подарок к атмосфере.</p>
-    </div>
-    <div class="cards-grid" data-stagger>
-      <!-- card 1 -->
-      <article class="w-card rv">
-        <div class="w-media">
-          <img src="https://picsum.photos/seed/rattan-planter-workshop/720/540" alt="Мастер-класс по плетению кашпо-гамака">
-          <span class="badge">Хит</span>
-          <span class="w-more">Подробнее <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </div>
-        <div class="w-body">
-          <div class="w-meta">
-            <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>12 апреля</span>
-            <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>3 часа</span>
-            <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21c-4-3.5-7-6.6-7-10a7 7 0 1 1 14 0c0 3.4-3 6.5-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>Пятницкая, 25</span>
-          </div>
-          <h3>Кашпо-гамак для растений</h3>
-          <p class="w-note">Для любого уровня · ротанг и кожа, изделие забираете с собой</p>
-          <div class="w-foot">
-            <span class="price">3 500 ₽</span>
-            <button class="btn btn-beige btn-sm" data-enroll="Кашпо-гамак · 12 апреля">Записаться</button>
-          </div>
-        </div>
-      </article>
-      <!-- card 2 -->
-      <article class="w-card rv">
-        <div class="w-media">
-          <img src="https://picsum.photos/seed/rattan-chair-workshop/720/540" alt="Мастер-класс: кресло из ротанга за день">
-          <span class="badge sage">Для начинающих</span>
-          <span class="w-more">Подробнее <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </div>
-        <div class="w-body">
-          <div class="w-meta">
-            <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>26 апреля</span>
-            <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>6 часов</span>
-            <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21c-4-3.5-7-6.6-7-10a7 7 0 1 1 14 0c0 3.4-3 6.5-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>Пятницкая, 25</span>
-          </div>
-          <h3>Кресло из ротанга за день</h3>
-          <p class="w-note">Интенсив с обедом · каркас готовим заранее, плетение — ваше</p>
-          <div class="w-foot">
-            <span class="price">7 900 ₽</span>
-            <button class="btn btn-beige btn-sm" data-enroll="Кресло из ротанга · 26 апреля">Записаться</button>
-          </div>
-        </div>
-      </article>
-      <!-- card 3 -->
-      <article class="w-card rv">
-        <div class="w-media">
-          <img src="https://picsum.photos/seed/boho-lampshade-workshop/720/540" alt="Мастер-класс по плетению абажура в стиле бохо">
-          <span class="badge dark">Осталось 3 места</span>
-          <span class="w-more">Подробнее <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-        </div>
-        <div class="w-body">
-          <div class="w-meta">
-            <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>10 мая</span>
-            <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>4 часа</span>
-            <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21c-4-3.5-7-6.6-7-10a7 7 0 1 1 14 0c0 3.4-3 6.5-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>Пятницкая, 25</span>
-          </div>
-          <h3>Абажур в стиле бохо</h3>
-          <p class="w-note">Ротанг + джут · патрон и лампа в комплекте</p>
-          <div class="w-foot">
-            <span class="price">4 200 ₽</span>
-            <button class="btn btn-beige btn-sm" data-enroll="Абажур бохо · 10 мая">Записаться</button>
-          </div>
-        </div>
-      </article>
-    </div>
-    <p class="empty-hint rv">Не нашли удобную дату? <a href="#contact">Напишите</a> — соберём группу под ваше расписание.</p>
-  </div>
+<div class="blob blob-sage plx" data-speed="0.04" style="width:340px;aspect-ratio:1;left:-160px;top:120px" aria-hidden="true"></div>
+<div class="container">
+<div class="sec-head rv">
+<span class="eyebrow">01 · Совместники</span>
+<h2>Живые мастер-классы — <em>плетём вместе</em> за большим столом</h2>
+<p class="lead">Небольшие группы до 6 человек, весь материал и инструменты включены, чай с травами и плетёные кресла — в подарок к атмосфере.</p>
+</div>
+<div class="cards-grid" data-stagger>
+<!-- card 1 -->
+<article class="w-card rv">
+<div class="w-media">
+<img src="https://picsum.photos/seed/rattan-planter-workshop/720/540" alt="Мастер-класс по плетению кашпо-гамака">
+<span class="badge">Хит</span>
+<span class="w-more">Подробнее <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+</div>
+<div class="w-body">
+<div class="w-meta">
+<span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>12 апреля</span>
+<span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>3 часа</span>
+<span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21c-4-3.5-7-6.6-7-10a7 7 0 1 1 14 0c0 3.4-3 6.5-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>Пятницкая, 25</span>
+</div>
+<h3>Кашпо-гамак для растений</h3>
+<p class="w-note">Для любого уровня · ротанг и кожа, изделие забираете с собой</p>
+<div class="w-foot">
+<span class="price">3 500 ₽</span>
+<button class="btn btn-beige btn-sm" data-enroll="Кашпо-гамак · 12 апреля">Записаться</button>
+</div>
+</div>
+</article>
+<!-- card 2 -->
+<article class="w-card rv">
+<div class="w-media">
+<img src="https://picsum.photos/seed/rattan-chair-workshop/720/540" alt="Мастер-класс: кресло из ротанга за день">
+<span class="badge sage">Для начинающих</span>
+<span class="w-more">Подробнее <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+</div>
+<div class="w-body">
+<div class="w-meta">
+<span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>26 апреля</span>
+<span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>6 часов</span>
+<span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21c-4-3.5-7-6.6-7-10a7 7 0 1 1 14 0c0 3.4-3 6.5-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>Пятницкая, 25</span>
+</div>
+<h3>Кресло из ротанга за день</h3>
+<p class="w-note">Интенсив с обедом · каркас готовим заранее, плетение — ваше</p>
+<div class="w-foot">
+<span class="price">7 900 ₽</span>
+<button class="btn btn-beige btn-sm" data-enroll="Кресло из ротанга · 26 апреля">Записаться</button>
+</div>
+</div>
+</article>
+<!-- card 3 -->
+<article class="w-card rv">
+<div class="w-media">
+<img src="https://picsum.photos/seed/boho-lampshade-workshop/720/540" alt="Мастер-класс по плетению абажура в стиле бохо">
+<span class="badge dark">Осталось 3 места</span>
+<span class="w-more">Подробнее <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+</div>
+<div class="w-body">
+<div class="w-meta">
+<span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>10 мая</span>
+<span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>4 часа</span>
+<span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21c-4-3.5-7-6.6-7-10a7 7 0 1 1 14 0c0 3.4-3 6.5-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>Пятницкая, 25</span>
+</div>
+<h3>Абажур в стиле бохо</h3>
+<p class="w-note">Ротанг + джут · патрон и лампа в комплекте</p>
+<div class="w-foot">
+<span class="price">4 200 ₽</span>
+<button class="btn btn-beige btn-sm" data-enroll="Абажур бохо · 10 мая">Записаться</button>
+</div>
+</div>
+</article>
+</div>
+<p class="empty-hint rv">Не нашли удобную дату? <a href="#contact">Напишите</a> — соберём группу под ваше расписание.</p>
+</div>
 </section>
-
-<!-- ================= LESSONS / BENTO ================= -->
+<!-- ================= LESSONS / NEW STRUCTURE ================= -->
 <section class="section lessons" id="lessons">
-  <div class="blob blob-peach plx" data-speed="-0.04" aria-hidden="true"></div>
-  <div class="container">
-    <div class="sec-head rv">
-      <span class="eyebrow">02 · Видео-уроки</span>
-      <h2>Учитесь <em>из дома</em>, в своём темпе</h2>
-      <p class="lead">Записи с крупными планами рук, схемами и обратной связью в чате. Доступ навсегда, обновления — бесплатно.</p>
-    </div>
-    <div class="bento" data-stagger>
-      <!-- big -->
-      <article class="l-card rv">
-        <div class="l-media">
-          <img src="https://picsum.photos/seed/rattan-course-hands/1100/640" alt="Курс: основы плетения из ротанга">
-          <span class="badge dark">Курс · 8 уроков</span>
-          <span class="play" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
-          <span class="dur">2 ч 40 мин</span>
-        </div>
-        <div class="l-body">
-          <h3>Основы плетения из ротанга</h3>
-          <p>Полный путь от первого мотка до готового кашпо: виды плетения, стыки, финишная обработка и уход за изделием.</p>
-          <div class="l-foot">
-            <span class="price">4 900 ₽</span>
-            <a class="l-link" href="#contact">Смотреть программу <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          </div>
-        </div>
-      </article>
-      <!-- free -->
-      <article class="l-card rv">
-        <div class="l-media">
-          <img src="https://picsum.photos/seed/free-lesson-spiral/700/520" alt="Бесплатный урок: первая спираль">
-          <span class="badge">Бесплатно</span>
-          <span class="play" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
-          <span class="dur">18 мин</span>
-        </div>
-        <div class="l-body">
-          <h3>Первая спираль</h3>
-          <p>Пробный урок: замачиваем ротанг и плетём подставку под горячее.</p>
-          <div class="l-foot">
-            <span class="price">0 ₽</span>
-            <a class="l-link" href="#contact">Открыть</a>
-          </div>
-        </div>
-      </article>
-      <!-- jute -->
-      <article class="l-card rv">
-        <div class="l-media">
-          <img src="https://picsum.photos/seed/jute-basket-lesson/700/520" alt="Видео-урок: джутовая корзина">
-          <span class="badge sage">Для начинающих</span>
-          <span class="play" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
-          <span class="dur">55 мин</span>
-        </div>
-        <div class="l-body">
-          <h3>Джутовая корзина</h3>
-          <p>Плотное витое плетение и кожаные ручки — без каркаса.</p>
-          <div class="l-foot">
-            <span class="price">1 900 ₽</span>
-            <a class="l-link" href="#contact">Купить</a>
-          </div>
-        </div>
-      </article>
-      <!-- macrame -->
-      <article class="l-card rv">
-        <div class="l-media">
-          <img src="https://picsum.photos/seed/macrame-wall-panel/700/520" alt="Видео-урок: макраме-панно">
-          <span class="badge">Хит</span>
-          <span class="play" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
-          <span class="dur">1 ч 20 мин</span>
-        </div>
-        <div class="l-body">
-          <h3>Макраме-панно</h3>
-          <p>Узлы, ритм и композиция: панно 60×90 см на деревянном карнизе.</p>
-          <div class="l-foot">
-            <span class="price">2 400 ₽</span>
-            <a class="l-link" href="#contact">Купить</a>
-          </div>
-        </div>
-      </article>
-      <!-- repair -->
-      <article class="l-card rv">
-        <div class="l-media">
-          <img src="https://picsum.photos/seed/wicker-chair-repair/700/520" alt="Урок: ремонт плетёной мебели">
-          <span class="play" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
-          <span class="dur">по задаче</span>
-        </div>
-        <div class="l-body">
-          <h3>Реставрация мебели</h3>
-          <p>Индивидуальные уроки по ремонту ваших стульев и кресел — очно или по видеосвязи.</p>
-          <div class="l-foot">
-            <span class="price"><em>по запросу</em></span>
-            <a class="l-link" href="#contact">Обсудить</a>
-          </div>
-        </div>
-      </article>
-    </div>
-    <p class="empty-hint rv">Если курса сейчас нет в продаже — оставьте почту в <a href="#" data-open-modal="modal-lead">лид-форме</a>, и мы сообщим о старте.</p>
-  </div>
+<div class="blob blob-peach plx" data-speed="-0.04" aria-hidden="true"></div>
+<div class="container">
+<div class="sec-head rv">
+<span class="eyebrow">02 · Видео-уроки</span>
+<h2>Учитесь <em>из дома</em>, в своём темпе</h2>
+<p class="lead">Записи с крупными планами рук, схемами и обратной связью в чате. Доступ навсегда, обновления — бесплатно.</p>
+</div>
+<!-- ===== FREE ===== -->
+<h3 class="subsection-title rv">⭐ Бесплатные уроки</h3>
+<!-- Слоты под фото работ: замените src на свои файлы, например images/works/kashpo-1.jpg -->
+<div class="free-grid" data-stagger>
+<article class="free-card rv">
+<div class="card-carousel" data-carousel>
+<div class="cc-track">
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kashpo-free-1/480/360" alt="Урок по кашпо — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kashpo-free-2/480/360" alt="Урок по кашпо — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kashpo-free-3/480/360" alt="Урок по кашпо — пример работы 3"></div>
+</div>
+<span class="cc-count">1 / 3</span>
+<div class="cc-dots"></div>
+<button class="cc-prev" type="button" aria-label="Предыдущее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+<button class="cc-next" type="button" aria-label="Следующее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<div class="free-body">
+<span class="free-icon">⭐</span>
+<h3>Урок по кашпо</h3>
+<p>Базовый урок: от замачивания ротанга до готового кашпо.</p>
+<a class="free-link" href="https://disk.yandex.ru/d/IjiF7J-2cnCO3w" target="_blank" rel="noopener">
+Смотреть бесплатно
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+</a>
+</div>
+</article>
+<article class="free-card rv">
+<div class="card-carousel" data-carousel>
+<div class="cc-track">
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-basket-free-1/480/360" alt="Бескаркасная корзина — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-basket-free-2/480/360" alt="Бескаркасная корзина — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-basket-free-3/480/360" alt="Бескаркасная корзина — пример работы 3"></div>
+</div>
+<span class="cc-count">1 / 3</span>
+<div class="cc-dots"></div>
+<button class="cc-prev" type="button" aria-label="Предыдущее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+<button class="cc-next" type="button" aria-label="Следующее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<div class="free-body">
+<span class="free-icon">⭐</span>
+<h3>Урок по бескаркасной корзине</h3>
+<p>Плетение плотной витой корзины без основы.</p>
+<a class="free-link" href="https://disk.yandex.ru/d/W3cYqKz7slRMSQ" target="_blank" rel="noopener">
+Смотреть бесплатно
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+</a>
+</div>
+</article>
+<article class="free-card rv">
+<div class="card-carousel" data-carousel>
+<div class="cc-track">
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-wreath-free-1/480/360" alt="Венок — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-wreath-free-2/480/360" alt="Венок — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-wreath-free-3/480/360" alt="Венок — пример работы 3"></div>
+</div>
+<span class="cc-count">1 / 3</span>
+<div class="cc-dots"></div>
+<button class="cc-prev" type="button" aria-label="Предыдущее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+<button class="cc-next" type="button" aria-label="Следующее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<div class="free-body">
+<span class="free-icon">⭐</span>
+<h3>Урок по венку</h3>
+<p>Сезонный декор: плетём уютный венок для двери.</p>
+<a class="free-link" href="https://disk.yandex.ru/d/A3U7EU79PGaCMA" target="_blank" rel="noopener">
+Смотреть бесплатно
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+</a>
+</div>
+</article>
+<article class="free-card rv">
+<div class="card-carousel" data-carousel>
+<div class="cc-track">
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-lukoshko-1/480/360" alt="Корзина «Лукошко» — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-lukoshko-2/480/360" alt="Корзина «Лукошко» — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-lukoshko-3/480/360" alt="Корзина «Лукошко» — пример работы 3"></div>
+</div>
+<span class="cc-count">1 / 3</span>
+<div class="cc-dots"></div>
+<button class="cc-prev" type="button" aria-label="Предыдущее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+<button class="cc-next" type="button" aria-label="Следующее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<div class="free-body">
+<span class="free-icon">⭐</span>
+<h3>Урок по корзине «Лукошко»</h3>
+<p>Классическая форма с ручкой — идеальный подарок.</p>
+<a class="free-link" href="https://disk.yandex.ru/d/JvB0MFe1LRFZIA" target="_blank" rel="noopener">
+Смотреть бесплатно
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+</a>
+</div>
+</article>
+</div>
+<!-- ===== PAID ===== -->
+<h3 class="subsection-title rv">💰 Платные мастер-классы</h3>
+<div class="paid-grid" data-stagger>
+<article class="paid-card rv">
+<div class="card-carousel" data-carousel>
+<div class="cc-track">
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-lenty-1/480/360" alt="Все про ленты — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-lenty-2/480/360" alt="Все про ленты — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-lenty-3/480/360" alt="Все про ленты — пример работы 3"></div>
+</div>
+<span class="cc-count">1 / 3</span>
+<div class="cc-dots"></div>
+<button class="cc-prev" type="button" aria-label="Предыдущее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+<button class="cc-next" type="button" aria-label="Следующее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<div class="paid-body">
+<h3>Все про ленты!</h3>
+<div class="paid-price">
+<span>2 000 ₽</span>
+<span class="old">2 500 ₽</span>
+<span class="discount">-20%</span>
+</div>
+<a class="btn btn-beige btn-sm" href="#contact" data-enroll="Все про ленты!">Купить</a>
+</div>
+</article>
+<article class="paid-card rv">
+<div class="card-carousel" data-carousel>
+<div class="cc-track">
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kreslo-kipr-1/480/360" alt="Кресло Кипр — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kreslo-kipr-2/480/360" alt="Кресло Кипр — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kreslo-kipr-3/480/360" alt="Кресло Кипр — пример работы 3"></div>
+</div>
+<span class="cc-count">1 / 3</span>
+<div class="cc-dots"></div>
+<button class="cc-prev" type="button" aria-label="Предыдущее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+<button class="cc-next" type="button" aria-label="Следующее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<div class="paid-body">
+<h3>Онлайн МК Кресло Кипр</h3>
+<div class="paid-price">
+<span>2 500 ₽</span>
+<span class="old">3 000 ₽</span>
+<span class="discount">-17%</span>
+</div>
+<a class="btn btn-beige btn-sm" href="#contact" data-enroll="Онлайн МК Кресло Кипр">Купить</a>
+</div>
+</article>
+<article class="paid-card rv">
+<div class="card-carousel" data-carousel>
+<div class="cc-track">
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kornevoe-1/480/360" alt="Корневое плетение — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kornevoe-2/480/360" alt="Корневое плетение — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kornevoe-3/480/360" alt="Корневое плетение — пример работы 3"></div>
+</div>
+<span class="cc-count">1 / 3</span>
+<div class="cc-dots"></div>
+<button class="cc-prev" type="button" aria-label="Предыдущее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+<button class="cc-next" type="button" aria-label="Следующее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<div class="paid-body">
+<h3>МК «Корневое плетение»</h3>
+<div class="paid-price">
+<span>700 ₽</span>
+<span class="old">1 300 ₽</span>
+<span class="discount">-46%</span>
+</div>
+<a class="btn btn-beige btn-sm" href="#contact" data-enroll="МК Корневое плетение">Купить</a>
+</div>
+</article>
+<article class="paid-card rv">
+<div class="card-carousel" data-carousel>
+<div class="cc-track">
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kolokolchik-1/480/360" alt="Колокольчик — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kolokolchik-2/480/360" alt="Колокольчик — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kolokolchik-3/480/360" alt="Колокольчик — пример работы 3"></div>
+</div>
+<span class="cc-count">1 / 3</span>
+<div class="cc-dots"></div>
+<button class="cc-prev" type="button" aria-label="Предыдущее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+<button class="cc-next" type="button" aria-label="Следующее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<div class="paid-body">
+<h3>МК «Колокольчик»</h3>
+<div class="paid-price">
+<span>500 ₽</span>
+</div>
+<a class="btn btn-beige btn-sm" href="#contact" data-enroll="МК Колокольчик">Купить</a>
+</div>
+</article>
+<article class="paid-card rv">
+<div class="card-carousel" data-carousel>
+<div class="cc-track">
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-loshadka-1/480/360" alt="Лошадка — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-loshadka-2/480/360" alt="Лошадка — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-loshadka-3/480/360" alt="Лошадка — пример работы 3"></div>
+</div>
+<span class="cc-count">1 / 3</span>
+<div class="cc-dots"></div>
+<button class="cc-prev" type="button" aria-label="Предыдущее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+<button class="cc-next" type="button" aria-label="Следующее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<div class="paid-body">
+<h3>МК «Лошадка»</h3>
+<div class="paid-price">
+<span>500 ₽</span>
+<span class="old">1 250 ₽</span>
+<span class="discount">-60%</span>
+</div>
+<a class="btn btn-beige btn-sm" href="#contact" data-enroll="МК Лошадка">Купить</a>
+</div>
+</article>
+<article class="paid-card rv">
+<div class="card-carousel" data-carousel>
+<div class="cc-track">
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-mebel-kipr-1/480/360" alt="Курс по плетению мебели Кипр — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-mebel-kipr-2/480/360" alt="Курс по плетению мебели Кипр — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-mebel-kipr-3/480/360" alt="Курс по плетению мебели Кипр — пример работы 3"></div>
+</div>
+<span class="cc-count">1 / 3</span>
+<div class="cc-dots"></div>
+<button class="cc-prev" type="button" aria-label="Предыдущее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+<button class="cc-next" type="button" aria-label="Следующее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<div class="paid-body">
+<h3>Онлайн курс по плетению мебели Кипр</h3>
+<div class="paid-price">
+<span>4 888 ₽</span>
+<span class="old">7 000 ₽</span>
+<span class="discount">-30%</span>
+</div>
+<a class="btn btn-beige btn-sm" href="#contact" data-enroll="Курс мебели Кипр">Купить</a>
+</div>
+</article>
+<article class="paid-card rv">
+<div class="card-carousel" data-carousel>
+<div class="cc-track">
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-taburet-stol-1/480/360" alt="Табурет-Стол — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-taburet-stol-2/480/360" alt="Табурет-Стол — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-taburet-stol-3/480/360" alt="Табурет-Стол — пример работы 3"></div>
+</div>
+<span class="cc-count">1 / 3</span>
+<div class="cc-dots"></div>
+<button class="cc-prev" type="button" aria-label="Предыдущее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+<button class="cc-next" type="button" aria-label="Следующее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<div class="paid-body">
+<h3>Онлайн МК Табурет-Стол</h3>
+<div class="paid-price">
+<span>700 ₽</span>
+</div>
+<a class="btn btn-beige btn-sm" href="#contact" data-enroll="Онлайн МК Табурет-Стол">Купить</a>
+</div>
+</article>
+<article class="paid-card rv">
+<div class="card-carousel" data-carousel>
+<div class="cc-track">
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-puf-yashchik-1/480/360" alt="Пуф и интерьерный ящик — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-puf-yashchik-2/480/360" alt="Пуф и интерьерный ящик — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-puf-yashchik-3/480/360" alt="Пуф и интерьерный ящик — пример работы 3"></div>
+</div>
+<span class="cc-count">1 / 3</span>
+<div class="cc-dots"></div>
+<button class="cc-prev" type="button" aria-label="Предыдущее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+<button class="cc-next" type="button" aria-label="Следующее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<div class="paid-body">
+<h3>Онлайн МК Пуф + Интерьерный ящик</h3>
+<div class="paid-price">
+<span>1 000 ₽</span>
+<span class="old">2 000 ₽</span>
+<span class="discount">-50%</span>
+</div>
+<a class="btn btn-beige btn-sm" href="#contact" data-enroll="Онлайн МК Пуф + Интерьерный ящик">Купить</a>
+</div>
+</article>
+<article class="paid-card rv">
+<div class="card-carousel" data-carousel>
+<div class="cc-track">
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-abazhur-1/480/360" alt="Абажур — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-abazhur-2/480/360" alt="Абажур — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-abazhur-3/480/360" alt="Абажур — пример работы 3"></div>
+</div>
+<span class="cc-count">1 / 3</span>
+<div class="cc-dots"></div>
+<button class="cc-prev" type="button" aria-label="Предыдущее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+<button class="cc-next" type="button" aria-label="Следующее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<div class="paid-body">
+<h3>Онлайн МК Абажур</h3>
+<div class="paid-price">
+<span>1 500 ₽</span>
+</div>
+<a class="btn btn-beige btn-sm" href="#contact" data-enroll="Онлайн МК Абажур">Купить</a>
+</div>
+</article>
+<article class="paid-card rv">
+<div class="card-carousel" data-carousel>
+<div class="cc-track">
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-venok-abazhur-1/480/360" alt="Венок-Абажур — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-venok-abazhur-2/480/360" alt="Венок-Абажур — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-venok-abazhur-3/480/360" alt="Венок-Абажур — пример работы 3"></div>
+</div>
+<span class="cc-count">1 / 3</span>
+<div class="cc-dots"></div>
+<button class="cc-prev" type="button" aria-label="Предыдущее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+<button class="cc-next" type="button" aria-label="Следующее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<div class="paid-body">
+<h3>Онлайн МК Венок-Абажур</h3>
+<div class="paid-price">
+<span>500 ₽</span>
+</div>
+<a class="btn btn-beige btn-sm" href="#contact" data-enroll="Онлайн МК Венок-Абажур">Купить</a>
+</div>
+</article>
+<article class="paid-card rv">
+<div class="card-carousel" data-carousel>
+<div class="cc-track">
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-restav-stul-1/480/360" alt="Реставрация советского стула — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-restav-stul-2/480/360" alt="Реставрация советского стула — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-restav-stul-3/480/360" alt="Реставрация советского стула — пример работы 3"></div>
+</div>
+<span class="cc-count">1 / 3</span>
+<div class="cc-dots"></div>
+<button class="cc-prev" type="button" aria-label="Предыдущее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+<button class="cc-next" type="button" aria-label="Следующее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<div class="paid-body">
+<h3>Онлайн МК Реставрация советского стула</h3>
+<div class="paid-price">
+<span>1 000 ₽</span>
+</div>
+<a class="btn btn-beige btn-sm" href="#contact" data-enroll="Онлайн МК Реставрация советского стула">Купить</a>
+</div>
+</article>
+<article class="paid-card rv">
+<div class="card-carousel" data-carousel>
+<div class="cc-track">
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-lenty-online-1/480/360" alt="Онлайн МК Все про ленты — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-lenty-online-2/480/360" alt="Онлайн МК Все про ленты — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-lenty-online-3/480/360" alt="Онлайн МК Все про ленты — пример работы 3"></div>
+</div>
+<span class="cc-count">1 / 3</span>
+<div class="cc-dots"></div>
+<button class="cc-prev" type="button" aria-label="Предыдущее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+<button class="cc-next" type="button" aria-label="Следующее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<div class="paid-body">
+<h3>Онлайн МК Все про ленты</h3>
+<div class="paid-price">
+<span>1 000 ₽</span>
+<span class="old">1 500 ₽</span>
+<span class="discount">-33%</span>
+</div>
+<a class="btn btn-beige btn-sm" href="#contact" data-enroll="Онлайн МК Все про ленты">Купить</a>
+</div>
+</article>
+<article class="paid-card rv">
+<div class="card-carousel" data-carousel>
+<div class="cc-track">
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-puf-1/480/360" alt="МК пуф — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-puf-2/480/360" alt="МК пуф — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-puf-3/480/360" alt="МК пуф — пример работы 3"></div>
+</div>
+<span class="cc-count">1 / 3</span>
+<div class="cc-dots"></div>
+<button class="cc-prev" type="button" aria-label="Предыдущее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+<button class="cc-next" type="button" aria-label="Следующее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<div class="paid-body">
+<h3>МК пуф</h3>
+<div class="paid-price">
+<span>6 000 ₽</span>
+</div>
+<a class="btn btn-beige btn-sm" href="#contact" data-enroll="МК пуф">Купить</a>
+</div>
+</article>
+<article class="paid-card rv">
+<div class="card-carousel" data-carousel>
+<div class="cc-track">
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kashpo-mk-1/480/360" alt="МК кашпо — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kashpo-mk-2/480/360" alt="МК кашпо — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kashpo-mk-3/480/360" alt="МК кашпо — пример работы 3"></div>
+</div>
+<span class="cc-count">1 / 3</span>
+<div class="cc-dots"></div>
+<button class="cc-prev" type="button" aria-label="Предыдущее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+<button class="cc-next" type="button" aria-label="Следующее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<div class="paid-body">
+<h3>МК кашпо</h3>
+<div class="paid-price">
+<span>2 300 ₽</span>
+</div>
+<a class="btn btn-beige btn-sm" href="#contact" data-enroll="МК кашпо">Купить</a>
+</div>
+</article>
+<article class="paid-card rv">
+<div class="card-carousel" data-carousel>
+<div class="cc-track">
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-korzinka-1/480/360" alt="МК корзинка — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-korzinka-2/480/360" alt="МК корзинка — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-korzinka-3/480/360" alt="МК корзинка — пример работы 3"></div>
+</div>
+<span class="cc-count">1 / 3</span>
+<div class="cc-dots"></div>
+<button class="cc-prev" type="button" aria-label="Предыдущее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+<button class="cc-next" type="button" aria-label="Следующее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<div class="paid-body">
+<h3>МК корзинка</h3>
+<div class="paid-price">
+<span>2 000 ₽</span>
+</div>
+<a class="btn btn-beige btn-sm" href="#contact" data-enroll="МК корзинка">Купить</a>
+</div>
+</article>
+<article class="paid-card rv">
+<div class="card-carousel" data-carousel>
+<div class="cc-track">
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-restav-offline-1/480/360" alt="МК Реставрация советского стула — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-restav-offline-2/480/360" alt="МК Реставрация советского стула — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-restav-offline-3/480/360" alt="МК Реставрация советского стула — пример работы 3"></div>
+</div>
+<span class="cc-count">1 / 3</span>
+<div class="cc-dots"></div>
+<button class="cc-prev" type="button" aria-label="Предыдущее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+<button class="cc-next" type="button" aria-label="Следующее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<div class="paid-body">
+<h3>МК Реставрация советского стула</h3>
+<div class="paid-price">
+<span>7 000 ₽</span>
+</div>
+<a class="btn btn-beige btn-sm" href="#contact" data-enroll="МК Реставрация советского стула">Купить</a>
+</div>
+</article>
+</div>
+<!-- ===== SUBSCRIPTION ===== -->
+<h3 class="subsection-title rv">🎁 По подписке (донат-система)</h3>
+<p class="lead rv" style="margin-bottom:28px">Доступ к эксклюзивным урокам через систему подписок ВКонтакте. Чем выше уровень — тем больше материалов и живое общение в закрытом чате.</p>
+<div class="subs-grid" data-stagger>
+<!-- СУМКИ -->
+<div class="sub-card rv">
+<h4>🎒 Уровень «Сумки»</h4>
+<p>Сумочки, авоськи, рюкзаки, лапти и работа с фермуарами.</p>
+<a class="chat-link" href="https://vk.me/join/5Ob_kJsGCgANwMJitE_qUgPe59xtfpbMAX4=" target="_blank" rel="noopener">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13.16 17.7c-5.36 0-8.42-3.67-8.55-9.78h2.68c.09 4.49 2.07 6.39 3.64 6.76V7.92h2.52v3.86c1.55-.17 3.18-1.94 3.73-3.86h2.52a7.32 7.32 0 0 1-3.35 4.79 7.6 7.6 0 0 1 3.88 5h-2.77c-.6-1.86-2.1-3.3-4.01-3.49v3.49h-.29z"/></svg>
+Чат для донов
+</a>
+<details class="sub-details">
+<summary>⭐ Сумочка с фермуаром</summary>
+<ul class="sub-list">
+<li><a href="https://vk.com/wall-206537840_1817" target="_blank" rel="noopener">Часть 1</a></li>
+<li><a href="https://vk.com/wall-206537840_2144" target="_blank" rel="noopener">Часть 2</a></li>
+<li><a href="https://vk.com/wall-206537840_2186" target="_blank" rel="noopener">Часть 3</a></li>
+</ul>
+</details>
+<details class="sub-details">
+<summary>⭐ Вставка фермуара и пошив подклада</summary>
+<ul class="sub-list">
+<li><a href="https://vk.com/wall-206537840_2204" target="_blank" rel="noopener">Часть 1</a></li>
+<li><a href="https://vk.com/wall-206537840_2205" target="_blank" rel="noopener">Часть 2</a></li>
+</ul>
+</details>
+<details class="sub-details">
+<summary>⭐ Уроки по лаптям</summary>
+<ul class="sub-list">
+<li><a href="https://vk.com/wall-206537840_1822" target="_blank" rel="noopener">Урок 1</a></li>
+<li><a href="https://vk.com/wall-206537840_1823" target="_blank" rel="noopener">Урок 2</a></li>
+<li><a href="https://vk.com/wall-206537840_1824" target="_blank" rel="noopener">Урок 3</a></li>
+<li><a href="https://vk.com/wall-206537840_1828" target="_blank" rel="noopener">Урок 4</a></li>
+</ul>
+</details>
+<details class="sub-details">
+<summary>⭐ Сумочка с бахромой (Лента Гатчина 30 мм)</summary>
+<ul class="sub-list">
+<li><a href="https://vk.com/wall-206537840_1983" target="_blank" rel="noopener">Урок 1</a></li>
+<li><a href="https://vk.com/wall-206537840_1984" target="_blank" rel="noopener">Урок 2 — основное плетение</a></li>
+<li><a href="https://vk.com/wall-206537840_1985" target="_blank" rel="noopener">Урок 3</a></li>
+<li><a href="https://vk.com/wall-206537840_1986" target="_blank" rel="noopener">Урок 4</a></li>
+<li><a href="https://vk.com/wall-206537840_1988" target="_blank" rel="noopener">Урок 5</a></li>
+<li><a href="https://vk.com/wall-206537840_1989" target="_blank" rel="noopener">Урок 6 + ссылки на фурнитуру</a></li>
+<li><a href="https://vk.com/wall-206537840_1993" target="_blank" rel="noopener">Ссылки на материалы</a></li>
+<li><a href="https://vk.com/wall-206537840_1994" target="_blank" rel="noopener">Урок 7</a></li>
+<li><a href="https://vk.com/wall-206537840_1996" target="_blank" rel="noopener">Урок 8</a></li>
+</ul>
+</details>
+<details class="sub-details">
+<summary>⭐ Сумочка-авоська</summary>
+<ul class="sub-list">
+<li><a href="https://vk.ru/wall-206537840_2257" target="_blank" rel="noopener">Полный урок</a></li>
+</ul>
+</details>
+<details class="sub-details">
+<summary>⭐ Рюкзак</summary>
+<ul class="sub-list">
+<li><a href="https://vk.ru/wall-206537840_2389" target="_blank" rel="noopener">Урок 1</a></li>
+<li><a href="https://vk.ru/wall-206537840_2391" target="_blank" rel="noopener">Урок 2</a></li>
+<li><a href="https://vk.ru/wall-206537840_2392" target="_blank" rel="noopener">Урок 2.1 — продолжение</a></li>
+<li><a href="https://vk.ru/wall-206537840_2402" target="_blank" rel="noopener">Урок 3</a></li>
+<li><a href="https://vk.ru/wall-206537840_2405" target="_blank" rel="noopener">Урок 4 — крылышки и ремешок</a></li>
+</ul>
+</details>
+</div>
+<!-- МЕБЕЛЬ -->
+<div class="sub-card meal rv">
+<h4>🪑 Уровень «Мебель»</h4>
+<p>Полный цикл реставрации и изготовления мебели: стулья, кресла, столы, табуреты.</p>
+<details class="sub-details">
+<summary>⚡ Реставрация металлического стула (13 уроков)</summary>
+<ul class="sub-list">
+<li><a href="https://vk.com/wall-206537840_1869" target="_blank" rel="noopener">Урок 1</a></li>
+<li><a href="https://vk.com/wall-206537840_1870" target="_blank" rel="noopener">Урок 2 — учимся спаивать ленты</a></li>
+<li><a href="https://vk.com/wall-206537840_1871" target="_blank" rel="noopener">Урок 3</a></li>
+<li><a href="https://vk.com/wall-206537840_1875" target="_blank" rel="noopener">Урок 4</a></li>
+<li><a href="https://vk.com/wall-206537840_1877" target="_blank" rel="noopener">Урок 5</a></li>
+<li><a href="https://vk.com/wall-206537840_1878" target="_blank" rel="noopener">Урок 6</a></li>
+<li><a href="https://vk.com/wall-206537840_1879" target="_blank" rel="noopener">Урок 7</a></li>
+<li><a href="https://vk.com/wall-206537840_1880" target="_blank" rel="noopener">Урок 8</a></li>
+<li><a href="https://vk.com/wall-206537840_1881" target="_blank" rel="noopener">Урок 9</a></li>
+<li><a href="https://vk.com/wall-206537840_1882" target="_blank" rel="noopener">Урок 10</a></li>
+<li><a href="https://vk.com/wall-206537840_1883" target="_blank" rel="noopener">Урок 11</a></li>
+<li><a href="https://vk.com/wall-206537840_1884" target="_blank" rel="noopener">Урок 12</a></li>
+<li><a href="https://vk.com/wall-206537840_1885" target="_blank" rel="noopener">Урок 13</a></li>
+</ul>
+</details>
+<details class="sub-details">
+<summary>⚡ Реставрация Советского стула</summary>
+<ul class="sub-list">
+<li><a href="https://vk.com/wall-206537840_1889" target="_blank" rel="noopener">Подготовка к реставрации</a></li>
+<li><a href="https://vk.com/wall-206537840_1890" target="_blank" rel="noopener">Урок 1 — обмотка ножек</a></li>
+<li><a href="https://vk.com/wall-206537840_1892" target="_blank" rel="noopener">Урок 2 — стойки и сидушка</a></li>
+<li><a href="https://vk.com/wall-206537840_1893" target="_blank" rel="noopener">Урок 3 — стойки на спинке</a></li>
+<li><a href="https://vk.com/wall-206537840_1898" target="_blank" rel="noopener">Урок 4.1 — оплетаем спинку</a></li>
+<li><a href="https://vk.com/wall-206537840_1899" target="_blank" rel="noopener">Урок 4.2 — завершение спинки</a></li>
+<li><a href="https://vk.com/wall-206537840_1900" target="_blank" rel="noopener">Урок 4.3 — верх спинки, сложные места</a></li>
+<li><a href="https://vk.com/wall-206537840_1901" target="_blank" rel="noopener">Урок 5 — юбочка у сидушки</a></li>
+</ul>
+</details>
+<details class="sub-details">
+<summary>⚡ Реставрация кресла</summary>
+<ul class="sub-list">
+<li><a href="https://vk.com/wall-206537840_2025" target="_blank" rel="noopener">Подготовка</a></li>
+<li><a href="https://vk.com/wall-206537840_2026" target="_blank" rel="noopener">Урок 1</a></li>
+<li><a href="https://vk.com/wall-206537840_2027" target="_blank" rel="noopener">Урок 2</a></li>
+<li><a href="https://vk.com/wall-206537840_2028" target="_blank" rel="noopener">Урок 3</a></li>
+<li><a href="https://vk.com/wall-206537840_2029" target="_blank" rel="noopener">Урок 4</a></li>
+<li><a href="https://vk.com/wall-206537840_2030" target="_blank" rel="noopener">Урок 5</a></li>
+<li><a href="https://vk.com/wall-206537840_2031" target="_blank" rel="noopener">Урок 6</a></li>
+<li><a href="https://vk.com/wall-206537840_2032" target="_blank" rel="noopener">Урок 7</a></li>
+<li><a href="https://vk.com/wall-206537840_2033" target="_blank" rel="noopener">Урок 8</a></li>
+</ul>
+</details>
+<details class="sub-details">
+<summary>⚡ Усилители для сидушки</summary>
+<ul class="sub-list">
+<li><a href="https://vk.com/wall-206537840_2039" target="_blank" rel="noopener">Урок по натягиванию</a></li>
+</ul>
+</details>
+<details class="sub-details">
+<summary>⚡ Ажурный столик из прутка</summary>
+<ul class="sub-list">
+<li><a href="https://vk.com/wall-206537840_2067" target="_blank" rel="noopener">Часть 1 — плетём верхнюю часть</a></li>
+<li><a href="https://vk.com/wall-206537840_2068" target="_blank" rel="noopener">Часть 2</a></li>
+<li><a href="https://vk.com/wall-206537840_2069" target="_blank" rel="noopener">Часть 3</a></li>
+<li><a href="https://vk.com/wall-206537840_2070" target="_blank" rel="noopener">Часть 4</a></li>
+</ul>
+</details>
+<details class="sub-details">
+<summary>⚡ Реставрация табуретки</summary>
+<ul class="sub-list">
+<li><a href="https://vk.com/wall-206537840_2105" target="_blank" rel="noopener">Урок 1</a></li>
+</ul>
+</details>
+<details class="sub-details">
+<summary>⚡ Стул с нуля (5 частей)</summary>
+<ul class="sub-list">
+<li><a href="https://vk.com/wall-206537840_2167" target="_blank" rel="noopener">Часть 1</a></li>
+<li><a href="https://vk.com/wall-206537840_2168" target="_blank" rel="noopener">Часть 2</a></li>
+<li><a href="https://vk.com/wall-206537840_2169" target="_blank" rel="noopener">Часть 3</a></li>
+<li><a href="https://vk.com/wall-206537840_2170" target="_blank" rel="noopener">Часть 4</a></li>
+<li><a href="https://vk.com/wall-206537840_2171" target="_blank" rel="noopener">Часть 5</a></li>
+</ul>
+</details>
+<details class="sub-details">
+<summary>⚡ Плетение рисунка «Диор»</summary>
+<ul class="sub-list">
+<li><a href="https://vk.ru/wall-206537840_2316" target="_blank" rel="noopener">Часть 1</a></li>
+<li><a href="https://vk.ru/wall-206537840_2317" target="_blank" rel="noopener">Часть 2</a></li>
+<li><a href="https://vk.ru/wall-206537840_2318" target="_blank" rel="noopener">Часть 3</a></li>
+</ul>
+</details>
+<details class="sub-details">
+<summary>⚡ Подготовка стула к «Диору»</summary>
+<ul class="sub-list">
+<li><a href="https://vk.ru/wall-206537840_2320" target="_blank" rel="noopener">Часть 1</a></li>
+<li><a href="https://vk.ru/wall-206537840_2323" target="_blank" rel="noopener">Часть 2</a></li>
+</ul>
+</details>
+</div>
+<!-- ПРОДВИЖЕНИЕ -->
+<div class="sub-card promo rv">
+<h4>📈 Курс «Продвижение личного бренда»</h4>
+<p>Как мастеру выйти из тени и стабильно зарабатывать на своём ремесле.</p>
+<a class="chat-link" href="https://vk.me/join/_EOmrBDmd3a2w00lUyifyvzNKR5UAXULGao=" target="_blank" rel="noopener">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13.16 17.7c-5.36 0-8.42-3.67-8.55-9.78h2.68c.09 4.49 2.07 6.39 3.64 6.76V7.92h2.52v3.86c1.55-.17 3.18-1.94 3.73-3.86h2.52a7.32 7.32 0 0 1-3.35 4.79 7.6 7.6 0 0 1 3.88 5h-2.77c-.6-1.86-2.1-3.3-4.01-3.49v3.49h-.29z"/></svg>
+Обязательно вступить в чат!
+</a>
+<details class="sub-details">
+<summary>1. Мой путь — месяц первый</summary>
+<ul class="sub-list">
+<li><a href="https://vk.ru/wall-206537840_2327" target="_blank" rel="noopener">Открыть урок</a></li>
+</ul>
+</details>
+<details class="sub-details">
+<summary>2. Как заработать первые 100 тысяч</summary>
+<ul class="sub-list">
+<li><a href="https://vk.ru/wall-206537840_2328" target="_blank" rel="noopener">Пошаговый план</a></li>
+</ul>
+</details>
+<details class="sub-details">
+<summary>3. Продукт. Что мы продаем?</summary>
+<ul class="sub-list">
+<li><a href="https://vk.ru/wall-206537840_2330" target="_blank" rel="noopener">Открыть урок</a></li>
+</ul>
+</details>
+<details class="sub-details">
+<summary>4. Как выйти из зоны комфорта?</summary>
+<ul class="sub-list">
+<li><a href="https://vk.ru/wall-206537840_2337" target="_blank" rel="noopener">Открыть урок</a></li>
+</ul>
+</details>
+<details class="sub-details">
+<summary>5. Правила выхода постов</summary>
+<ul class="sub-list">
+<li><a href="https://vk.ru/wall-206537840_2341" target="_blank" rel="noopener">Открыть урок</a></li>
+</ul>
+</details>
+<details class="sub-details">
+<summary>Бонус-материал</summary>
+<ul class="sub-list">
+<li><a href="https://vk.ru/wall-206537840_2353" target="_blank" rel="noopener">Дополнительные материалы</a></li>
+</ul>
+</details>
+</div>
+</div>
+<p class="empty-hint rv" style="margin-top:40px">Если курса сейчас нет в продаже — оставьте почту в <a href="#" data-open-modal="modal-lead">лид-форме</a>, и мы сообщим о старте.</p>
+</div>
 </section>
-
 <!-- ================= ABOUT ================= -->
 <section class="section" id="about">
-  <div class="container about-grid">
-    <div class="about-photo rv">
-      <div class="blob blob-peach about-blob plx" data-speed="0.05" aria-hidden="true"></div>
-      <div class="arch"><img src="https://picsum.photos/seed/sofia-weaver-portrait/800/1000" alt="Софья — основательница мастерской SoVkuSom"></div>
-      <div class="about-sign">Софья, мастер ✿</div>
-    </div>
-    <div class="about-txt">
-      <div class="sec-head rv" style="margin-bottom:0">
-        <span class="eyebrow">03 · Обо мне</span>
-        <h2>Мастерская начинается <em>с рук</em> мастера</h2>
-      </div>
-      <p class="rv">Семь лет назад я принесла домой сломанное бабушкино кресло — и вместо того, чтобы выбросить, научилась его чинить. Так появились первые мотки ротанга, первые мозоли и первая любовь к ремеслу.</p>
-      <p class="rv">Сегодня <b>SoVkuSom</b> — это тёплое пространство на Пятницкой, где пахнет деревом и травами, и онлайн-школа, где ученики из десятков городов плетут свои первые кашпо. Я верю: <b>красивые вещи доступны каждому</b> — достаточно пары свободных вечеров и желания трогать мир руками.</p>
-      <div class="counters">
-        <div class="counter rv">
-          <span class="ci"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M5 9c4 1 10 1 14 0M4 14c5-2 11-2 16 0M9 3.5c2 5 2 12 0 17M15 3.5c-2 5-2 12 0 17"/></svg></span>
-          <div><div class="num" data-count="7" data-suffix="+">0</div><div class="lbl">лет в ремесле</div></div>
-        </div>
-        <div class="counter rv">
-          <span class="ci"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="6.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/><path d="M8.5 15.5L20 4M15.5 15.5L4 4"/></svg></span>
-          <div><div class="num" data-count="500" data-suffix="+">0</div><div class="lbl">учеников научились плести</div></div>
-        </div>
-        <div class="counter rv">
-          <span class="ci"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M12 21c0-6 0-10 0-16M12 9c-2-3-6-3-7-1s2 4 7 1zM12 14c2-3 6-3 7-1s-2 4-7 1zM12 5c1.5-1.5 3-1 3 0"/></svg></span>
-          <div><div class="num" data-count="1200" data-suffix="+">0</div><div class="lbl">изделий сплетено в мастерской</div></div>
-        </div>
-        <div class="counter rv">
-          <span class="ci"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M12 21C7 17 3 13.5 3 9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 9 2.5c0 4-4 7.5-9 11.5z"/></svg></span>
-          <div><div class="num" data-count="98" data-suffix="%">0</div><div class="lbl">рекомендуют мастерскую друзьям</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="container about-grid">
+<div class="about-photo rv">
+<div class="blob blob-peach about-blob plx" data-speed="0.05" aria-hidden="true"></div>
+<div class="arch"><img src="images/info.jpg" alt="Наталья — основательница мастерской SoVkuSom"></div>
+<div class="about-sign">Наталья, мастер ✿</div>
+</div>
+<div class="about-txt">
+<div class="sec-head rv" style="margin-bottom:0">
+<span class="eyebrow">03 · Обо мне</span>
+<h2>Мастерская начинается <em>с рук</em> мастера</h2>
+</div>
+<p class="rv">Семь лет назад я принесла домой сломанное бабушкино кресло — и вместо того, чтобы выбросить, научилась его чинить. Так появились первые мотки ротанга, первые мозоли и первая любовь к ремеслу.</p>
+<p class="rv">Сегодня <b>SoVkuSom</b> — это тёплое пространство, где пахнет деревом и травами, и онлайн-школа, где ученики из десятков городов плетут свои первые кашпо. Я верю: <b>красивые вещи доступны каждому</b> — достаточно пары свободных вечеров и желания трогать мир руками.</p>
+<div class="counters">
+<div class="counter rv">
+<span class="ci"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M5 9c4 1 10 1 14 0M4 14c5-2 11-2 16 0M9 3.5c2 5 2 12 0 17M15 3.5c-2 5-2 12 0 17"/></svg></span>
+<div><div class="num" data-count="7" data-suffix="+">0</div><div class="lbl">лет в ремесле</div></div>
+</div>
+<div class="counter rv">
+<span class="ci"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="6.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/><path d="M8.5 15.5L20 4M15.5 15.5L4 4"/></svg></span>
+<div><div class="num" data-count="500" data-suffix="+">0</div><div class="lbl">учеников научились плести</div></div>
+</div>
+<div class="counter rv">
+<span class="ci"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M12 21c0-6 0-10 0-16M12 9c-2-3-6-3-7-1s2 4 7 1zM12 14c2-3 6-3 7-1s-2 4-7 1zM12 5c1.5-1.5 3-1 3 0"/></svg></span>
+<div><div class="num" data-count="1200" data-suffix="+">0</div><div class="lbl">изделий сплетено в мастерской</div></div>
+</div>
+<div class="counter rv">
+<span class="ci"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M12 21C7 17 3 13.5 3 9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 9 2.5c0 4-4 7.5-9 11.5z"/></svg></span>
+<div><div class="num" data-count="98" data-suffix="%">0</div><div class="lbl">рекомендуют мастерскую друзьям</div></div>
+</div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- ================= GALLERY ================= -->
 <section class="section gallery" id="gallery">
-  <div class="container gal-head rv">
-    <div class="sec-head" style="margin-bottom:0">
-      <span class="eyebrow">04 · Галерея</span>
-      <h2>Работы учеников <em>в интерьере</em></h2>
-    </div>
-    <span class="gal-hint">потяните вбок <svg width="26" height="12" viewBox="0 0 26 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M1 6h22M18 1l5 5-5 5"/></svg></span>
-  </div>
-  <div class="container">
-    <div class="gal-track" id="galTrack" data-lb-group="gallery">
-      <figure class="gal-card"><button data-full="https://picsum.photos/seed/interior-planter-hammock/1200/900" data-caption="Кашпо-гамак · Анна, Москва"><span class="gimg"><img src="https://picsum.photos/seed/interior-planter-hammock/640/800" alt="Кашпо-гамак в интерьере" loading="lazy"></span></button><figcaption><b>Кашпо-гамак</b><span>Анна · Мск</span></figcaption></figure>
-      <figure class="gal-card"><button data-full="https://picsum.photos/seed/interior-rattan-chair/1200/900" data-caption="Кресло из ротанга · Мария, Санкт-Петербург"><span class="gimg"><img src="https://picsum.photos/seed/interior-rattan-chair/640/800" alt="Плетёное кресло в гостиной" loading="lazy"></span></button><figcaption><b>Кресло</b><span>Мария · СПб</span></figcaption></figure>
-      <figure class="gal-card"><button data-full="https://picsum.photos/seed/interior-boho-lamp/1200/900" data-caption="Абажур бохо · Ольга, Екатеринбург"><span class="gimg"><img src="https://picsum.photos/seed/interior-boho-lamp/640/800" alt="Плетёный абажур над столом" loading="lazy"></span></button><figcaption><b>Абажур</b><span>Ольга · Екб</span></figcaption></figure>
-      <figure class="gal-card"><button data-full="https://picsum.photos/seed/interior-jute-basket/1200/900" data-caption="Джутовые корзины · Наталья, Калининград"><span class="gimg"><img src="https://picsum.photos/seed/interior-jute-basket/640/800" alt="Джутовые корзины для хранения" loading="lazy"></span></button><figcaption><b>Корзины</b><span>Наталья · Клг</span></figcaption></figure>
-      <figure class="gal-card"><button data-full="https://picsum.photos/seed/interior-macrame-panel/1200/900" data-caption="Макраме-панно · Ирина, Казань"><span class="gimg"><img src="https://picsum.photos/seed/interior-macrame-panel/640/800" alt="Макраме-панно на стене" loading="lazy"></span></button><figcaption><b>Панно</b><span>Ирина · Кзнь</span></figcaption></figure>
-      <figure class="gal-card"><button data-full="https://picsum.photos/seed/interior-wicker-tray/1200/900" data-caption="Поднос из ротанга · Дарья, Тула"><span class="gimg"><img src="https://picsum.photos/seed/interior-wicker-tray/640/800" alt="Плетёный поднос на кухне" loading="lazy"></span></button><figcaption><b>Поднос</b><span>Дарья · Тула</span></figcaption></figure>
-      <figure class="gal-card"><button data-full="https://picsum.photos/seed/interior-dried-flowers/1200/900" data-caption="Ваза с сухоцветами · Ксения, Сочи"><span class="gimg"><img src="https://picsum.photos/seed/interior-dried-flowers/640/800" alt="Плетёная ваза с сухоцветами" loading="lazy"></span></button><figcaption><b>Ваза</b><span>Ксения · Сочи</span></figcaption></figure>
-    </div>
-  </div>
+<div class="container gal-head rv">
+<div class="sec-head" style="margin-bottom:0">
+<span class="eyebrow">04 · Галерея</span>
+<h2>Работы учеников <em>в интерьере</em></h2>
+</div>
+<span class="gal-hint">потяните вбок <svg width="26" height="12" viewBox="0 0 26 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M1 6h22M18 1l5 5-5 5"/></svg></span>
+</div>
+<div class="container">
+<div class="gal-track" id="galTrack" data-lb-group="gallery">
+<figure class="gal-card"><button data-full="https://picsum.photos/seed/interior-planter-hammock/1200/900" data-caption="Кашпо-гамак · Анна, Москва"><span class="gimg"><img src="https://picsum.photos/seed/interior-planter-hammock/640/800" alt="Кашпо-гамак в интерьере" loading="lazy"></span></button><figcaption><b>Кашпо-гамак</b><span>Анна · Мск</span></figcaption></figure>
+<figure class="gal-card"><button data-full="https://picsum.photos/seed/interior-rattan-chair/1200/900" data-caption="Кресло из ротанга · Мария, Санкт-Петербург"><span class="gimg"><img src="https://picsum.photos/seed/interior-rattan-chair/640/800" alt="Плетёное кресло в гостиной" loading="lazy"></span></button><figcaption><b>Кресло</b><span>Мария · СПб</span></figcaption></figure>
+<figure class="gal-card"><button data-full="https://picsum.photos/seed/interior-boho-lamp/1200/900" data-caption="Абажур бохо · Ольга, Екатеринбург"><span class="gimg"><img src="https://picsum.photos/seed/interior-boho-lamp/640/800" alt="Плетёный абажур над столом" loading="lazy"></span></button><figcaption><b>Абажур</b><span>Ольга · Екб</span></figcaption></figure>
+<figure class="gal-card"><button data-full="https://picsum.photos/seed/interior-jute-basket/1200/900" data-caption="Джутовые корзины · Наталья, Калининград"><span class="gimg"><img src="https://picsum.photos/seed/interior-jute-basket/640/800" alt="Джутовые корзины для хранения" loading="lazy"></span></button><figcaption><b>Корзины</b><span>Наталья · Клг</span></figcaption></figure>
+<figure class="gal-card"><button data-full="https://picsum.photos/seed/interior-macrame-panel/1200/900" data-caption="Макраме-панно · Ирина, Казань"><span class="gimg"><img src="https://picsum.photos/seed/interior-macrame-panel/640/800" alt="Макраме-панно на стене" loading="lazy"></span></button><figcaption><b>Панно</b><span>Ирина · Кзнь</span></figcaption></figure>
+<figure class="gal-card"><button data-full="https://picsum.photos/seed/interior-wicker-tray/1200/900" data-caption="Поднос из ротанга · Дарья, Тула"><span class="gimg"><img src="https://picsum.photos/seed/interior-wicker-tray/640/800" alt="Плетёный поднос на кухне" loading="lazy"></span></button><figcaption><b>Поднос</b><span>Дарья · Тула</span></figcaption></figure>
+<figure class="gal-card"><button data-full="https://picsum.photos/seed/interior-dried-flowers/1200/900" data-caption="Ваза с сухоцветами · Ксения, Сочи"><span class="gimg"><img src="https://picsum.photos/seed/interior-dried-flowers/640/800" alt="Плетёная ваза с сухоцветами" loading="lazy"></span></button><figcaption><b>Ваза</b><span>Ксения · Сочи</span></figcaption></figure>
+</div>
+</div>
 </section>
-
 <!-- ================= REVIEWS ================= -->
 <section class="section reviews" id="reviews">
-  <div class="container">
-    <div class="sec-head rv" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px;max-width:none">
-      <div>
-        <span class="eyebrow">05 · Отзывы</span>
-        <h2>Тёплые слова <em>от учеников</em></h2>
-      </div>
-      <div class="rev-nav">
-        <button class="icon-btn" id="revPrev" aria-label="Предыдущий отзыв"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></button>
-        <button class="icon-btn" id="revNext" aria-label="Следующий отзыв"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-      </div>
-    </div>
-    <div class="rev-viewport rv">
-      <div class="rev-track" id="revTrack">
-        <!-- review 1 -->
-        <article class="rev-card">
-          <div class="rev-top">
-            <img src="https://picsum.photos/seed/avatar-anna-m/112/112" alt="Анна">
-            <div class="who"><b>Анна</b><span>Москва · кашпо-гамак</span></div>
-            <span class="stars" aria-label="5 из 5">★★★★★</span>
-          </div>
-          <blockquote>Шла «просто попробовать», а ушла с кашпо, мозолями на пальцах и полным ощущением счастья. Софья объясняет так, будто ты плетёшь уже лет десять. Атмосфера — как у бабушки на даче, только красивее.</blockquote>
-          <div class="rev-gal" data-lb-group="rev1">
-            <button aria-label="Фото работы 1"><img src="https://picsum.photos/seed/review1-work-a/152/152" data-full="https://picsum.photos/seed/review1-work-a/1200/900" data-caption="Кашпо Анны · мастер-класс 12 марта" alt=""></button>
-            <button aria-label="Фото работы 2"><img src="https://picsum.photos/seed/review1-work-b/152/152" data-full="https://picsum.photos/seed/review1-work-b/1200/900" data-caption="Кашпо Анны дома" alt=""></button>
-            <button aria-label="Фото работы 3"><img src="https://picsum.photos/seed/review1-work-c/152/152" data-full="https://picsum.photos/seed/review1-work-c/1200/900" data-caption="Процесс плетения" alt=""></button>
-          </div>
-        </article>
-        <!-- review 2 -->
-        <article class="rev-card">
-          <div class="rev-top">
-            <img src="https://picsum.photos/seed/avatar-maria-spb/112/112" alt="Мария">
-            <div class="who"><b>Мария</b><span>Санкт-Петербург · онлайн-курс</span></div>
-            <span class="stars" aria-label="5 из 5">★★★★★</span>
-          </div>
-          <blockquote>Боялась, что онлайн — это «всё мелко и непонятно». Оказалось наоборот: крупные планы рук, замедленные повторы, а в чате Софья разбирала мои фото и подсказывала, где подтянуть. Кресло стоит, пользуюсь каждый день!</blockquote>
-          <div class="rev-gal" data-lb-group="rev2">
-            <button aria-label="Фото работы 1"><img src="https://picsum.photos/seed/review2-work-a/152/152" data-full="https://picsum.photos/seed/review2-work-a/1200/900" data-caption="Кресло Марии" alt=""></button>
-            <button aria-label="Фото работы 2"><img src="https://picsum.photos/seed/review2-work-b/152/152" data-full="https://picsum.photos/seed/review2-work-b/1200/900" data-caption="Фрагмент плетения спинки" alt=""></button>
-            <button aria-label="Фото работы 3"><img src="https://picsum.photos/seed/review2-work-c/152/152" data-full="https://picsum.photos/seed/review2-work-c/1200/900" data-caption="Рабочее место Марии" alt=""></button>
-            <button aria-label="Фото работы 4"><img src="https://picsum.photos/seed/review2-work-d/152/152" data-full="https://picsum.photos/seed/review2-work-d/1200/900" data-caption="Кресло в интерьере" alt=""></button>
-          </div>
-        </article>
-        <!-- review 3 -->
-        <article class="rev-card">
-          <div class="rev-top">
-            <img src="https://picsum.photos/seed/avatar-olga-ekb/112/112" alt="Ольга">
-            <div class="who"><b>Ольга</b><span>Екатеринбург · реставрация</span></div>
-            <span class="stars" aria-label="5 из 5">★★★★★</span>
-          </div>
-          <blockquote>Привезли на консультацию стул моей прабабушки 1958 года. Думала — только выбросить. Через месяц индивидуальных созвонов и советов стул снова в строю. Это не урок, это спасение семейной истории.</blockquote>
-          <div class="rev-gal" data-lb-group="rev3">
-            <button aria-label="Фото работы 1"><img src="https://picsum.photos/seed/review3-work-a/152/152" data-full="https://picsum.photos/seed/review3-work-a/1200/900" data-caption="Стул до реставрации" alt=""></button>
-            <button aria-label="Фото работы 2"><img src="https://picsum.photos/seed/review3-work-b/152/152" data-full="https://picsum.photos/seed/review3-work-b/1200/900" data-caption="Стул после реставрации" alt=""></button>
-            <button aria-label="Фото работы 3"><img src="https://picsum.photos/seed/review3-work-c/152/152" data-full="https://picsum.photos/seed/review3-work-c/1200/900" data-caption="Новое сиденье крупным планом" alt=""></button>
-          </div>
-        </article>
-        <!-- review 4 -->
-        <article class="rev-card">
-          <div class="rev-top">
-            <img src="https://picsum.photos/seed/avatar-natasha-klg/112/112" alt="Наталья">
-            <div class="who"><b>Наталья</b><span>Калининград · подарочный сертификат</span></div>
-            <span class="stars" aria-label="5 из 5">★★★★★</span>
-          </div>
-          <blockquote>Дарила мастер-класс маме на юбилей. Она до сих пор рассказывает об этом чаще, чем о самом юбилее :) Организация на высоте: встретили, всё показали, упаковали готовую корзину как подарок. Спасибо!</blockquote>
-          <div class="rev-gal" data-lb-group="rev4">
-            <button aria-label="Фото работы 1"><img src="https://picsum.photos/seed/review4-work-a/152/152" data-full="https://picsum.photos/seed/review4-work-a/1200/900" data-caption="Корзина мамы Натальи" alt=""></button>
-            <button aria-label="Фото работы 2"><img src="https://picsum.photos/seed/review4-work-b/152/152" data-full="https://picsum.photos/seed/review4-work-b/1200/900" data-caption="За плетением" alt=""></button>
-            <button aria-label="Фото работы 3"><img src="https://picsum.photos/seed/review4-work-c/152/152" data-full="https://picsum.photos/seed/review4-work-c/1200/900" data-caption="Готовая корзина с цветами" alt=""></button>
-          </div>
-        </article>
-      </div>
-    </div>
-    <div class="rev-dots" id="revDots" role="tablist" aria-label="Страницы отзывов"></div>
-  </div>
+<div class="container">
+<div class="sec-head rv" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px;max-width:none">
+<div>
+<span class="eyebrow">05 · Отзывы</span>
+<h2>Тёплые слова <em>от учеников</em></h2>
+</div>
+<div class="rev-nav">
+<button class="icon-btn" id="revPrev" aria-label="Предыдущий отзыв"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></button>
+<button class="icon-btn" id="revNext" aria-label="Следующий отзыв"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+</div>
+</div>
+<div class="rev-viewport rv">
+<div class="rev-track" id="revTrack">
+<!-- review 1 -->
+<article class="rev-card">
+<div class="rev-top">
+<img src="https://picsum.photos/seed/avatar-anna-m/112/112" alt="Анна">
+<div class="who"><b>Анна</b><span>Москва · кашпо-гамак</span></div>
+<span class="stars" aria-label="5 из 5">★★★★★</span>
+</div>
+<blockquote>Шла «просто попробовать», а ушла с кашпо, мозолями на пальцах и полным ощущением счастья. Софья объясняет так, будто ты плетёшь уже лет десять. Атмосфера — как у бабушки на даче, только красивее.</blockquote>
+<div class="rev-gal" data-lb-group="rev1">
+<button aria-label="Фото работы 1"><img src="https://picsum.photos/seed/review1-work-a/152/152" data-full="https://picsum.photos/seed/review1-work-a/1200/900" data-caption="Кашпо Анны · мастер-класс 12 марта" alt=""></button>
+<button aria-label="Фото работы 2"><img src="https://picsum.photos/seed/review1-work-b/152/152" data-full="https://picsum.photos/seed/review1-work-b/1200/900" data-caption="Кашпо Анны дома" alt=""></button>
+<button aria-label="Фото работы 3"><img src="https://picsum.photos/seed/review1-work-c/152/152" data-full="https://picsum.photos/seed/review1-work-c/1200/900" data-caption="Процесс плетения" alt=""></button>
+</div>
+</article>
+<!-- review 2 -->
+<article class="rev-card">
+<div class="rev-top">
+<img src="https://picsum.photos/seed/avatar-maria-spb/112/112" alt="Мария">
+<div class="who"><b>Мария</b><span>Санкт-Петербург · онлайн-курс</span></div>
+<span class="stars" aria-label="5 из 5">★★★★★</span>
+</div>
+<blockquote>Боялась, что онлайн — это «всё мелко и непонятно». Оказалось наоборот: крупные планы рук, замедленные повторы, а в чате Софья разбирала мои фото и подсказывала, где подтянуть. Кресло стоит, пользуюсь каждый день!</blockquote>
+<div class="rev-gal" data-lb-group="rev2">
+<button aria-label="Фото работы 1"><img src="https://picsum.photos/seed/review2-work-a/152/152" data-full="https://picsum.photos/seed/review2-work-a/1200/900" data-caption="Кресло Марии" alt=""></button>
+<button aria-label="Фото работы 2"><img src="https://picsum.photos/seed/review2-work-b/152/152" data-full="https://picsum.photos/seed/review2-work-b/1200/900" data-caption="Фрагмент плетения спинки" alt=""></button>
+<button aria-label="Фото работы 3"><img src="https://picsum.photos/seed/review2-work-c/152/152" data-full="https://picsum.photos/seed/review2-work-c/1200/900" data-caption="Рабочее место Марии" alt=""></button>
+<button aria-label="Фото работы 4"><img src="https://picsum.photos/seed/review2-work-d/152/152" data-full="https://picsum.photos/seed/review2-work-d/1200/900" data-caption="Кресло в интерьере" alt=""></button>
+</div>
+</article>
+<!-- review 3 -->
+<article class="rev-card">
+<div class="rev-top">
+<img src="https://picsum.photos/seed/avatar-olga-ekb/112/112" alt="Ольга">
+<div class="who"><b>Ольга</b><span>Екатеринбург · реставрация</span></div>
+<span class="stars" aria-label="5 из 5">★★★★★</span>
+</div>
+<blockquote>Привезли на консультацию стул моей прабабушки 1958 года. Думала — только выбросить. Через месяц индивидуальных созвонов и советов стул снова в строю. Это не урок, это спасение семейной истории.</blockquote>
+<div class="rev-gal" data-lb-group="rev3">
+<button aria-label="Фото работы 1"><img src="https://picsum.photos/seed/review3-work-a/152/152" data-full="https://picsum.photos/seed/review3-work-a/1200/900" data-caption="Стул до реставрации" alt=""></button>
+<button aria-label="Фото работы 2"><img src="https://picsum.photos/seed/review3-work-b/152/152" data-full="https://picsum.photos/seed/review3-work-b/1200/900" data-caption="Стул после реставрации" alt=""></button>
+<button aria-label="Фото работы 3"><img src="https://picsum.photos/seed/review3-work-c/152/152" data-full="https://picsum.photos/seed/review3-work-c/1200/900" data-caption="Новое сиденье крупным планом" alt=""></button>
+</div>
+</article>
+<!-- review 4 -->
+<article class="rev-card">
+<div class="rev-top">
+<img src="https://picsum.photos/seed/avatar-natasha-klg/112/112" alt="Наталья">
+<div class="who"><b>Наталья</b><span>Калининград · подарочный сертификат</span></div>
+<span class="stars" aria-label="5 из 5">★★★★★</span>
+</div>
+<blockquote>Дарила мастер-класс маме на юбилей. Она до сих пор рассказывает об этом чаще, чем о самом юбилее :) Организация на высоте: встретили, всё показали, упаковали готовую корзину как подарок. Спасибо!</blockquote>
+<div class="rev-gal" data-lb-group="rev4">
+<button aria-label="Фото работы 1"><img src="https://picsum.photos/seed/review4-work-a/152/152" data-full="https://picsum.photos/seed/review4-work-a/1200/900" data-caption="Корзина мамы Натальи" alt=""></button>
+<button aria-label="Фото работы 2"><img src="https://picsum.photos/seed/review4-work-b/152/152" data-full="https://picsum.photos/seed/review4-work-b/1200/900" data-caption="За плетением" alt=""></button>
+<button aria-label="Фото работы 3"><img src="https://picsum.photos/seed/review4-work-c/152/152" data-full="https://picsum.photos/seed/review4-work-c/1200/900" data-caption="Готовая корзина с цветами" alt=""></button>
+</div>
+</article>
+</div>
+</div>
+<div class="rev-dots" id="revDots" role="tablist" aria-label="Страницы отзывов"></div>
+</div>
 </section>
-
 <!-- ================= FAQ ================= -->
 <section class="section" id="faq">
-  <div class="container">
-    <div class="sec-head rv" style="text-align:center;margin-inline:auto">
-      <span class="eyebrow" style="justify-content:center">06 · Вопросы</span>
-      <h2>Частые <em>вопросы</em></h2>
-    </div>
-    <div class="faq-wrap rv">
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">Я никогда не плела и не уверена, что получится. Стоит ли идти?<span class="faq-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
-        <div class="faq-a"><div><p>Определённо да. Больше половины гостей приходят «с нуля». Программа построена от простого к сложному, я показываю каждый этап на руках и помогаю каждому. За 7 лет ещё никто не ушёл без готового изделия :)</p></div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">Что входит в стоимость мастер-класса?<span class="faq-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
-        <div class="faq-a"><div><p>Все материалы и инструменты, фартук, чай со сладостями и готовое изделие, которое вы забираете домой. Для видео-уроков в стоимость входит доступ навсегда, схемы в PDF и чат с обратной связью.</p></div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">Как проходят онлайн-уроки, если я из другого города?<span class="faq-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
-        <div class="faq-a"><div><p>После оплаты вы получаете ссылку на платформу с записями — смотрите в любое время, с любого устройства. Домашние работы присылаете в чат, я разбираю их голосовыми и видео-комментариями. Набор материалов можно купить у нас с доставкой или по списку в своём городе.</p></div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">Можно ли подарить мастер-класс?<span class="faq-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
-        <div class="faq-a"><div><p>Конечно! Сертификат действует 6 месяцев на любой мастер-класс или курс. Оформляем в двух вариантах: плетёная открытка ручной работы (в мастерской) или красивая электронная версия (мгновенно на почту).</p></div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">Какие условия оплаты и возврата?<span class="faq-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
-        <div class="faq-a"><div><p>Оплата картой, СБП или переводом; для мастер-классов достаточно предоплаты 30%. Если планы изменились — при отмене за 48 часов вернём 100% или перенесём запись на другую дату без доплат.</p></div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">Доставляете ли готовые изделия и наборы материалов?<span class="faq-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
-        <div class="faq-a"><div><p>Да, отправляем по всей России СДЭК и Почтой. Изделия упаковываем в крафт с сеном и веточкой эвкалипта — чтобы посылка тоже была немного подарком. Наборы для онлайн-уроков доставляем за 2–7 дней.</p></div></div>
-      </div>
-    </div>
-  </div>
+<div class="container">
+<div class="sec-head rv" style="text-align:center;margin-inline:auto">
+<span class="eyebrow" style="justify-content:center">06 · Вопросы</span>
+<h2>Частые <em>вопросы</em></h2>
+</div>
+<div class="faq-wrap rv">
+<div class="faq-item">
+<button class="faq-q" aria-expanded="false">Я никогда не плела и не уверена, что получится. Стоит ли идти?<span class="faq-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+<div class="faq-a"><div><p>Определённо да. Больше половины гостей приходят «с нуля». Программа построена от простого к сложному, я показываю каждый этап на руках и помогаю каждому. За 7 лет ещё никто не ушёл без готового изделия :)</p></div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q" aria-expanded="false">Что входит в стоимость мастер-класса?<span class="faq-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+<div class="faq-a"><div><p>Все материалы и инструменты, фартук, чай со сладостями и готовое изделие, которое вы забираете домой. Для видео-уроков в стоимость входит доступ навсегда, схемы в PDF и чат с обратной связью.</p></div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q" aria-expanded="false">Как проходят онлайн-уроки, если я из другого города?<span class="faq-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+<div class="faq-a"><div><p>После оплаты вы получаете ссылку на платформу с записями — смотрите в любое время, с любого устройства. Домашние работы присылаете в чат, я разбираю их голосовыми и видео-комментариями. Набор материалов можно купить у нас с доставкой или по списку в своём городе.</p></div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q" aria-expanded="false">Можно ли подарить мастер-класс?<span class="faq-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+<div class="faq-a"><div><p>Конечно! Сертификат действует 6 месяцев на любой мастер-класс или курс. Оформляем в двух вариантах: плетёная открытка ручной работы (в мастерской) или красивая электронная версия (мгновенно на почту).</p></div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q" aria-expanded="false">Какие условия оплаты и возврата?<span class="faq-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+<div class="faq-a"><div><p>Оплата картой, СБП или переводом; для мастер-классов достаточно предоплаты 30%. Если планы изменились — при отмене за 48 часов вернём 100% или перенесём запись на другую дату без доплат.</p></div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q" aria-expanded="false">Доставляете ли готовые изделия и наборы материалов?<span class="faq-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+<div class="faq-a"><div><p>Да, отправляем по всей России СДЭК и Почтой. Изделия упаковываем в крафт с сеном и веточкой эвкалипта — чтобы посылка тоже была немного подарком. Наборы для онлайн-уроков доставляем за 2–7 дней.</p></div></div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- ================= LEAD BANNER ================= -->
 <section class="section" style="padding-top:20px">
-  <div class="container">
-    <div class="lead-banner rv">
-      <div>
-        <h3>Гайд «Первые шаги в плетении» — <em>бесплатно</em></h3>
-        <p>12 страниц: 5 базовых узлов, список инструментов и чек-лист выбора ротанга. Пришлём на почту в течение минуты.</p>
-      </div>
-      <button class="btn btn-primary magnet" data-open-modal="modal-lead">
-        Получить гайд
-        <svg class="arr" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </button>
-    </div>
-  </div>
+<div class="container">
+<div class="lead-banner rv">
+<div>
+<h3>Гайд «Первые шаги в плетении» — <em>бесплатно</em></h3>
+<p>12 страниц: 5 базовых узлов, список инструментов и чек-лист выбора ротанга. Пришлём на почту в течение минуты.</p>
+</div>
+<button class="btn btn-primary magnet" data-open-modal="modal-lead">
+Получить гайд
+<svg class="arr" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+</button>
+</div>
+</div>
 </section>
-
 <!-- ================= CONTACT ================= -->
 <section class="section" id="contact" style="padding-top:40px">
-  <div class="container">
-    <div class="sec-head rv">
-      <span class="eyebrow">07 · Контакты</span>
-      <h2>Записаться или <em>просто спросить</em></h2>
-    </div>
-    <div class="contact-grid">
-      <div class="rv">
-        <p class="lead">Пишите любым удобным способом — отвечаю лично и обычно в течение часа. А если хотите потрогать ротанг вживую, приходите в мастерскую на чай.</p>
-        <div class="contact-list">
-          <a href="https://vk.com/sovкусom" target="_blank" rel="noopener">
-            <span class="ci"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M13.16 17.7c-5.36 0-8.42-3.67-8.55-9.78h2.68c.09 4.49 2.07 6.39 3.64 6.76V7.92h2.52v3.86c1.55-.17 3.18-1.94 3.73-3.86h2.52a7.32 7.32 0 0 1-3.35 4.79 7.6 7.6 0 0 1 3.88 5h-2.77c-.6-1.86-2.1-3.3-4.01-3.49v3.49h-.29z"/></svg></span>
-            <span><b>ВКонтакте</b><span>самый быстрый способ · @sovkusom</span></span>
-          </a>
-          <a href="tel:+79991234567">
-            <span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
-            <span><b>+7 999 123-45-67</b><span>ежедневно 10:00–20:00</span></span>
-          </a>
-          <a href="https://maps.google.com/?q=Москва, Пятницкая 25" target="_blank" rel="noopener">
-            <span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 21c-4-3.5-7-6.6-7-10a7 7 0 1 1 14 0c0 3.4-3 6.5-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg></span>
-            <span><b>Москва, Пятницкая, 25</b><span>мастерская · вход со двора, 2 этаж</span></span>
-          </a>
-        </div>
-      </div>
-      <div class="form-card rv" style="--d:.15s">
-        <form id="signupForm" novalidate>
-          <div class="form-body">
-            <h3>Оставить заявку</h3>
-            <p>Заполните пару полей — и я свяжусь с вами, чтобы подобрать дату и формат.</p>
-            <!-- скрытые UTM-поля -->
-            <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium">
-            <input type="hidden" name="utm_campaign"><input type="hidden" name="utm_term">
-            <input type="hidden" name="utm_content"><input type="hidden" name="landing_ts">
-            <div class="field">
-              <label for="fName">Ваше имя *</label>
-              <input id="fName" name="name" type="text" placeholder="Например, Анна" autocomplete="name">
-              <span class="err">Пожалуйста, представьтесь</span>
-            </div>
-            <div class="field">
-              <label for="fPhone">Телефон или ник в ВК *</label>
-              <input id="fPhone" name="phone" type="tel" placeholder="+7 ___ ___-__-__" autocomplete="tel">
-              <span class="err">Проверьте номер — нужно не меньше 10 цифр</span>
-            </div>
-            <div class="field">
-              <label for="fTopic">Что вас интересует?</label>
-              <select id="fTopic" name="topic">
-                <option>Живой мастер-класс</option>
-                <option>Видео-курс или урок</option>
-                <option>Подарочный сертификат</option>
-                <option>Реставрация мебели</option>
-                <option>Другой вопрос</option>
-              </select>
-            </div>
-            <label class="check" id="consentWrap">
-              <input type="checkbox" id="fConsent" name="consent">
-              <span class="box"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg></span>
-              <span>Согласна(ен) на обработку <a href="#" data-open-modal="modal-privacy">персональных данных</a> и принимаю условия <a href="#" data-open-modal="modal-offer">оферты</a></span>
-            </label>
-            <span class="err" id="consentErr" style="display:none;font-size:13px;color:var(--error);font-weight:600;margin-top:8px">Для отправки нужно согласие на обработку данных</span>
-            <button type="submit" class="btn btn-primary form-submit magnet">
-              Отправить заявку
-              <svg class="arr" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </button>
-          </div>
-          <div class="form-success" id="formSuccess">
-            <span class="ok"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg></span>
-            <h4>Заявка улетела! 🌿</h4>
-            <p>Обычно отвечаю в течение часа. Если хочется быстрее — напишите в ВК.</p>
-            <a class="btn btn-primary" href="https://vk.com/sovкусom" target="_blank" rel="noopener">Написать ВКонтакте</a>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
+<div class="container">
+<div class="sec-head rv">
+<span class="eyebrow">07 · Контакты</span>
+<h2>Записаться или <em>просто спросить</em></h2>
+</div>
+<div class="contact-grid">
+<div class="rv">
+<p class="lead">Пишите любым удобным способом — отвечаю лично и обычно в течение часа. А если хотите потрогать ротанг вживую, приходите в мастерскую на чай.</p>
+<div class="contact-list">
+<a href="https://vk.ru/sovkusomnd" target="_blank" rel="noopener">
+<span class="ci"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M13.16 17.7c-5.36 0-8.42-3.67-8.55-9.78h2.68c.09 4.49 2.07 6.39 3.64 6.76V7.92h2.52v3.86c1.55-.17 3.18-1.94 3.73-3.86h2.52a7.32 7.32 0 0 1-3.35 4.79 7.6 7.6 0 0 1 3.88 5h-2.77c-.6-1.86-2.1-3.3-4.01-3.49v3.49h-.29z"/></svg></span>
+<span><b>ВКонтакте</b><span>самый быстрый способ · @sovkusom</span></span>
+</a>
+<a href="tel:+79120117250">
+<span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+<span><b>+7 (912) 011-72-50</b><span>ежедневно 10:00–20:00</span></span>
+</a>
+<a href="https://maps.google.com/?q=Москва, Пятницкая 25" target="_blank" rel="noopener">
+<span class="ci"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 21c-4-3.5-7-6.6-7-10a7 7 0 1 1 14 0c0 3.4-3 6.5-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg></span>
+<span><b>ТЦ «Арбери» </b> <b> с. Малая Пурга, улица Советская, д. 62</b><span>мастерская · офис 2, 1 этаж</span></span>
+</a>
+</div>
+</div>
+<div class="form-card rv" style="--d:.15s">
+<form id="signupForm" novalidate>
+<div class="form-body">
+<h3>Оставить заявку</h3>
+<p>Заполните пару полей — и я свяжусь с вами, чтобы подобрать дату и формат.</p>
+<!-- скрытые UTM-поля -->
+<input type="hidden" name="utm_source"><input type="hidden" name="utm_medium">
+<input type="hidden" name="utm_campaign"><input type="hidden" name="utm_term">
+<input type="hidden" name="utm_content"><input type="hidden" name="landing_ts">
+<div class="field">
+<label for="fName">Ваше имя *</label>
+<input id="fName" name="name" type="text" placeholder="Например, Анна" autocomplete="name">
+<span class="err">Пожалуйста, представьтесь</span>
+</div>
+<div class="field">
+<label for="fPhone">Телефон или ник в ВК *</label>
+<input id="fPhone" name="phone" type="tel" placeholder="+7 ___ ___-__-__" autocomplete="tel">
+<span class="err">Проверьте номер — нужно не меньше 10 цифр</span>
+</div>
+<div class="field">
+<label for="fTopic">Что вас интересует?</label>
+<select id="fTopic" name="topic">
+<option>Живой мастер-класс</option>
+<option>Видео-курс или урок</option>
+<option>Подарочный сертификат</option>
+<option>Реставрация мебели</option>
+<option>Другой вопрос</option>
+</select>
+</div>
+<label class="check" id="consentWrap">
+<input type="checkbox" id="fConsent" name="consent">
+<span class="box"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg></span>
+<span>Согласна(ен) на обработку <a href="#" data-open-modal="modal-privacy">персональных данных</a> и принимаю условия <a href="#" data-open-modal="modal-offer">оферты</a></span>
+</label>
+<span class="err" id="consentErr" style="display:none;font-size:13px;color:var(--error);font-weight:600;margin-top:8px">Для отправки нужно согласие на обработку данных</span>
+<button type="submit" class="btn btn-primary form-submit magnet">
+Отправить заявку
+<svg class="arr" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+</button>
+</div>
+<div class="form-success" id="formSuccess">
+<span class="ok"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg></span>
+<h4>Заявка улетела! 🌿</h4>
+<p>Обычно отвечаю в течение часа. Если хочется быстрее — напишите в ВК.</p>
+<a class="btn btn-primary" href="https://vk.ru/sovkusomnd" target="_blank" rel="noopener">Написать ВКонтакте</a>
+</div>
+</form>
+</div>
+</div>
+</div>
 </section>
 </main>
-
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <a href="#home" class="logo">So<b>Vku</b>Som<span class="dot"></span></a>
-        <p class="footer-about">Камерная мастерская плетения из ротанга и джута. Учим создавать вещи, в которых живёт тепло рук.</p>
-        <div class="footer-social">
-          <a href="https://vk.com/sovкусom" target="_blank" rel="noopener" aria-label="ВКонтакте"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.16 17.7c-5.36 0-8.42-3.67-8.55-9.78h2.68c.09 4.49 2.07 6.39 3.64 6.76V7.92h2.52v3.86c1.55-.17 3.18-1.94 3.73-3.86h2.52a7.32 7.32 0 0 1-3.35 4.79 7.6 7.6 0 0 1 3.88 5h-2.77c-.6-1.86-2.1-3.3-4.01-3.49v3.49h-.29z"/></svg></a>
-          <a href="#" aria-label="Telegram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 4L3 11.5l5.5 2L10 19l3-3.5 5 4L21 4z"/></svg></a>
-          <a href="#" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="6" width="19" height="13" rx="4"/><path d="M10.5 9.8v5.4l4.8-2.7z" fill="currentColor" stroke="none"/></svg></a>
-        </div>
-      </div>
-      <div>
-        <h4>Навигация</h4>
-        <ul>
-          <li><a href="#workshops">Совместники</a></li>
-          <li><a href="#lessons">Видео-уроки</a></li>
-          <li><a href="#about">Обо мне</a></li>
-          <li><a href="#reviews">Отзывы</a></li>
-          <li><a href="#faq">Вопросы</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Форматы</h4>
-        <ul>
-          <li><a href="#workshops">Мастер-классы в Москве</a></li>
-          <li><a href="#lessons">Онлайн-курсы</a></li>
-          <li><a href="#contact">Подарочные сертификаты</a></li>
-          <li><a href="#contact">Реставрация мебели</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Документы</h4>
-        <ul>
-          <li><button data-open-modal="modal-privacy">Политика конфиденциальности</button></li>
-          <li><button data-open-modal="modal-offer">Публичная оферта</button></li>
-          <li><a href="tel:+79991234567">+7 999 123-45-67</a></li>
-          <li><a href="mailto:hello@sovkusom.ru">hello@sovkusom.ru</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2025 SoVkuSom · ИП Вкусова С. А. · ИНН 7700000000</span>
-      <span>Сплетено с <em>любовью</em> и ротангом</span>
-    </div>
-  </div>
+<div class="container">
+<div class="footer-grid">
+<div>
+<a href="#home" class="logo">
+<img src="images/logo.png" alt="">
+<span class="logo-text">
+<span class="logo-name">SoVkuSom</span>
+<span class="logo-sub">Авторская мастерская Натальи Девятых</span>
+</span>
+</a>
+<p class="footer-about">Камерная мастерская плетения из ротанга и джута. Учим создавать вещи, в которых живёт тепло рук.</p>
+<div class="footer-social">
+<a href="https://vk.ru/sovkusomnd" target="_blank" rel="noopener" aria-label="ВКонтакте"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.16 17.7c-5.36 0-8.42-3.67-8.55-9.78h2.68c.09 4.49 2.07 6.39 3.64 6.76V7.92h2.52v3.86c1.55-.17 3.18-1.94 3.73-3.86h2.52a7.32 7.32 0 0 1-3.35 4.79 7.6 7.6 0 0 1 3.88 5h-2.77c-.6-1.86-2.1-3.3-4.01-3.49v3.49h-.29z"/></svg></a>
+<a href="#" aria-label="Telegram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 4L3 11.5l5.5 2L10 19l3-3.5 5 4L21 4z"/></svg></a>
+<a href="#" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="6" width="19" height="13" rx="4"/><path d="M10.5 9.8v5.4l4.8-2.7z" fill="currentColor" stroke="none"/></svg></a>
+</div>
+</div>
+<div>
+<h4>Навигация</h4>
+<ul>
+<li><a href="#workshops">Совместники</a></li>
+<li><a href="#lessons">Видео-уроки</a></li>
+<li><a href="#about">Обо мне</a></li>
+<li><a href="#reviews">Отзывы</a></li>
+<li><a href="#faq">Вопросы</a></li>
+</ul>
+</div>
+<div>
+<h4>Форматы</h4>
+<ul>
+<li><a href="#workshops">Мастер-классы в Москве</a></li>
+<li><a href="#lessons">Онлайн-курсы</a></li>
+<li><a href="#contact">Подарочные сертификаты</a></li>
+<li><a href="#contact">Реставрация мебели</a></li>
+</ul>
+</div>
+<div>
+<h4>Документы</h4>
+<ul>
+<li><button data-open-modal="modal-privacy">Политика конфиденциальности</button></li>
+<li><button data-open-modal="modal-offer">Публичная оферта</button></li>
+<li><a href="tel:+79120117250">+7 (912) 011-72-50</a></li>
+<li><a href="mailto:hello@sovkusom.ru">hello@sovkusom.ru</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© 2025 SoVkuSom · ИП Девятых · ИНН 7700000000</span>
+<span>Сплетено с <em>любовью</em></span>
+</div>
+</div>
 </footer>
-
 <!-- ================= STICKY MOBILE BAR ================= -->
 <div class="stickybar" id="stickybar">
-  <a class="btn btn-primary sb-vk" href="https://vk.com/sovкусom" target="_blank" rel="noopener">
-    <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M13.16 17.7c-5.36 0-8.42-3.67-8.55-9.78h2.68c.09 4.49 2.07 6.39 3.64 6.76V7.92h2.52v3.86c1.55-.17 3.18-1.94 3.73-3.86h2.52a7.32 7.32 0 0 1-3.35 4.79 7.6 7.6 0 0 1 3.88 5h-2.77c-.6-1.86-2.1-3.3-4.01-3.49v3.49h-.29z"/></svg>
-    Написать ВК
-  </a>
-  <a class="btn btn-beige sb-tel" href="tel:+79991234567" aria-label="Позвонить">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
-  </a>
+<a class="btn btn-primary sb-vk" href="https://vk.ru/sovkusomnd" target="_blank" rel="noopener">
+<svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M13.16 17.7c-5.36 0-8.42-3.67-8.55-9.78h2.68c.09 4.49 2.07 6.39 3.64 6.76V7.92h2.52v3.86c1.55-.17 3.18-1.94 3.73-3.86h2.52a7.32 7.32 0 0 1-3.35 4.79 7.6 7.6 0 0 1 3.88 5h-2.77c-.6-1.86-2.1-3.3-4.01-3.49v3.49h-.29z"/></svg>
+Написать ВК
+</a>
+<a class="btn btn-beige sb-tel" href="tel:+79120117250" aria-label="Позвонить">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+</a>
 </div>
-
 <!-- ================= LIGHTBOX ================= -->
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр фото">
-  <div class="lb-bg" data-lb-close></div>
-  <button class="lb-close" data-lb-close aria-label="Закрыть"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-  <button class="lb-arrow lb-prev" id="lbPrev" aria-label="Назад"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></button>
-  <figure>
-    <span class="lb-count" id="lbCount">1 / 3</span>
-    <img id="lbImg" src="" alt="Просмотр работы">
-    <figcaption id="lbCap"></figcaption>
-  </figure>
-  <button class="lb-arrow lb-next" id="lbNext" aria-label="Вперёд"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+<div class="lb-bg" data-lb-close></div>
+<button class="lb-close" data-lb-close aria-label="Закрыть"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+<button class="lb-arrow lb-prev" id="lbPrev" aria-label="Назад"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></button>
+<figure>
+<span class="lb-count" id="lbCount">1 / 3</span>
+<img id="lbImg" src="" alt="Просмотр работы">
+<figcaption id="lbCap"></figcaption>
+</figure>
+<button class="lb-arrow lb-next" id="lbNext" aria-label="Вперёд"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
 </div>
-
 <!-- ================= MODALS ================= -->
 <div class="modal" id="modal-privacy" role="dialog" aria-modal="true" aria-labelledby="mpTitle">
-  <div class="modal-bg" data-close-modal></div>
-  <div class="modal-box">
-    <div class="modal-head"><h3 id="mpTitle">Политика конфиденциальности</h3><button class="modal-x" data-close-modal aria-label="Закрыть"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
-    <div class="modal-body">
-      <h4>1. Общие положения</h4>
-      <p>Настоящая политика определяет порядок обработки персональных данных пользователей сайта sovkusom.ru. Оператор — ИП Вкусова С. А. Используя сайт и оставляя заявки, вы соглашаетесь с условиями настоящей политики.</p>
-      <h4>2. Какие данные мы собираем</h4>
-      <p>Имя, номер телефона, адрес электронной почты, а также технические данные (cookie, IP-адрес, UTM-метки), необходимые для улучшения работы сайта и учёта эффективности рекламы.</p>
-      <h4>3. Цели обработки</h4>
-      <p>Связь с вами по оставленной заявке, информирование о мастер-классах и курсах, оформление заказов и исполнение условий публичной оферты.</p>
-      <h4>4. Хранение и защита</h4>
-      <p>Данные хранятся на защищённых серверах на территории РФ и не передаются третьим лицам, за исключением случаев, предусмотренных законодательством.</p>
-      <h4>5. Ваши права</h4>
-      <p>Вы вправе в любой момент запросить уточнение, блокирование или удаление своих данных, написав на hello@sovkusom.ru. Оператор ответит в течение 10 рабочих дней.</p>
-    </div>
-  </div>
+<div class="modal-bg" data-close-modal></div>
+<div class="modal-box">
+<div class="modal-head"><h3 id="mpTitle">Политика конфиденциальности</h3><button class="modal-x" data-close-modal aria-label="Закрыть"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+<div class="modal-body">
+<h4>1. Общие положения</h4>
+<p>Настоящая политика определяет порядок обработки персональных данных пользователей сайта sovkusom.ru. Оператор — ИП Девятых Используя сайт и оставляя заявки, вы соглашаетесь с условиями настоящей политики.</p>
+<h4>2. Какие данные мы собираем</h4>
+<p>Имя, номер телефона, адрес электронной почты, а также технические данные (cookie, IP-адрес, UTM-метки), необходимые для улучшения работы сайта и учёта эффективности рекламы.</p>
+<h4>3. Цели обработки</h4>
+<p>Связь с вами по оставленной заявке, информирование о мастер-классах и курсах, оформление заказов и исполнение условий публичной оферты.</p>
+<h4>4. Хранение и защита</h4>
+<p>Данные хранятся на защищённых серверах на территории РФ и не передаются третьим лицам, за исключением случаев, предусмотренных законодательством.</p>
+<h4>5. Ваши права</h4>
+<p>Вы вправе в любой момент запросить уточнение, блокирование или удаление своих данных, написав на hello@sovkusom.ru. Оператор ответит в течение 10 рабочих дней.</p>
 </div>
-
+</div>
+</div>
 <div class="modal" id="modal-offer" role="dialog" aria-modal="true" aria-labelledby="moTitle">
-  <div class="modal-bg" data-close-modal></div>
-  <div class="modal-box">
-    <div class="modal-head"><h3 id="moTitle">Публичная оферта</h3><button class="modal-x" data-close-modal aria-label="Закрыть"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
-    <div class="modal-body">
-      <h4>1. Предмет оферты</h4>
-      <p>ИП Вкусова С. А. предлагает физическим лицам заключить договор на оказание услуг: проведение мастер-классов, предоставление доступа к видео-курсам и продажу изделий ручной работы на условиях настоящей оферты.</p>
-      <h4>2. Акцепт</h4>
-      <p>Акцептом оферты является оплата услуг любым доступным способом. С момента оплаты договор считается заключённым.</p>
-      <h4>3. Оплата</h4>
-      <p>Оплата производится банковской картой, через СБП или переводом. Для офлайн мастер-классов допускается предоплата 30%, остаток — в день проведения.</p>
-      <h4>4. Перенос и возврат</h4>
-      <p>При отмене участия не позднее чем за 48 часов до начала — возврат 100% стоимости либо перенос на другую дату. При отмене менее чем за 48 часов удерживается стоимость материалов.</p>
-      <h4>5. Доступ к онлайн-курсам</h4>
-      <p>Доступ предоставляется в течение 24 часов после оплаты и действует бессрочно. Материалы курсов предназначены для личного использования и не подлежат распространению.</p>
-    </div>
-  </div>
+<div class="modal-bg" data-close-modal></div>
+<div class="modal-box">
+<div class="modal-head"><h3 id="moTitle">Публичная оферта</h3><button class="modal-x" data-close-modal aria-label="Закрыть"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+<div class="modal-body">
+<h4>1. Предмет оферты</h4>
+<p>ИП Девятых предлагает физическим лицам заключить договор на оказание услуг: проведение мастер-классов, предоставление доступа к видео-курсам и продажу изделий ручной работы на условиях настоящей оферты.</p>
+<h4>2. Акцепт</h4>
+<p>Акцептом оферты является оплата услуг любым доступным способом. С момента оплаты договор считается заключённым.</p>
+<h4>3. Оплата</h4>
+<p>Оплата производится банковской картой, через СБП или переводом. Для офлайн мастер-классов допускается предоплата 30%, остаток — в день проведения.</p>
+<h4>4. Перенос и возврат</h4>
+<p>При отмене участия не позднее чем за 48 часов до начала — возврат 100% стоимости либо перенос на другую дату. При отмене менее чем за 48 часов удерживается стоимость материалов.</p>
+<h4>5. Доступ к онлайн-курсам</h4>
+<p>Доступ предоставляется в течение 24 часов после оплаты и действует бессрочно. Материалы курсов предназначены для личного использования и не подлежат распространению.</p>
 </div>
-
+</div>
+</div>
 <div class="modal" id="modal-lead" role="dialog" aria-modal="true" aria-labelledby="mlTitle">
-  <div class="modal-bg" data-close-modal></div>
-  <div class="modal-box">
-    <div class="modal-head"><h3 id="mlTitle">Гайд «Первые шаги в плетении»</h3><button class="modal-x" data-close-modal aria-label="Закрыть"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
-    <div class="lead-inner">
-      <div class="book"><img src="https://picsum.photos/seed/weaving-guide-book/450/600" alt="Обложка гайда по плетению"></div>
-      <div>
-        <form id="leadForm" novalidate>
-          <div class="form-body">
-            <p style="font-size:14.5px;color:var(--ink-soft)">Оставьте контакты — пришлю гайд и расскажу о ближайших мастер-классах. Никакого спама, только тепло.</p>
-            <div class="field">
-              <label for="lName">Имя *</label>
-              <input id="lName" name="name" type="text" placeholder="Как к вам обращаться?">
-              <span class="err">Пожалуйста, представьтесь</span>
-            </div>
-            <div class="field">
-              <label for="lEmail">E-mail *</label>
-              <input id="lEmail" name="email" type="email" placeholder="you@example.ru">
-              <span class="err">Похоже, в адресе ошибка</span>
-            </div>
-            <label class="check" id="leadConsentWrap">
-              <input type="checkbox" id="lConsent" name="consent">
-              <span class="box"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg></span>
-              <span>Согласна(ен) на обработку персональных данных</span>
-            </label>
-            <span class="err" id="leadConsentErr" style="display:none;font-size:13px;color:var(--error);font-weight:600;margin-top:8px">Нужно согласие на обработку данных</span>
-            <button type="submit" class="btn btn-primary form-submit" style="margin-top:22px">Получить бесплатно</button>
-          </div>
-          <div class="form-success" id="leadSuccess">
-            <span class="ok"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg></span>
-            <h4>Гайд уже в пути! 📮</h4>
-            <p>Проверьте почту в течение пары минут — и загляните в папку «Промоакции».</p>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
+<div class="modal-bg" data-close-modal></div>
+<div class="modal-box">
+<div class="modal-head"><h3 id="mlTitle">Гайд «Первые шаги в плетении»</h3><button class="modal-x" data-close-modal aria-label="Закрыть"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+<div class="lead-inner">
+<div class="book"><img src="https://picsum.photos/seed/weaving-guide-book/450/600" alt="Обложка гайда по плетению"></div>
+<div>
+<form id="leadForm" novalidate>
+<div class="form-body">
+<p style="font-size:14.5px;color:var(--ink-soft)">Оставьте контакты — пришлю гайд и расскажу о ближайших мастер-классах. Никакого спама, только тепло.</p>
+<div class="field">
+<label for="lName">Имя *</label>
+<input id="lName" name="name" type="text" placeholder="Как к вам обращаться?">
+<span class="err">Пожалуйста, представьтесь</span>
 </div>
-
+<div class="field">
+<label for="lEmail">E-mail *</label>
+<input id="lEmail" name="email" type="email" placeholder="you@example.ru">
+<span class="err">Похоже, в адресе ошибка</span>
+</div>
+<label class="check" id="leadConsentWrap">
+<input type="checkbox" id="lConsent" name="consent">
+<span class="box"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg></span>
+<span>Согласна(ен) на обработку персональных данных</span>
+</label>
+<span class="err" id="leadConsentErr" style="display:none;font-size:13px;color:var(--error);font-weight:600;margin-top:8px">Нужно согласие на обработку данных</span>
+<button type="submit" class="btn btn-primary form-submit" style="margin-top:22px">Получить бесплатно</button>
+</div>
+<div class="form-success" id="leadSuccess">
+<span class="ok"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg></span>
+<h4>Гайд уже в пути! 📮</h4>
+<p>Проверьте почту в течение пары минут — и загляните в папку «Промоакции».</p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
 <script>
 (function(){
 "use strict";
@@ -1251,141 +1865,191 @@ const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const FINE = matchMedia('(pointer: fine)').matches;
 const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
-
 /* ---------- Marquee: дублируем контент для бесшовного цикла ---------- */
 const mq = $('#marqueeTrack');
 if (mq) mq.innerHTML += mq.innerHTML;
-
 /* ---------- Header & sticky bar ---------- */
 const header = $('#header'), stickybar = $('#stickybar');
 function onScrollTop(){
-  header.classList.toggle('is-scrolled', scrollY > 40);
-  stickybar.classList.toggle('show', scrollY > 480);
+header.classList.toggle('is-scrolled', scrollY > 40);
+stickybar.classList.toggle('show', scrollY > 480);
 }
 addEventListener('scroll', onScrollTop, {passive:true}); onScrollTop();
-
 /* ---------- Drawer ---------- */
 const drawer = $('#drawer'), burger = $('#burger');
 function setDrawer(open){
-  drawer.classList.toggle('open', open);
-  document.body.classList.toggle('drawer-open', open);
-  document.body.classList.toggle('lock', open);
-  burger.setAttribute('aria-expanded', open);
+drawer.classList.toggle('open', open);
+document.body.classList.toggle('drawer-open', open);
+document.body.classList.toggle('lock', open);
+burger.setAttribute('aria-expanded', open);
 }
 burger.addEventListener('click', () => setDrawer(!drawer.classList.contains('open')));
 drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setDrawer(false)));
-
 /* ---------- Scroll reveal + stagger ---------- */
 $$('[data-stagger]').forEach(parent => {
-  [...parent.children].forEach((child,i) => child.style.setProperty('--d', (i * .12) + 's'));
+[...parent.children].forEach((child,i) => child.style.setProperty('--d', (i * .12) + 's'));
 });
 const io = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); } });
+entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); } });
 }, {threshold:.14, rootMargin:'0px 0px -6% 0px'});
 $$('.rv').forEach(el => REDUCED ? el.classList.add('on') : io.observe(el));
-
 /* hero stagger запуск */
 requestAnimationFrame(() => setTimeout(() => $('#home').classList.add('on'), 80));
-
 /* ---------- Active nav ---------- */
 const navLinks = $$('.nav a');
 const secIO = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (!e.isIntersecting) return;
-    navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
-  });
+entries.forEach(e => {
+if (!e.isIntersecting) return;
+navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+});
 }, {rootMargin:'-40% 0px -55% 0px'});
-['workshops','lessons','about','reviews','faq','contact'].forEach(id => { const el = document.getElementById(id); if (el) secIO.observe(el); });
-
+['workshops','lessons','about','gallery','reviews','faq','contact'].forEach(id => { const el = document.getElementById(id); if (el) secIO.observe(el); });
 /* ---------- Parallax blobs ---------- */
 const plxEls = $$('.plx');
 if (!REDUCED && plxEls.length){
-  let ticking = false;
-  function parallax(){
-    const vh = innerHeight;
-    plxEls.forEach(el => {
-      const r = el.getBoundingClientRect();
-      if (r.bottom < -200 || r.top > vh + 200) return;
-      const off = (r.top + r.height/2 - vh/2) * parseFloat(el.dataset.speed || .05);
-      el.style.transform = `translate3d(0, ${off.toFixed(1)}px, 0)`;
-    });
-    ticking = false;
-  }
-  addEventListener('scroll', () => { if (!ticking){ requestAnimationFrame(parallax); ticking = true; } }, {passive:true});
-  parallax();
+let ticking = false;
+function parallax(){
+const vh = innerHeight;
+plxEls.forEach(el => {
+const r = el.getBoundingClientRect();
+if (r.bottom < -200 || r.top > vh + 200) return;
+const off = (r.top + r.height/2 - vh/2) * parseFloat(el.dataset.speed || .05);
+el.style.transform = `translate3d(0, ${off.toFixed(1)}px, 0)`;
+});
+ticking = false;
 }
-
+addEventListener('scroll', () => { if (!ticking){ requestAnimationFrame(parallax); ticking = true; } }, {passive:true});
+parallax();
+}
 /* ---------- Magnetic buttons ---------- */
 if (FINE && !REDUCED){
-  $$('.magnet').forEach(btn => {
-    btn.addEventListener('mousemove', e => {
-      const r = btn.getBoundingClientRect();
-      const dx = (e.clientX - r.left - r.width/2) / r.width;
-      const dy = (e.clientY - r.top - r.height/2) / r.height;
-      btn.style.transform = `translate(${dx*10}px, ${dy*8}px)`;
-    });
-    btn.addEventListener('mouseleave', () => btn.style.transform = '');
-  });
+$$('.magnet').forEach(btn => {
+btn.addEventListener('mousemove', e => {
+const r = btn.getBoundingClientRect();
+const dx = (e.clientX - r.left - r.width/2) / r.width;
+const dy = (e.clientY - r.top - r.height/2) / r.height;
+btn.style.transform = `translate(${dx*10}px, ${dy*8}px)`;
+});
+btn.addEventListener('mouseleave', () => btn.style.transform = '');
+});
 }
-
 /* ---------- Custom cursor ---------- */
 if (FINE && !REDUCED){
-  const cur = $('#cursor');
-  let cx = -100, cy = -100, tx = cx, ty = cy;
-  addEventListener('mousemove', e => { tx = e.clientX; ty = e.clientY; cur.style.opacity = .9; });
-  (function loop(){ cx += (tx-cx)*.2; cy += (ty-cy)*.2; cur.style.left = cx+'px'; cur.style.top = cy+'px'; requestAnimationFrame(loop); })();
-  document.addEventListener('mouseover', e => {
-    if (e.target.closest('a, button, [data-full], .faq-q, select, input, label.check')) cur.classList.add('big');
-  });
-  document.addEventListener('mouseout', e => {
-    if (e.target.closest('a, button, [data-full], .faq-q, select, input, label.check')) cur.classList.remove('big');
-  });
+const cur = $('#cursor');
+let cx = -100, cy = -100, tx = cx, ty = cy;
+addEventListener('mousemove', e => { tx = e.clientX; ty = e.clientY; cur.style.opacity = .9; });
+(function loop(){ cx += (tx-cx)*.2; cy += (ty-cy)*.2; cur.style.left = cx+'px'; cur.style.top = cy+'px'; requestAnimationFrame(loop); })();
+document.addEventListener('mouseover', e => {
+if (e.target.closest('a, button, [data-full], .faq-q, select, input, label.check, summary')) cur.classList.add('big');
+});
+document.addEventListener('mouseout', e => {
+if (e.target.closest('a, button, [data-full], .faq-q, select, input, label.check, summary')) cur.classList.remove('big');
+});
 }
-
 /* ---------- Count-up ---------- */
 const cntIO = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (!e.isIntersecting) return;
-    cntIO.unobserve(e.target);
-    const el = e.target, target = +el.dataset.count, suf = el.dataset.suffix || '';
-    const fmt = n => n.toLocaleString('ru-RU') + suf;
-    if (REDUCED){ el.textContent = fmt(target); return; }
-    const t0 = performance.now(), dur = 1400;
-    (function tick(t){
-      const p = Math.min(1, (t - t0)/dur), ease = 1 - Math.pow(1-p, 3);
-      el.textContent = fmt(Math.round(target * ease));
-      if (p < 1) requestAnimationFrame(tick);
-    })(t0);
-  });
+entries.forEach(e => {
+if (!e.isIntersecting) return;
+cntIO.unobserve(e.target);
+const el = e.target, target = +el.dataset.count, suf = el.dataset.suffix || '';
+const fmt = n => n.toLocaleString('ru-RU') + suf;
+if (REDUCED){ el.textContent = fmt(target); return; }
+const t0 = performance.now(), dur = 1400;
+(function tick(t){
+const p = Math.min(1, (t - t0)/dur), ease = 1 - Math.pow(1-p, 3);
+el.textContent = fmt(Math.round(target * ease));
+if (p < 1) requestAnimationFrame(tick);
+})(t0);
+});
 }, {threshold:.5});
 $$('[data-count]').forEach(el => cntIO.observe(el));
-
 /* ---------- Gallery drag scroll ---------- */
 const gal = $('#galTrack');
 let gDown = false, gStartX = 0, gScroll = 0;
 gal.addEventListener('pointerdown', e => {
-  if (e.pointerType !== 'mouse') return;
-  gDown = true; gStartX = e.clientX; gScroll = gal.scrollLeft; gal.classList.add('dragging');
+if (e.pointerType !== 'mouse') return;
+gDown = true; gStartX = e.clientX; gScroll = gal.scrollLeft; gal.classList.add('dragging');
 });
 addEventListener('pointermove', e => { if (gDown) gal.scrollLeft = gScroll - (e.clientX - gStartX); });
 addEventListener('pointerup', () => { gDown = false; gal.classList.remove('dragging'); });
+/* ---------- Mini-carousels: фото работ в карточках курсов (зацикленные) ---------- */
+$$('[data-carousel]').forEach(car => {
+  const track = car.querySelector('.cc-track');
+  const dotsWrap = car.querySelector('.cc-dots');
+  const count = car.querySelector('.cc-count');
+  const prev = car.querySelector('.cc-prev');
+  const next = car.querySelector('.cc-next');
+  const N = track.children.length;
+  if (N < 2){
+    if (dotsWrap) dotsWrap.style.display = 'none';
+    if (count) count.style.display = 'none';
+    if (prev) prev.style.display = 'none';
+    if (next) next.style.display = 'none';
+    return;
+  }
 
+  const first = track.children[0], last = track.children[N - 1];
+  const cFirst = first.cloneNode(true), cLast = last.cloneNode(true);
+  cFirst.setAttribute('aria-hidden', 'true');
+  cLast.setAttribute('aria-hidden', 'true');
+  track.appendChild(cFirst);
+  track.insertBefore(cLast, first);
+
+  for (let i = 0; i < N; i++){
+    const d = document.createElement('button');
+    d.type = 'button';
+    d.setAttribute('aria-label', 'Фото ' + (i + 1));
+    d.addEventListener('click', () => goTo(i + 1, true));
+    dotsWrap.appendChild(d);
+  }
+  const dots = [...dotsWrap.children];
+
+  const W  = () => track.clientWidth;
+  const di = () => Math.round(track.scrollLeft / W());
+  const ri = () => (di() - 1 + N) % N;
+  const place = i => { track.scrollLeft = i * W(); };
+  const goTo  = (i, smooth) => track.scrollTo({ left: i * W(), behavior: smooth && !REDUCED ? 'smooth' : 'auto' });
+
+  function paint(){
+    const r = ri();
+    dots.forEach((d, j) => d.classList.toggle('active', j === r));
+    if (count) count.textContent = (r + 1) + ' / ' + N;
+  }
+
+  let t = null;
+  track.addEventListener('scroll', () => {
+    requestAnimationFrame(paint);
+    clearTimeout(t);
+    t = setTimeout(() => {
+      const i = di();
+      if (i === 0) place(N);
+      if (i === N + 1) place(1);
+    }, 90);
+  }, {passive:true});
+
+  next.addEventListener('click', () => goTo(di() + 1, true));
+  prev.addEventListener('click', () => goTo(di() - 1, true));
+  addEventListener('resize', () => place(ri() + 1));
+
+  place(1);
+  paint();
+});
 /* ---------- Lightbox ---------- */
 const lb = $('#lightbox'), lbImg = $('#lbImg'), lbCap = $('#lbCap'), lbCount = $('#lbCount');
 let lbItems = [], lbIdx = 0;
 $$('[data-full]').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const group = btn.closest('[data-lb-group]');
-    lbItems = group ? [...group.querySelectorAll('[data-full]')].map(b => ({src:b.dataset.full, cap:b.dataset.caption||''}))
-                     : [{src:btn.dataset.full, cap:btn.dataset.caption||''}];
-    lbIdx = group ? [...group.querySelectorAll('[data-full]')].indexOf(btn) : 0;
-    lbShow(); lb.classList.add('open'); document.body.classList.add('lock');
-  });
+btn.addEventListener('click', () => {
+const group = btn.closest('[data-lb-group]');
+lbItems = group ? [...group.querySelectorAll('[data-full]')].map(b => ({src:b.dataset.full, cap:b.dataset.caption||''}))
+: [{src:btn.dataset.full, cap:btn.dataset.caption||''}];
+lbIdx = group ? [...group.querySelectorAll('[data-full]')].indexOf(btn) : 0;
+lbShow(); lb.classList.add('open'); document.body.classList.add('lock');
+});
 });
 function lbShow(){
-  const it = lbItems[lbIdx];
-  lbImg.src = it.src; lbImg.alt = it.cap || 'Фото работы';
-  lbCap.textContent = it.cap; lbCount.textContent = (lbIdx+1) + ' / ' + lbItems.length;
+const it = lbItems[lbIdx];
+lbImg.src = it.src; lbImg.alt = it.cap || 'Фото работы';
+lbCap.textContent = it.cap; lbCount.textContent = (lbIdx+1) + ' / ' + lbItems.length;
 }
 function lbClose(){ lb.classList.remove('open'); document.body.classList.remove('lock'); }
 function lbNav(d){ lbIdx = (lbIdx + d + lbItems.length) % lbItems.length; lbShow(); }
@@ -1395,20 +2059,18 @@ $$('[data-lb-close]').forEach(el => el.addEventListener('click', lbClose));
 let tsx = 0;
 lb.addEventListener('touchstart', e => tsx = e.touches[0].clientX, {passive:true});
 lb.addEventListener('touchend', e => {
-  const d = e.changedTouches[0].clientX - tsx;
-  if (Math.abs(d) > 45) lbNav(d > 0 ? -1 : 1);
+const d = e.changedTouches[0].clientX - tsx;
+if (Math.abs(d) > 45) lbNav(d > 0 ? -1 : 1);
 }, {passive:true});
-
 /* ---------- FAQ accordion ---------- */
 $$('.faq-item').forEach(item => {
-  const q = item.querySelector('.faq-q');
-  q.addEventListener('click', () => {
-    const open = item.classList.contains('open');
-    $$('.faq-item.open').forEach(o => { o.classList.remove('open'); o.querySelector('.faq-q').setAttribute('aria-expanded','false'); });
-    if (!open){ item.classList.add('open'); q.setAttribute('aria-expanded','true'); }
-  });
+const q = item.querySelector('.faq-q');
+q.addEventListener('click', () => {
+const open = item.classList.contains('open');
+$$('.faq-item.open').forEach(o => { o.classList.remove('open'); o.querySelector('.faq-q').setAttribute('aria-expanded','false'); });
+if (!open){ item.classList.add('open'); q.setAttribute('aria-expanded','true'); }
 });
-
+});
 /* ---------- Reviews slider ---------- */
 const track = $('#revTrack'), cards = [...track.children];
 const prevB = $('#revPrev'), nextB = $('#revNext'), dotsWrap = $('#revDots');
@@ -1416,98 +2078,92 @@ let rIdx = 0, dots = [];
 const perView = () => innerWidth < 880 ? 1 : 2;
 const maxIdx = () => Math.max(0, cards.length - perView());
 function buildDots(){
-  dotsWrap.innerHTML = '';
-  for (let i = 0; i <= maxIdx(); i++){
-    const b = document.createElement('button');
-    b.setAttribute('aria-label','Отзывы ' + (i+1));
-    b.addEventListener('click', () => goRev(i));
-    dotsWrap.appendChild(b);
-  }
-  dots = [...dotsWrap.children];
+dotsWrap.innerHTML = '';
+for (let i = 0; i <= maxIdx(); i++){
+const b = document.createElement('button');
+b.setAttribute('aria-label','Отзывы ' + (i+1));
+b.addEventListener('click', () => goRev(i));
+dotsWrap.appendChild(b);
+}
+dots = [...dotsWrap.children];
 }
 function goRev(i){
-  rIdx = Math.max(0, Math.min(i, maxIdx()));
-  const step = cards[0].getBoundingClientRect().width + 26;
-  track.style.transform = `translateX(${-rIdx * step}px)`;
-  dots.forEach((d,j) => d.classList.toggle('active', j === rIdx));
-  prevB.disabled = rIdx === 0; nextB.disabled = rIdx >= maxIdx();
+rIdx = Math.max(0, Math.min(i, maxIdx()));
+const step = cards[0].getBoundingClientRect().width + 26;
+track.style.transform = `translateX(${-rIdx * step}px)`;
+dots.forEach((d,j) => d.classList.toggle('active', j === rIdx));
+prevB.disabled = rIdx === 0; nextB.disabled = rIdx >= maxIdx();
 }
 prevB.addEventListener('click', () => goRev(rIdx-1));
 nextB.addEventListener('click', () => goRev(rIdx+1));
 addEventListener('resize', () => { buildDots(); goRev(rIdx); });
 buildDots(); goRev(0);
-
 /* ---------- Modals ---------- */
 function openModal(id){ const m = document.getElementById(id); if (!m) return; m.classList.add('open'); document.body.classList.add('lock'); }
 function closeModal(m){ m.classList.remove('open'); if (!$$('.modal.open').length) document.body.classList.remove('lock'); }
 $$('[data-open-modal]').forEach(b => b.addEventListener('click', e => { e.preventDefault(); openModal(b.dataset.openModal); }));
 $$('[data-close-modal]').forEach(b => b.addEventListener('click', () => closeModal(b.closest('.modal'))));
 addEventListener('keydown', e => {
-  if (e.key === 'Escape'){ $$('.modal.open').forEach(closeModal); if (lb.classList.contains('open')) lbClose(); setDrawer(false); }
-  if (lb.classList.contains('open')){
-    if (e.key === 'ArrowLeft') lbNav(-1);
-    if (e.key === 'ArrowRight') lbNav(1);
-  }
+if (e.key === 'Escape'){ $$('.modal.open').forEach(closeModal); if (lb.classList.contains('open')) lbClose(); setDrawer(false); }
+if (lb.classList.contains('open')){
+if (e.key === 'ArrowLeft') lbNav(-1);
+if (e.key === 'ArrowRight') lbNav(1);
+}
 });
-
 /* ---------- UTM hidden fields ---------- */
 const usp = new URLSearchParams(location.search);
 const form = $('#signupForm');
 ['source','medium','campaign','term','content'].forEach(k => {
-  const inp = form.querySelector(`[name="utm_${k}"]`);
-  if (inp) inp.value = usp.get('utm_' + k) || '';
+const inp = form.querySelector(`[name="utm_${k}"]`);
+if (inp) inp.value = usp.get('utm_' + k) || '';
 });
 form.querySelector('[name="landing_ts"]').value = new Date().toISOString();
-
 /* ---------- Enroll prefill ---------- */
 $$('[data-enroll]').forEach(b => b.addEventListener('click', () => {
-  $('#fTopic').value = 'Живой мастер-класс';
-  const note = document.createElement('option'); // мягко отмечаем в теме
-  document.getElementById('contact').scrollIntoView({behavior: REDUCED ? 'auto' : 'smooth'});
-  setTimeout(() => $('#fName').focus({preventScroll:true}), 700);
+$('#fTopic').value = 'Видео-курс или урок';
+document.getElementById('contact').scrollIntoView({behavior: REDUCED ? 'auto' : 'smooth'});
+setTimeout(() => $('#fName').focus({preventScroll:true}), 700);
 }));
-
 /* ---------- Form validation ---------- */
 function setErr(input, on){ input.closest('.field').classList.toggle('error', on); }
 function validateForm(f, opts){
-  let ok = true;
-  const name = f.querySelector('[name="name"]');
-  if (name.value.trim().length < 2){ setErr(name, true); ok = false; } else setErr(name, false);
-  if (opts.email){
-    const em = f.querySelector('[name="email"]');
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em.value.trim())){ setErr(em, true); ok = false; } else setErr(em, false);
-  }
-  if (opts.phone){
-    const ph = f.querySelector('[name="phone"]');
-    const digits = ph.value.replace(/\D/g, '');
-    if (digits.length < 10 && ph.value.trim().length < 3){ setErr(ph, true); ok = false; } else setErr(ph, false);
-  }
-  const consent = f.querySelector('[name="consent"]');
-  const errEl = f.closest('form') ? null : null;
-  const consentErr = f.id === 'leadForm' ? $('#leadConsentErr') : $('#consentErr');
-  const wrap = f.id === 'leadForm' ? $('#leadConsentWrap') : $('#consentWrap');
-  if (!consent.checked){ consentErr.style.display = 'block'; wrap.classList.add('error-lbl'); ok = false; }
-  else { consentErr.style.display = 'none'; wrap.classList.remove('error-lbl'); }
-  return ok;
+let ok = true;
+const name = f.querySelector('[name="name"]');
+if (name.value.trim().length < 2){ setErr(name, true); ok = false; } else setErr(name, false);
+if (opts.email){
+const em = f.querySelector('[name="email"]');
+if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em.value.trim())){ setErr(em, true); ok = false; } else setErr(em, false);
+}
+if (opts.phone){
+const ph = f.querySelector('[name="phone"]');
+const digits = ph.value.replace(/\D/g, '');
+if (digits.length < 10 && ph.value.trim().length < 3){ setErr(ph, true); ok = false; } else setErr(ph, false);
+}
+const consent = f.querySelector('[name="consent"]');
+const consentErr = f.id === 'leadForm' ? $('#leadConsentErr') : $('#consentErr');
+const wrap = f.id === 'leadForm' ? $('#leadConsentWrap') : $('#consentWrap');
+if (!consent.checked){ consentErr.style.display = 'block'; wrap.classList.add('error-lbl'); ok = false; }
+else { consentErr.style.display = 'none'; wrap.classList.remove('error-lbl'); }
+return ok;
 }
 form.addEventListener('submit', e => {
-  e.preventDefault();
-  if (!validateForm(form, {phone:true})) return;
-  form.querySelector('.form-body').style.display = 'none';
-  $('#formSuccess').classList.add('show');
+e.preventDefault();
+if (!validateForm(form, {phone:true})) return;
+form.querySelector('.form-body').style.display = 'none';
+$('#formSuccess').classList.add('show');
 });
 const leadForm = $('#leadForm');
 leadForm.addEventListener('submit', e => {
-  e.preventDefault();
-  if (!validateForm(leadForm, {email:true})) return;
-  leadForm.querySelector('.form-body').style.display = 'none';
-  $('#leadSuccess').classList.add('show');
+e.preventDefault();
+if (!validateForm(leadForm, {email:true})) return;
+leadForm.querySelector('.form-body').style.display = 'none';
+$('#leadSuccess').classList.add('show');
 });
 /* live-очистка ошибок */
 $$('.field input, .field select').forEach(inp => inp.addEventListener('input', () => setErr(inp, false)));
 $$('[name="consent"]').forEach(c => c.addEventListener('change', () => {
-  const err = c.closest('form').id === 'leadForm' ? $('#leadConsentErr') : $('#consentErr');
-  if (c.checked){ err.style.display = 'none'; c.closest('label').classList.remove('error-lbl'); }
+const err = c.closest('form').id === 'leadForm' ? $('#leadConsentErr') : $('#consentErr');
+if (c.checked){ err.style.display = 'none'; c.closest('label').classList.remove('error-lbl'); }
 }));
 })();
 </script>
