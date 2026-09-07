@@ -302,7 +302,7 @@ margin:56px 0 24px;display:flex;align-items:center;gap:14px;font-weight:500;lett
 .subsection-title::before{content:"";width:28px;height:2px;background:var(--terra);border-radius:2px;flex:none}
 .subsection-title:first-of-type{margin-top:40px}
 /* ---------- Mini-carousel: слоты под фото работ ---------- */
-.card-carousel{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:var(--cream);flex:none;min-height:0}
+.card-carousel{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:1/1;background:var(--cream);flex:none;min-height:0}
 .cc-track{position:absolute;inset:0;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .cc-track::-webkit-scrollbar{display:none}
 .cc-slide{flex:0 0 100%;min-width:100%;height:100%;scroll-snap-align:start}
@@ -313,11 +313,11 @@ font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;letter-spacin
 .cc-dots button{width:7px;height:7px;padding:0;border-radius:50%;background:rgba(253,251,247,.55);transition:.3s var(--ease)}
 .cc-dots button.active{background:var(--terra);width:18px;border-radius:999px}
 .cc-prev,.cc-next{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:28px;height:28px;border-radius:50%;
-background:rgba(253,251,247,.9);color:var(--terra-dk);display:grid;place-items:center;
-opacity:0;transition:opacity .3s,background .3s;box-shadow:var(--shadow-sm)}
+background:rgba(253,251,247,.55);color:var(--terra-dk);display:grid;place-items:center;
+opacity:.75;transition:opacity .3s,background .3s;box-shadow:var(--shadow-sm);
+-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
 .cc-prev{left:8px}.cc-next{right:8px}
-.cc-prev:hover,.cc-next:hover{background:var(--peach)}
-.card-carousel:hover .cc-prev,.card-carousel:hover .cc-next,.card-carousel:focus-within .cc-prev,.card-carousel:focus-within .cc-next{opacity:1}
+.cc-prev:hover,.cc-next:hover{opacity:1;background:rgba(232,180,156,.9)}
 @media (pointer:coarse){.cc-prev,.cc-next{display:none}}
 /* ---------- Free grid ---------- */
 .free-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;position:relative;z-index:2}
@@ -363,6 +363,7 @@ position:relative;overflow:hidden;display:flex;flex-direction:column}
 .sub-card.promo::before{background:var(--ink-deep)}
 .sub-card h4{font-family:var(--font-head);font-size:22px;color:var(--ink-deep);margin-bottom:10px;font-weight:500}
 .sub-card > p{color:var(--ink-soft);font-size:14.5px;margin-bottom:18px}
+.sub-card .card-carousel{aspect-ratio:1/1;margin:0 0 20px;border-radius:12px}
 .chat-link{display:inline-flex;align-items:center;gap:8px;background:var(--sage-soft);color:var(--ink-deep);
 padding:11px 16px;border-radius:12px;font-size:14px;font-weight:700;margin-bottom:18px;
 transition:background .3s,transform .3s;width:max-content}
@@ -810,9 +811,9 @@ html{scroll-behavior:auto}
 <article class="free-card rv">
 <div class="card-carousel" data-carousel>
 <div class="cc-track">
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kashpo-free-1/480/360" alt="Урок по кашпо — пример работы 1"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kashpo-free-2/480/360" alt="Урок по кашпо — пример работы 2"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kashpo-free-3/480/360" alt="Урок по кашпо — пример работы 3"></div>
+<div class="cc-slide"><img loading="lazy" src="images/free_mk/kashpo1.jpeg" alt="Урок по кашпо — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="images/free_mk/kashpo1.jpeg" alt="Урок по кашпо — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="images/free_mk/kashpo1.jpeg" alt="Урок по кашпо — пример работы 3"></div>
 </div>
 <span class="cc-count">1 / 3</span>
 <div class="cc-dots"></div>
@@ -832,9 +833,9 @@ html{scroll-behavior:auto}
 <article class="free-card rv">
 <div class="card-carousel" data-carousel>
 <div class="cc-track">
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-basket-free-1/480/360" alt="Бескаркасная корзина — пример работы 1"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-basket-free-2/480/360" alt="Бескаркасная корзина — пример работы 2"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-basket-free-3/480/360" alt="Бескаркасная корзина — пример работы 3"></div>
+<div class="cc-slide"><img loading="lazy" src="images/free_mk/korzina1.jpg" alt="Бескаркасная корзина — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="images/free_mk/korzina1.jpg" alt="Бескаркасная корзина — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="images/free_mk/korzina1.jpg" alt="Бескаркасная корзина — пример работы 3"></div>
 </div>
 <span class="cc-count">1 / 3</span>
 <div class="cc-dots"></div>
@@ -854,9 +855,9 @@ html{scroll-behavior:auto}
 <article class="free-card rv">
 <div class="card-carousel" data-carousel>
 <div class="cc-track">
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-wreath-free-1/480/360" alt="Венок — пример работы 1"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-wreath-free-2/480/360" alt="Венок — пример работы 2"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-wreath-free-3/480/360" alt="Венок — пример работы 3"></div>
+<div class="cc-slide"><img loading="lazy" src="images/free_mk/venok1.jpg" alt="Венок — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="images/free_mk/venok1.jpg" alt="Венок — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="images/free_mk/venok1.jpg" alt="Венок — пример работы 3"></div>
 </div>
 <span class="cc-count">1 / 3</span>
 <div class="cc-dots"></div>
@@ -876,9 +877,9 @@ html{scroll-behavior:auto}
 <article class="free-card rv">
 <div class="card-carousel" data-carousel>
 <div class="cc-track">
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-lukoshko-1/480/360" alt="Корзина «Лукошко» — пример работы 1"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-lukoshko-2/480/360" alt="Корзина «Лукошко» — пример работы 2"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-lukoshko-3/480/360" alt="Корзина «Лукошко» — пример работы 3"></div>
+<div class="cc-slide"><img loading="lazy" src="images/free_mk/lukoshko1.jpeg" alt="Корзина «Лукошко» — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="images/free_mk/lukoshko1.jpeg" alt="Корзина «Лукошко» — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="images/free_mk/lukoshko1.jpeg" alt="Корзина «Лукошко» — пример работы 3"></div>
 </div>
 <span class="cc-count">1 / 3</span>
 <div class="cc-dots"></div>
@@ -902,9 +903,9 @@ html{scroll-behavior:auto}
 <article class="paid-card rv">
 <div class="card-carousel" data-carousel>
 <div class="cc-track">
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-lenty-1/480/360" alt="Все про ленты — пример работы 1"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-lenty-2/480/360" alt="Все про ленты — пример работы 2"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-lenty-3/480/360" alt="Все про ленты — пример работы 3"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/lenta1.jpg" alt="Все про ленты — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/lenta2.jpg" alt="Все про ленты — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/lenta3.jpg" alt="Все про ленты — пример работы 3"></div>
 </div>
 <span class="cc-count">1 / 3</span>
 <div class="cc-dots"></div>
@@ -924,9 +925,9 @@ html{scroll-behavior:auto}
 <article class="paid-card rv">
 <div class="card-carousel" data-carousel>
 <div class="cc-track">
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kreslo-kipr-1/480/360" alt="Кресло Кипр — пример работы 1"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kreslo-kipr-2/480/360" alt="Кресло Кипр — пример работы 2"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kreslo-kipr-3/480/360" alt="Кресло Кипр — пример работы 3"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/kipr1.jpg" alt="Кресло Кипр — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/kipr2.jpg" alt="Кресло Кипр — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/kipr3.jpg" alt="Кресло Кипр — пример работы 3"></div>
 </div>
 <span class="cc-count">1 / 3</span>
 <div class="cc-dots"></div>
@@ -946,9 +947,9 @@ html{scroll-behavior:auto}
 <article class="paid-card rv">
 <div class="card-carousel" data-carousel>
 <div class="cc-track">
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kornevoe-1/480/360" alt="Корневое плетение — пример работы 1"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kornevoe-2/480/360" alt="Корневое плетение — пример работы 2"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kornevoe-3/480/360" alt="Корневое плетение — пример работы 3"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/koren1.jpg" alt="Корневое плетение — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/koren2.jpg" alt="Корневое плетение — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/koren3.jpg" alt="Корневое плетение — пример работы 3"></div>
 </div>
 <span class="cc-count">1 / 3</span>
 <div class="cc-dots"></div>
@@ -968,9 +969,9 @@ html{scroll-behavior:auto}
 <article class="paid-card rv">
 <div class="card-carousel" data-carousel>
 <div class="cc-track">
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kolokolchik-1/480/360" alt="Колокольчик — пример работы 1"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kolokolchik-2/480/360" alt="Колокольчик — пример работы 2"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-kolokolchik-3/480/360" alt="Колокольчик — пример работы 3"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/kolokol1.jpg" alt="Колокольчик — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/kolokol2.jpg" alt="Колокольчик — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/kolokol3.jpg" alt="Колокольчик — пример работы 3"></div>
 </div>
 <span class="cc-count">1 / 3</span>
 <div class="cc-dots"></div>
@@ -988,9 +989,9 @@ html{scroll-behavior:auto}
 <article class="paid-card rv">
 <div class="card-carousel" data-carousel>
 <div class="cc-track">
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-loshadka-1/480/360" alt="Лошадка — пример работы 1"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-loshadka-2/480/360" alt="Лошадка — пример работы 2"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-loshadka-3/480/360" alt="Лошадка — пример работы 3"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/loshadka1.jpg" alt="Лошадка — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/loshadka2.jpg" alt="Лошадка — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/loshadka3.jpg" alt="Лошадка — пример работы 3"></div>
 </div>
 <span class="cc-count">1 / 3</span>
 <div class="cc-dots"></div>
@@ -1010,9 +1011,9 @@ html{scroll-behavior:auto}
 <article class="paid-card rv">
 <div class="card-carousel" data-carousel>
 <div class="cc-track">
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-mebel-kipr-1/480/360" alt="Курс по плетению мебели Кипр — пример работы 1"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-mebel-kipr-2/480/360" alt="Курс по плетению мебели Кипр — пример работы 2"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-mebel-kipr-3/480/360" alt="Курс по плетению мебели Кипр — пример работы 3"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/mebel1.jpg" alt="Курс по плетению мебели Кипр — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/mebel2.jpg" alt="Курс по плетению мебели Кипр — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/mebel3.jpg" alt="Курс по плетению мебели Кипр — пример работы 3"></div>
 </div>
 <span class="cc-count">1 / 3</span>
 <div class="cc-dots"></div>
@@ -1032,9 +1033,9 @@ html{scroll-behavior:auto}
 <article class="paid-card rv">
 <div class="card-carousel" data-carousel>
 <div class="cc-track">
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-taburet-stol-1/480/360" alt="Табурет-Стол — пример работы 1"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-taburet-stol-2/480/360" alt="Табурет-Стол — пример работы 2"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-taburet-stol-3/480/360" alt="Табурет-Стол — пример работы 3"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/taburet1.jpg" alt="Табурет-Стол — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/taburet2.jpg" alt="Табурет-Стол — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/taburet2.jpg" alt="Табурет-Стол — пример работы 3"></div>
 </div>
 <span class="cc-count">1 / 3</span>
 <div class="cc-dots"></div>
@@ -1052,9 +1053,9 @@ html{scroll-behavior:auto}
 <article class="paid-card rv">
 <div class="card-carousel" data-carousel>
 <div class="cc-track">
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-puf-yashchik-1/480/360" alt="Пуф и интерьерный ящик — пример работы 1"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-puf-yashchik-2/480/360" alt="Пуф и интерьерный ящик — пример работы 2"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-puf-yashchik-3/480/360" alt="Пуф и интерьерный ящик — пример работы 3"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/puf1.jpg" alt="Пуф и интерьерный ящик — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/puf2.jpg" alt="Пуф и интерьерный ящик — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/puf3.jpg" alt="Пуф и интерьерный ящик — пример работы 3"></div>
 </div>
 <span class="cc-count">1 / 3</span>
 <div class="cc-dots"></div>
@@ -1074,9 +1075,9 @@ html{scroll-behavior:auto}
 <article class="paid-card rv">
 <div class="card-carousel" data-carousel>
 <div class="cc-track">
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-abazhur-1/480/360" alt="Абажур — пример работы 1"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-abazhur-2/480/360" alt="Абажур — пример работы 2"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-abazhur-3/480/360" alt="Абажур — пример работы 3"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/abajur1.jpg" alt="Абажур — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/abajur2.jpg" alt="Абажур — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/abajur3.jpg" alt="Абажур — пример работы 3"></div>
 </div>
 <span class="cc-count">1 / 3</span>
 <div class="cc-dots"></div>
@@ -1094,9 +1095,9 @@ html{scroll-behavior:auto}
 <article class="paid-card rv">
 <div class="card-carousel" data-carousel>
 <div class="cc-track">
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-venok-abazhur-1/480/360" alt="Венок-Абажур — пример работы 1"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-venok-abazhur-2/480/360" alt="Венок-Абажур — пример работы 2"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-venok-abazhur-3/480/360" alt="Венок-Абажур — пример работы 3"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/venok-a1.jpg" alt="Венок-Абажур — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/venok-a1.jpg" alt="Венок-Абажур — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/venok-a1.jpg" alt="Венок-Абажур — пример работы 3"></div>
 </div>
 <span class="cc-count">1 / 3</span>
 <div class="cc-dots"></div>
@@ -1114,9 +1115,9 @@ html{scroll-behavior:auto}
 <article class="paid-card rv">
 <div class="card-carousel" data-carousel>
 <div class="cc-track">
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-restav-stul-1/480/360" alt="Реставрация советского стула — пример работы 1"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-restav-stul-2/480/360" alt="Реставрация советского стула — пример работы 2"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-restav-stul-3/480/360" alt="Реставрация советского стула — пример работы 3"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/rest1.jpg" alt="Реставрация советского стула — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/rest2.jpg" alt="Реставрация советского стула — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/rest1.jpg" alt="Реставрация советского стула — пример работы 3"></div>
 </div>
 <span class="cc-count">1 / 3</span>
 <div class="cc-dots"></div>
@@ -1134,9 +1135,9 @@ html{scroll-behavior:auto}
 <article class="paid-card rv">
 <div class="card-carousel" data-carousel>
 <div class="cc-track">
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-lenty-online-1/480/360" alt="Онлайн МК Все про ленты — пример работы 1"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-lenty-online-2/480/360" alt="Онлайн МК Все про ленты — пример работы 2"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-lenty-online-3/480/360" alt="Онлайн МК Все про ленты — пример работы 3"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/lenta-shir1.jpg" alt="Онлайн МК Все про ленты — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/lenta-shir2.jpg" alt="Онлайн МК Все про ленты — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/lenta-shir3.jpg" alt="Онлайн МК Все про ленты — пример работы 3"></div>
 </div>
 <span class="cc-count">1 / 3</span>
 <div class="cc-dots"></div>
@@ -1216,9 +1217,9 @@ html{scroll-behavior:auto}
 <article class="paid-card rv">
 <div class="card-carousel" data-carousel>
 <div class="cc-track">
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-restav-offline-1/480/360" alt="МК Реставрация советского стула — пример работы 1"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-restav-offline-2/480/360" alt="МК Реставрация советского стула — пример работы 2"></div>
-<div class="cc-slide"><img loading="lazy" src="https://picsum.photos/seed/works-restav-offline-3/480/360" alt="МК Реставрация советского стула — пример работы 3"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/rest-sov1.jpg" alt="МК Реставрация советского стула — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/rest-sov1.jpg" alt="МК Реставрация советского стула — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="images/paid_mk/rest-sov1.jpg" alt="МК Реставрация советского стула — пример работы 3"></div>
 </div>
 <span class="cc-count">1 / 3</span>
 <div class="cc-dots"></div>
@@ -1241,6 +1242,17 @@ html{scroll-behavior:auto}
 <!-- СУМКИ -->
 <div class="sub-card rv">
 <h4>🎒 Уровень «Сумки»</h4>
+<div class="card-carousel" data-carousel>
+<div class="cc-track">
+<div class="cc-slide"><img loading="lazy" src="images/donat_mk/sumki1.jpg" alt="Уровень «Сумки» — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="images/donat_mk/sumki2.jpg" alt="Уровень «Сумки» — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="images/donat_mk/sumki3.jpg" alt="Уровень «Сумки» — пример работы 3"></div>
+</div>
+<span class="cc-count">1 / 3</span>
+<div class="cc-dots"></div>
+<button class="cc-prev" type="button" aria-label="Предыдущее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+<button class="cc-next" type="button" aria-label="Следующее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
 <p>Сумочки, авоськи, рюкзаки, лапти и работа с фермуарами.</p>
 <a class="chat-link" href="https://vk.me/join/5Ob_kJsGCgANwMJitE_qUgPe59xtfpbMAX4=" target="_blank" rel="noopener">
 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13.16 17.7c-5.36 0-8.42-3.67-8.55-9.78h2.68c.09 4.49 2.07 6.39 3.64 6.76V7.92h2.52v3.86c1.55-.17 3.18-1.94 3.73-3.86h2.52a7.32 7.32 0 0 1-3.35 4.79 7.6 7.6 0 0 1 3.88 5h-2.77c-.6-1.86-2.1-3.3-4.01-3.49v3.49h-.29z"/></svg>
@@ -1304,6 +1316,17 @@ html{scroll-behavior:auto}
 <!-- МЕБЕЛЬ -->
 <div class="sub-card meal rv">
 <h4>🪑 Уровень «Мебель»</h4>
+<div class="card-carousel" data-carousel>
+<div class="cc-track">
+<div class="cc-slide"><img loading="lazy" src="images/donat_mk/mebel1.jpg" alt="Уровень «Мебель» — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="images/donat_mk/mebel2.jpg" alt="Уровень «Мебель» — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="images/donat_mk/mebel3.jpg" alt="Уровень «Мебель» — пример работы 3"></div>
+</div>
+<span class="cc-count">1 / 3</span>
+<div class="cc-dots"></div>
+<button class="cc-prev" type="button" aria-label="Предыдущее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+<button class="cc-next" type="button" aria-label="Следующее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
 <p>Полный цикл реставрации и изготовления мебели: стулья, кресла, столы, табуреты.</p>
 <details class="sub-details">
 <summary>⚡ Реставрация металлического стула (13 уроков)</summary>
@@ -1400,6 +1423,17 @@ html{scroll-behavior:auto}
 <!-- ПРОДВИЖЕНИЕ -->
 <div class="sub-card promo rv">
 <h4>📈 Курс «Продвижение личного бренда»</h4>
+<div class="card-carousel" data-carousel>
+<div class="cc-track">
+<div class="cc-slide"><img loading="lazy" src="images/works/sumki-1.jpg" alt="Уровень «Продвижение» — пример работы 1"></div>
+<div class="cc-slide"><img loading="lazy" src="images/works/sumki-2.jpg" alt="Уровень «Продвижение» — пример работы 2"></div>
+<div class="cc-slide"><img loading="lazy" src="images/works/sumki-3.jpg" alt="Уровень «Продвижение» — пример работы 3"></div>
+</div>
+<span class="cc-count">1 / 3</span>
+<div class="cc-dots"></div>
+<button class="cc-prev" type="button" aria-label="Предыдущее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+<button class="cc-next" type="button" aria-label="Следующее фото"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
 <p>Как мастеру выйти из тени и стабильно зарабатывать на своём ремесле.</p>
 <a class="chat-link" href="https://vk.me/join/_EOmrBDmd3a2w00lUyifyvzNKR5UAXULGao=" target="_blank" rel="noopener">
 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13.16 17.7c-5.36 0-8.42-3.67-8.55-9.78h2.68c.09 4.49 2.07 6.39 3.64 6.76V7.92h2.52v3.86c1.55-.17 3.18-1.94 3.73-3.86h2.52a7.32 7.32 0 0 1-3.35 4.79 7.6 7.6 0 0 1 3.88 5h-2.77c-.6-1.86-2.1-3.3-4.01-3.49v3.49h-.29z"/></svg>
@@ -1972,7 +2006,8 @@ gDown = true; gStartX = e.clientX; gScroll = gal.scrollLeft; gal.classList.add('
 });
 addEventListener('pointermove', e => { if (gDown) gal.scrollLeft = gScroll - (e.clientX - gStartX); });
 addEventListener('pointerup', () => { gDown = false; gal.classList.remove('dragging'); });
-/* ---------- Mini-carousels: фото работ в карточках курсов (зацикленные) ---------- */
+/* ---------- Mini-carousels: фото работ (цикл + автопрокрутка 5 сек) ---------- */
+const AUTOPLAY_MS = 5000;
 $$('[data-carousel]').forEach(car => {
   const track = car.querySelector('.cc-track');
   const dotsWrap = car.querySelector('.cc-dots');
@@ -1988,26 +2023,29 @@ $$('[data-carousel]').forEach(car => {
     return;
   }
 
+  /* Краевые клоны для бесшовного цикла: [копия посл.][1…N][копия перв.] */
   const first = track.children[0], last = track.children[N - 1];
   const cFirst = first.cloneNode(true), cLast = last.cloneNode(true);
   cFirst.setAttribute('aria-hidden', 'true');
   cLast.setAttribute('aria-hidden', 'true');
   track.appendChild(cFirst);
   track.insertBefore(cLast, first);
+  const M = N + 2; // всего слайдов в DOM
 
+  /* Точки */
   for (let i = 0; i < N; i++){
     const d = document.createElement('button');
     d.type = 'button';
     d.setAttribute('aria-label', 'Фото ' + (i + 1));
-    d.addEventListener('click', () => goTo(i + 1, true));
+    d.addEventListener('click', () => { goTo(i + 1, true); restart(); });
     dotsWrap.appendChild(d);
   }
   const dots = [...dotsWrap.children];
 
-  const W  = () => track.clientWidth;
-  const di = () => Math.round(track.scrollLeft / W());
-  const ri = () => (di() - 1 + N) % N;
-  const place = i => { track.scrollLeft = i * W(); };
+  const W     = () => track.clientWidth;
+  const di    = () => Math.round(track.scrollLeft / W());        // индекс в DOM (0…M-1)
+  const ri    = () => ((di() - 1) % N + N) % N;                  // «настоящий» индекс (0…N-1)
+  const place = i => { track.scrollLeft = i * W(); };            // мгновенно
   const goTo  = (i, smooth) => track.scrollTo({ left: i * W(), behavior: smooth && !REDUCED ? 'smooth' : 'auto' });
 
   function paint(){
@@ -2016,22 +2054,45 @@ $$('[data-carousel]').forEach(car => {
     if (count) count.textContent = (r + 1) + ' / ' + N;
   }
 
-  let t = null;
+  /* Остановились на клоне → мгновенный прыжок на настоящий слайд */
+  let settleT = null;
+  function settle(){
+    const i = di();
+    if (i === 0) place(N);        // уехали влево на «копию последнего» → настоящий последний
+    else if (i === M - 1) place(1); // уехали вправо на «копию первого» → настоящий первый
+  }
   track.addEventListener('scroll', () => {
     requestAnimationFrame(paint);
-    clearTimeout(t);
-    t = setTimeout(() => {
-      const i = di();
-      if (i === 0) place(N);
-      if (i === N + 1) place(1);
-    }, 90);
+    clearTimeout(settleT);
+    settleT = setTimeout(settle, 90);
   }, {passive:true});
 
-  next.addEventListener('click', () => goTo(di() + 1, true));
-  prev.addEventListener('click', () => goTo(di() - 1, true));
-  addEventListener('resize', () => place(ri() + 1));
+  /* Стрелки — тоже по кругу */
+  next.addEventListener('click', () => { goTo(di() + 1, true); restart(); });
+  prev.addEventListener('click', () => { goTo(di() - 1, true); restart(); });
+  track.addEventListener('pointerdown', () => restart(), {passive:true}); // свайп сбрасывает отсчёт
 
-  place(1);
+  /* ----- Автопрокрутка: каждые 5 сек, по кругу, с паузами ----- */
+  let timer = null, inView = false, hovered = false;
+  function tick(){
+    if (!inView || hovered || document.hidden) return;
+    goTo(di() + 1, true); // с последнего уйдёт на «копию первого» и сама прыгнет на 1
+  }
+  function start(){ if (REDUCED || timer) return; timer = setInterval(tick, AUTOPLAY_MS); }
+  function stop(){ clearInterval(timer); timer = null; }
+  function restart(){ stop(); start(); }
+
+  if (!REDUCED){
+    new IntersectionObserver(en => {
+      inView = en[0].isIntersecting;
+      inView ? start() : stop();
+    }, {threshold:.35}).observe(car);
+    car.addEventListener('mouseenter', () => { hovered = true; });
+    car.addEventListener('mouseleave', () => { hovered = false; restart(); });
+    document.addEventListener('visibilitychange', () => { document.hidden ? stop() : (inView && start()); });
+  }
+
+  place(1); // стартуем с первого слайда
   paint();
 });
 /* ---------- Lightbox ---------- */
